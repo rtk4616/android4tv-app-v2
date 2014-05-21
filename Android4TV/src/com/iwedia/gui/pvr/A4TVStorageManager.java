@@ -2,8 +2,6 @@ package com.iwedia.gui.pvr;
 
 import android.content.Context;
 import android.os.storage.StorageManager;
-import android.os.storage.StorageEventListener;
-import android.os.storage.StorageVolume;
 import android.util.Log;
 
 import com.iwedia.dtv.setup.OffSignalTimerEvent;
@@ -42,20 +40,20 @@ public class A4TVStorageManager {
         Log.d(TAG, "RemoveUSBStorage mount dir: " + mountPath);
     }
 
-    StorageEventListener mStorageListener = new StorageEventListener() {
-        @Override
-        public void onStorageStateChanged(String path, String oldState,
-                String newState) {
-            if (newState.equals("mounted")) {
-                addUSBStorage(path);
-                Log.d(TAG, "Number of USB devices: " + mDevices.size());
-            } else if (newState.equals("removed")) {
-                removeUSBStorage(path);
-                Log.d(TAG, "Number of USB devices: " + mDevices.size());
-            }
-        }
-    };
-
+    // TODO: This Should Be Fixed!
+    // StorageEventListener mStorageListener = new StorageEventListener() {
+    // @Override
+    // public void onStorageStateChanged(String path, String oldState,
+    // String newState) {
+    // if (newState.equals("mounted")) {
+    // addUSBStorage(path);
+    // Log.d(TAG, "Number of USB devices: " + mDevices.size());
+    // } else if (newState.equals("removed")) {
+    // removeUSBStorage(path);
+    // Log.d(TAG, "Number of USB devices: " + mDevices.size());
+    // }
+    // }
+    // };
     public A4TVStorageManager() {
         mContext = MainActivity.activity.getApplicationContext();
         if (!mDevices.isEmpty()) {
@@ -63,19 +61,20 @@ public class A4TVStorageManager {
         }
         mStorageManager = (StorageManager) mContext
                 .getSystemService(Context.STORAGE_SERVICE);
-        mStorageManager.registerListener(mStorageListener);
-        StorageVolume[] storageVolumes = mStorageManager.getVolumeList();
-        Log.d(TAG, "Initial storageVolumes :" + storageVolumes);
-        for (int i = 0; i < storageVolumes.length; i++) {
-            Log.d(TAG, storageVolumes[i].toString());
-            if (storageVolumes[i].getPath().startsWith(USB_MOUNT_ROOT)) {
-                Log.d(TAG, "This is an USB device");
-                addUSBStorage(storageVolumes[i].getPath());
-            }
-            if (storageVolumes[i].getDescription(mContext) != null) {
-                Log.d(TAG, storageVolumes[i].getDescription(mContext));
-            }
-        }
+        // TODO: This Should Be Fixed!
+        // mStorageManager.registerListener(mStorageListener);
+        // StorageVolume[] storageVolumes = mStorageManager.getVolumeList();
+        // Log.d(TAG, "Initial storageVolumes :" + storageVolumes);
+        // for (int i = 0; i < storageVolumes.length; i++) {
+        // Log.d(TAG, storageVolumes[i].toString());
+        // if (storageVolumes[i].getPath().startsWith(USB_MOUNT_ROOT)) {
+        // Log.d(TAG, "This is an USB device");
+        // addUSBStorage(storageVolumes[i].getPath());
+        // }
+        // if (storageVolumes[i].getDescription(mContext) != null) {
+        // Log.d(TAG, storageVolumes[i].getDescription(mContext));
+        // }
+        // }
         Log.d(TAG, "Number of USB devices: " + mDevices.size());
     }
 

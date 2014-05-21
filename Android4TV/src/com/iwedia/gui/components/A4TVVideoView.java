@@ -112,7 +112,9 @@ public class A4TVVideoView extends VideoView {
                     request.writeInt(mH);
                     MediaPlayer mPlayer = getMediaPlayer();
                     if (mPlayer != null) {
-                        mPlayer.setParameter(PARA_SCALE_DISP_WINDOW, request);
+                        // TODO: This Should Be Fixed!
+                        // mPlayer.setParameter(PARA_SCALE_DISP_WINDOW,
+                        // request);
                         Log.i(TAG, "setParameter para["
                                 + PARA_SCALE_DISP_WINDOW + "] x[" + mX + "] y["
                                 + mY + "] width[" + mW + "] height[" + mH + "]");

@@ -418,12 +418,14 @@ public class MainActivity extends Activity implements OSDGlobal {
         // Set xml content
         setContentView(R.layout.main);
         // check if early video
-        if (android.os.SystemProperties.get("iwedia.mw.earlyvideo", "disabled")
-                .equals("handled")
-                && System.getProperty(EARLY_VIDEO_PROPERTY_NAME, "1").equals(
-                        "1")) {
-            mIsEarlyVideo = true;
-        }
+        // TODO: This Should Be Fixed!
+        // if (android.os.SystemProperties.get("iwedia.mw.earlyvideo",
+        // "disabled")
+        // .equals("handled")
+        // && System.getProperty(EARLY_VIDEO_PROPERTY_NAME, "1").equals(
+        // "1")) {
+        // mIsEarlyVideo = true;
+        // }
         if (mIsEarlyVideo) {
             connectWithServer();
         } else {

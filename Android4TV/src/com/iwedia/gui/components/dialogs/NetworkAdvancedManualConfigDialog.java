@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.net.DhcpInfo;
 import android.view.View;
-import android.net.NetworkUtils;
 
 import com.iwedia.comm.system.INetworkSettings;
 import com.iwedia.gui.MainActivity;
@@ -97,8 +96,11 @@ public class NetworkAdvancedManualConfigDialog extends A4TVDialog implements
                 spinnerAddressType.setSelection(0);
                 DhcpInfo currentIP = networkSettings.getIP();
                 editTextIP.setText(intToIp(currentIP.ipAddress));
-                editTextNetworkPrefix.setText(String.valueOf(NetworkUtils
-                        .netmaskIntToPrefixLength(currentIP.netmask)));
+                // TODO: This Should Be Fixed!
+                // editTextNetworkPrefix.setText(String.valueOf(NetworkUtils
+                // .netmaskIntToPrefixLength(currentIP.netmask)));
+                // Temp Fix:
+                editTextNetworkPrefix.setText("");
                 editTextGateway.setText(intToIp(currentIP.gateway));
                 editTextDNS.setText(intToIp(currentIP.dns1));
                 disableEditTexts();
@@ -106,8 +108,11 @@ public class NetworkAdvancedManualConfigDialog extends A4TVDialog implements
                 spinnerAddressType.setSelection(1);
                 DhcpInfo currentIP = networkSettings.getIP();
                 editTextIP.setText(intToIp(currentIP.ipAddress));
-                editTextNetworkPrefix.setText(String.valueOf(NetworkUtils
-                        .netmaskIntToPrefixLength(currentIP.netmask)));
+                // TODO: This Should Be Fixed!
+                // editTextNetworkPrefix.setText(String.valueOf(NetworkUtils
+                // .netmaskIntToPrefixLength(currentIP.netmask)));
+                // Temp Fix:
+                editTextNetworkPrefix.setText("");
                 editTextGateway.setText(intToIp(currentIP.gateway));
                 editTextDNS.setText(intToIp(currentIP.dns1));
                 enableEditTexts();
