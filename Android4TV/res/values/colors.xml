@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="layout_focus_graytheme">#FF00FFFF</color>
+    <color name="red">#FFFF4444</color>
+    <color name="first_time_installation_background">#FF4D4949</color>
+    <!-- colors for EPG -->
+    <color name="epg_event_color">#FF2d2d2d</color>
+    <color name="red_normal_epg">#FFF0020B</color>
+    <color name="blue_normal_epg">#FF03D9DC</color>
+    <color name="green_normal_epg">#FF90B758</color>
+    <color name="yellow_normal_epg">#FFFFF542</color>
+    <color name="white_normal_epg">#FFA8A8A8</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pink_normal_epg">#FFE8119F</color>
+    <color name="orange_normal_epg">#FFEC5D18</color>
+    <color name="purple_normal_epg">#FFDE88E2</color>
+    <color name="epg_black_background">#EE000000</color>
+    <color name="text_color_white_with_transparency">#99FFFFFF</color>
+    <color name="epg_gray_button">#FF777777</color>
+    <color name="text_blue">#FF00bff3</color>
+    <color name="epg_text_gray_text_color">#FFd5d5d5</color>
+    <!-- New Skin -->
+    <color name="epg_gray_selection_ics">#FF22bff3</color>
+    <color name="content_list_black_background">#F3000000</color>
+    <color name="focus_blue">#ff00bff3</color>
+    <color name="content_list_text_blue">#ff044f64</color>
+    <!-- Filter options -->
+    <color name="filter_option_selected_background_ics">#FF0395c3</color>
+    <color name="filter_option_non_selected_text_ics">#FF919191</color>
+    <!-- Widget background -->
+    <color name="widget_selected_background">#333399FF</color>
+    <color name="widget_static_background">#33FF0000</color>
+    <color name="widget_drop_zone_active">#CCFF0000</color>
+    <!-- Dialog background -->
+    <color name="dialog_1">#FF080808</color>
+    <color name="dialog_2">#FF191b1d</color>
+    <color name="dialog_stroke">#FF848582</color>
+    <!-- info banner colors for pvr, timeshift progress bar -->
+    <color name="progress_color_blue">#FF12A3D3</color>
+    <color name="progress_secondary_red">#FFFF4444</color>
+    <color name="progress_background">#FF484848</color>
+    <!-- Info baner -->
+    <color name="select">#5c89e5</color>
+    <color name="unselect">#f0f0f0</color>
+    <!-- Universal -->
+    <color name="color_1">#141414</color>
+    <color name="color_2">#656565</color>
+</resources>

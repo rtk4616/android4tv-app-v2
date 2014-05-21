@@ -1,0 +1,220 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- =============================================================== -->
+    <!-- A4TV  default gray style -->
+    <!-- =============================================================== -->
+    <dimen name="menu_margin_gray">0sp</dimen>
+    <style name="a4tvbutton_gray" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/a4tv_component_text_color_gray</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textSize">@dimen/a4tvdialog_button_text_size</item>
+        <item name="android:focusable">true</item>
+        <!-- <item name="android:height">@dimen/a4tvbutton_height</item> -->
+        <!-- <item name="android:width">@dimen/a4tvbutton_width</item> -->
+        <item name="android:background">@drawable/a4tvbutton_gray</item>
+    </style>
+    <style name="content_item" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#FFFF</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textSize">@dimen/a4tvdialog_button_text_size</item>
+        <item name="android:focusable">true</item>
+        <!-- <item name="android:height">@dimen/a4tvbutton_height</item> -->
+        <!-- <item name="android:width">@dimen/a4tvbutton_width</item> -->
+    </style>
+    <style name="a4tvicon_gray">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+    <style name="a4tvtextview_gray">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/a4tv_component_text_color_gray</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="dialog_gray" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- <item name="android:paddingBottom">@dimen/a4tvdialog_padding_botom</item> -->
+        <!-- <item name="android:paddingTop">@dimen/a4tvdialog_padding_top</item> -->
+        <!-- <item name="android:paddingRight">@dimen/a4tvdialog_padding_right</item> -->
+        <!-- <item name="android:paddingLeft">@dimen/a4tvdialog_padding_left</item> -->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:buttonStyle">@style/a4tvbutton_gray</item>
+        <!-- <item name="android:spinnerStyle">@style/a4tvspinner_gray</item> -->
+        <!-- <item name="android:spinnerItemStyle">@style/a4tvspinner_item</item> -->
+        <item name="A4TVSpinner">@drawable/a4tvspinner_gray</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scroll</item>
+        <item name="android:scrollbarTrackVertical">@null</item>
+        <item name="android:scrollbarTrackHorizontal">@null</item>
+        <item name="android:scrollbarSize">@dimen/scrollbar</item>
+        <item name="android:seekBarStyle">@style/a4tvprogressbar_gray</item>
+    </style>
+    <style name="dialog_gray_without_background" parent="android:style/Theme.Holo.NoActionBar.Fullscreen">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:buttonStyle">@style/a4tvbutton_gray</item>
+        <!-- <item name="android:spinnerStyle">@style/a4tvspinner_gray</item> -->
+        <!-- <item name="android:spinnerItemStyle">@style/a4tvspinner_item</item> -->
+        <item name="A4TVSpinner">@drawable/a4tvspinner_gray</item>
+        <item name="android:scrollbarThumbHorizontal">@drawable/scroll</item>
+        <item name="android:scrollbarTrackVertical">@null</item>
+        <item name="android:scrollbarTrackHorizontal">@null</item>
+        <item name="android:scrollbarSize">@dimen/scrollbar</item>
+        <item name="android:seekBarStyle">@style/a4tvprogressbar_gray</item>
+    </style>
+    <style name="a4tvedittext_gray" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">@dimen/a4tvdialog_button_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textCursorDrawable">@android:color/black</item>
+        <item name="android:background">@drawable/a4tvedittext_gray</item>
+    </style>
+    <style name="a4tvprogressbar_gray" parent="@android:style/Widget.SeekBar">
+        <item name="android:padding">1dp</item>
+        <item name="android:height">15dp</item>
+        <item name="android:progressDrawable">@drawable/a4tvprogressbar_drawable_gray</item>
+        <item name="android:thumb">@null</item>
+    </style>
+    <style name="a4tvdot_gray">
+        <item name="android:padding">5dp</item>
+        <item name="android:src">@drawable/a4tvdot_gray</item>
+        <item name="android:background">#0000</item>
+    </style>
+    <style name="epg_button_selector">
+        <item name="android:background">@drawable/epg_button_selector</item>
+    </style>
+    <!-- =============================================================== -->
+    <!-- =============================================================== -->
+    <!-- A4TV  ICS style -->
+    <!-- =============================================================== -->
+    <style name="a4tvbutton_ics" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/a4tv_component_text_color_ics</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textSize">@dimen/a4tvdialog_button_text_size</item>
+        <item name="android:focusable">true</item>
+        <!-- ovo promeniti -->
+        <item name="android:background">@drawable/a4tvbutton_ics</item>
+    </style>
+    <style name="a4tvtextview_ics">
+        <item name="android:textSize">@dimen/a4tvdialog_textview_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textColor">@color/a4tv_component_text_color_ics</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="a4tvdot_ics">
+        <item name="android:padding">5dp</item>
+        <item name="android:src">@drawable/a4tvdot_ics</item>
+        <item name="android:background">#0000</item>
+    </style>
+    <style name="dialog_ics" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@drawable/dialog_background_ics1</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:buttonStyle">@style/a4tvbutton_ics</item>
+        <item name="android:editTextStyle">@style/a4tvedittext_ics</item>
+        <item name="A4TVSpinner">@drawable/a4tvspinner_ics</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scroll_ics</item>
+        <item name="android:scrollbarTrackVertical">@drawable/scroll_line_ics</item>
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:seekBarStyle">@style/a4tvprogressbar_ics</item>
+    </style>
+    <style name="dialog_ics_without_background" parent="android:style/Theme.Holo.NoActionBar.Fullscreen">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:buttonStyle">@style/a4tvbutton_ics</item>
+        <item name="android:editTextStyle">@style/a4tvedittext_ics</item>
+        <item name="A4TVSpinner">@drawable/a4tvspinner_ics</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scroll_ics</item>
+        <item name="android:scrollbarTrackVertical">@drawable/scroll_line_ics</item>
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:seekBarStyle">@style/a4tvprogressbar_ics</item>
+    </style>
+    <style name="dialog_context_ics" parent="android:style/Theme.Holo.NoActionBar.Fullscreen">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:buttonStyle">@style/a4tvbutton_ics</item>
+        <item name="A4TVSpinner">@drawable/a4tvspinner_ics</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scroll_ics</item>
+        <item name="android:scrollbarTrackVertical">@drawable/scroll_line_ics</item>
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:seekBarStyle">@style/a4tvprogressbar_ics</item>
+    </style>
+    <style name="a4tvedittext_ics" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">@dimen/a4tvdialog_button_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textCursorDrawable">@android:color/white</item>
+        <item name="android:background">@drawable/a4tvedittext_ics</item>
+    </style>
+    <style name="epg_gallery_item_ics">
+        <item name="android:background">@drawable/epg_gallery_item_background</item>
+        <item name="android:focusable">false</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:padding">@dimen/a4tvdialog_padding_top</item>
+        <item name="android:textSize">@dimen/a4tvdialog_button_text_size</item>
+    </style>
+    <style name="epg_button_selector_ics">
+        <item name="android:background">@drawable/epg_button_selector_ics</item>
+    </style>
+    <style name="a4tvprogressbar_ics" parent="@android:style/Widget.SeekBar">
+        <item name="android:padding">1dp</item>
+        <item name="android:height">15dp</item>
+        <item name="android:progressDrawable">@drawable/a4tvprogressbar_drawable_ics</item>
+        <item name="android:thumb">@null</item>
+    </style>
+    <style name="epg_zoom_control_ics">
+        <item name="android:src">@drawable/epg_zoom_ics</item>
+    </style>
+    <style name="epg_unzoom_control_ics">
+        <item name="android:src">@drawable/epg_unzoom_ics</item>
+    </style>
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

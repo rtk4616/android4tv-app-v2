@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentListMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/epg_black_background"
+    android:orientation="vertical"
+    android:weightSum="28.5" >
+    <!-- Top Banner -->
+    <LinearLayout
+        android:id="@+id/contentListTopBanner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/top_banner_background"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_extra_small"
+        android:weightSum="20" >
+        <!-- Icon in top banner -->
+        <!-- Text in top banner -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5" >
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:layout_marginLeft="@dimen/padding_extra_large"
+                android:layout_marginTop="@dimen/padding_small"
+                android:src="@drawable/epg_icon" />
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:src="@drawable/arrow_up" />
+        </FrameLayout>
+        <com.iwedia.gui.components.A4TVTextView
+            android:id="@+id/contentListTopBannerText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:layout_marginRight="@dimen/padding_small"
+            android:layout_weight="2"
+            android:gravity="left|center_vertical"
+            android:text="@string/epg"
+            android:textSize="@dimen/a4tvdialog_textview_size" />
+        <!-- <com.iwedia.gui.components.A4TVTextView -->
+        <!-- android:id="@+id/aTVTextViewCurrentTime" -->
+        <!-- android:layout_width="0dp" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_weight="2" /> -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/padding_extra_small"
+            android:layout_weight="4"
+            android:gravity="center_vertical" >
+            <com.iwedia.gui.components.A4TVTextView
+                android:id="@+id/aTVTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/epg_day_showing" />
+            <com.iwedia.gui.components.A4TVTextView
+                android:id="@+id/aTVTextViewEPGDayShowing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.iwedia.gui.components.A4TVTextView
+            android:id="@+id/aTVTextViewEpgScheduleRecording"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/padding_small"
+            android:layout_weight="1.5"
+            android:gravity="right|center_vertical"
+            android:singleLine="true"
+            android:text="@string/epg_schedule_recording"
+            android:textColor="@color/yellow_normal_epg" />
+        <com.iwedia.gui.components.A4TVTextView
+            android:id="@+id/aTVTextViewReminders"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/padding_small"
+            android:layout_weight="1.5"
+            android:gravity="right|center_vertical"
+            android:singleLine="true"
+            android:text="@string/epg_reminder"
+            android:textColor="@color/green_normal_epg" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="bottom"
+            android:weightSum="2" >
+            <ImageView
+                android:id="@+id/imageViewEPGScalePlus"
+                style="?Epg_zoom_image"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/padding_extra_small"
+                android:layout_weight="1" />
+            <ImageView
+                android:id="@+id/imageViewEPGScaleMinus"
+                style="?Epg_unzoom_image"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/padding_extra_small"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/arrowLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:src="@drawable/left_arrow_small" />
+        <com.iwedia.gui.epg.EpgSmallScrollView
+            android:id="@+id/contentFilterOptionsScroll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6.6"
+            android:focusable="false"
+            android:scrollbars="@null" >
+            <LinearLayout
+                android:id="@+id/contentListInputFilterBanner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </com.iwedia.gui.epg.EpgSmallScrollView>
+        <ImageView
+            android:id="@+id/arrowRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:src="@drawable/right_arrow_small" >
+        </ImageView>
+    </LinearLayout>
+    <!-- Content filter banner -->
+    <!-- Recently watched banner -->
+    <!-- Recently watched content -->
+    <!-- Favorites banner -->
+    <!-- Favorites watched content -->
+    <!-- All banner -->
+    <!-- All content grid view -->
+    <!-- All content -->
+    <!-- Info bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="right"
+        android:layout_weight="24.5"
+        android:orientation="vertical"
+        android:weightSum="18.7" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="14.69" >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <com.iwedia.gui.epg.EPGScrollView
+                    android:id="@+id/scrollViewMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fadingEdge="none"
+                    android:fillViewport="true" >
+                    <LinearLayout
+                        android:id="@+id/linearLayoutEPGScroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="20" >
+                        <LinearLayout
+                            android:id="@+id/linearLayoutEPGScrollTime"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:orientation="vertical" >
+                            <com.iwedia.gui.epg.VerticalTextView
+                                android:id="@+id/verticalTextView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:background="#8F00"
+                                android:gravity="center_vertical|end"
+                                android:text="@string/available" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/EPGMainLayoutWithLayouts"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="18"
+                            android:weightSum="6" >
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.iwedia.gui.epg.EPGScrollView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="20" >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:src="@drawable/epg_time_divider_line" />
+                </LinearLayout>
+                <FrameLayout
+                    android:id="@+id/frameLayoutEPGForSmallEvents"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </FrameLayout>
+        <ImageView
+            android:id="@+id/allItemFirstGridDivider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/content_list_horiz_line" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:weightSum="20" >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_small" >
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:layout_marginTop="@dimen/padding_extra_small"
+                    android:src="@drawable/arrow_down" />
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="18" >
+                <ImageView
+                    android:id="@+id/allItemSecondGridDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/content_list_horiz_line" />
+                <com.iwedia.gui.epg.EPGDownGallery
+                    android:id="@+id/galleryEPG"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="false" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayoutForMenuInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_weight="2"
+        android:background="?MainMenuDescriptionBackground"
+        android:padding="@dimen/main_menu_description_margin"
+        android:weightSum="2" >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|top"
+            android:orientation="horizontal" >
+            <com.iwedia.gui.components.A4TVTextView
+                android:id="@+id/aTVTextViewMoreInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:gravity="top|left"
+                android:text="@string/electronic_program_guide" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="top|right"
+            android:orientation="horizontal" >
+            <com.iwedia.gui.components.A4TVTextView
+                android:id="@+id/aTVTextViewInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top|right"
+                android:text="@string/main_menu_description_info" />
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="top|right"
+                android:layout_marginBottom="@dimen/padding_small"
+                android:src="@drawable/product_info" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

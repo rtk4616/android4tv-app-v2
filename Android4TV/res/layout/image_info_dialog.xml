@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutImageInfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.iwedia.gui.components.A4TVTextView
+        android:id="@+id/textViewDateTimeImageInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+    <com.iwedia.gui.components.A4TVTextView
+        android:id="@+id/textViewMakeImageInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" />
+    <com.iwedia.gui.components.A4TVTextView
+        android:id="@+id/textViewModelImageInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" />
+    <com.iwedia.gui.components.A4TVTextView
+        android:id="@+id/textViewFlashImageInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" />
+    <com.iwedia.gui.components.A4TVTextView
+        android:id="@+id/textViewImageWidthImageInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" />
+    <com.iwedia.gui.components.A4TVTextView
+        android:id="@+id/textViewImageHeightImageInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" />
+    <com.iwedia.gui.components.A4TVTextView
+        android:id="@+id/textViewExposureTimeImageInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" />
+    <com.iwedia.gui.components.A4TVTextView
+        android:id="@+id/textViewApertureImageInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" />
+    <com.iwedia.gui.components.A4TVTextView
+        android:id="@+id/textViewISOImageInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" />
+    <com.iwedia.gui.components.A4TVTextView
+        android:id="@+id/textViewWhiteBalanceImageInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" />
+    <com.iwedia.gui.components.A4TVTextView
+        android:id="@+id/textViewFocalLengthImageInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" />
+</LinearLayout>

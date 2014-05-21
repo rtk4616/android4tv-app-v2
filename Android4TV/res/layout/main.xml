@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:id="@+id/a4tv_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <RelativeLayout
+            android:id="@+id/primaryVideoHolder"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+            <!--
+            <com.iwedia.gui.components.A4TVVideoView
+                android:id="@+id/mainVideo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentTop="false" />
+            -->
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/secondaryVideoHolder"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+            <!--
+	        <com.iwedia.gui.components.A4TVVideoView
+	            android:id="@+id/secondaryVideo"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="false"
+	            android:layout_alignParentLeft="false"
+	            android:layout_alignParentRight="false"
+	            android:layout_alignParentTop="false" />
+            -->
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/hbbtvVideoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <VideoView
+                android:id="@+id/hbbtvVideo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/subtitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+    <LinearLayout
+        android:id="@+id/teletextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+    <LinearLayout
+        android:id="@+id/mhegLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:id="@+id/linLayMessages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F000"
+            android:gravity="center"
+            android:visibility="invisible" >
+            <LinearLayout
+                android:id="@+id/linLayScrambled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/imageViewScrambled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/scrambled_channel_big"
+                    android:visibility="visible" />
+                <com.iwedia.gui.components.A4TVTextView
+                    android:id="@+id/textViewScrambled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/padding_medium"
+                    android:text="@string/scrambled"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:visibility="visible" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linLayRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/imageViewRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/radio_icon_big"
+                    android:visibility="visible" />
+                <com.iwedia.gui.components.A4TVTextView
+                    android:id="@+id/textViewRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/padding_medium"
+                    android:text="@string/radio"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:visibility="visible" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linLayData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/imageViewData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/radio_icon_big"
+                    android:visibility="visible" />
+                <com.iwedia.gui.components.A4TVTextView
+                    android:id="@+id/textViewData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/padding_medium"
+                    android:text="@string/data_service"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:visibility="visible" />
+            </LinearLayout>
+            <!-- Locked service icon -->
+            <LinearLayout
+                android:id="@+id/linLayLocked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/imageViewLocked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lock_big"
+                    android:visibility="visible" />
+                <com.iwedia.gui.components.A4TVTextView
+                    android:id="@+id/textViewLocked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/padding_medium"
+                    android:text="@string/locked"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:visibility="visible" />
+            </LinearLayout>
+            <!-- Parental control icon -->
+            <LinearLayout
+                android:id="@+id/linLayParentalControl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black"
+                android:gravity="center"
+                android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/imageViewParental"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lock_big"
+                    android:visibility="visible" />
+                <com.iwedia.gui.components.A4TVTextView
+                    android:id="@+id/textViewParental"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/padding_medium"
+                    android:text="@string/parental_control_activated"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Music reproduction from dlna -->
+        <LinearLayout
+            android:id="@+id/musicReproductionFromDlnaLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F000"
+            android:gravity="center"
+            android:visibility="invisible" >
+            <ImageView
+                android:id="@+id/imageViewMusicReproduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/music_icon" />
+            <com.iwedia.gui.components.A4TVInfoDescriptionScrollView
+                android:id="@+id/scrollViewLyrics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="@null" >
+                <com.iwedia.gui.components.A4TVTextView
+                    android:id="@+id/textViewLyrics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:visibility="gone" />
+            </com.iwedia.gui.components.A4TVInfoDescriptionScrollView>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/noSignalAvailableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F000"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+            <ImageView
+                android:id="@+id/imageViewAlert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/padding_large"
+                android:src="@drawable/warning_icon" />
+            <com.iwedia.gui.components.A4TVTextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewAlert"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="false"
+                android:layout_centerVertical="false"
+                android:layout_marginTop="@dimen/padding_large"
+                android:gravity="left"
+                android:text="@string/no_signal"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/mainOSD"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" />
+    <RelativeLayout
+        android:id="@+id/firstTimeInstallLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/first_time_installation_background"
+        android:visibility="gone" >
+        <com.iwedia.gui.components.A4TVTextView
+            android:id="@+id/aTVTextViewFirstTimeInstallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/padding_large"
+            android:text="@string/first_time_install_text" />
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aTVTextViewFirstTimeInstallText"
+            android:layout_centerInParent="true"
+            android:src="@drawable/android4tv_old" />
+        <com.iwedia.gui.components.A4TVButton
+            android:id="@+id/aTVButtonFirstTimeInstallNextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/padding_large"
+            android:layout_marginRight="@dimen/padding_large"
+            android:text="@string/first_time_install_next_button_text" />
+    </RelativeLayout>
+</FrameLayout>

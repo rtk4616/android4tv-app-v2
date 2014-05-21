@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:id="@+id/multimediaShow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF000000"
+        android:orientation="vertical"
+        android:weightSum="10" >
+        <!-- Name -->
+        <com.iwedia.gui.components.A4TVTextView
+            android:id="@+id/multimediaShowImageName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center" />
+        <!-- Previous -> Image -> Next -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="8"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+                <com.iwedia.gui.components.A4TVButton
+                    android:id="@+id/multimedaShowPrevious"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/multimedia_left_arrow_selector"
+                    android:gravity="center" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="8"
+                android:gravity="center" >
+                <com.iwedia.gui.components.A4TVPhotoView
+                    android:id="@+id/multimediaShowImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+                <com.iwedia.gui.components.A4TVButton
+                    android:id="@+id/multimedaShowNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/multimedia_right_arrow_selector"
+                    android:gravity="center" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- Info banner -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1" >
+            <ImageView
+                android:id="@+id/imageViewRotateLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_marginTop="6dp"
+                android:padding="4dp"
+                android:src="@drawable/sorted_by" >
+            </ImageView>
+            <com.iwedia.gui.components.A4TVTextView
+                android:id="@+id/textViewRotateLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:layout_marginRight="@dimen/padding_small"
+                android:layout_marginTop="@dimen/padding_small"
+                android:layout_toRightOf="@+id/imageViewRotateLeft"
+                android:text="@string/rotate_left" />
+            <ImageView
+                android:id="@+id/imageViewRotateRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/textViewRotateLeft"
+                android:padding="4dp"
+                android:src="@drawable/sorted_by_order" >
+            </ImageView>
+            <com.iwedia.gui.components.A4TVTextView
+                android:id="@+id/textViewRotateRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:layout_marginRight="@dimen/padding_small"
+                android:layout_marginTop="@dimen/padding_small"
+                android:layout_toRightOf="@+id/imageViewRotateRight"
+                android:text="@string/rotate_right" />
+            <ImageView
+                android:id="@+id/imageViewZoomIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/textViewRotateRight"
+                android:padding="4dp"
+                android:src="@drawable/zoom_in" >
+            </ImageView>
+            <com.iwedia.gui.components.A4TVTextView
+                android:id="@+id/textViewZoomIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:layout_marginRight="@dimen/padding_small"
+                android:layout_marginTop="@dimen/padding_small"
+                android:layout_toRightOf="@+id/imageViewZoomIn"
+                android:text="@string/zoom_in" />
+            <ImageView
+                android:id="@+id/imageViewZoomOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/textViewZoomIn"
+                android:padding="4dp"
+                android:src="@drawable/zoom_out" >
+            </ImageView>
+            <com.iwedia.gui.components.A4TVTextView
+                android:id="@+id/textViewZoomOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:layout_marginTop="@dimen/padding_small"
+                android:layout_toRightOf="@+id/imageViewZoomOut"
+                android:text="@string/zoom_out" />
+            <!--
+             <com.iwedia.gui.components.A4TVTextView
+            android:id="@+id/multimediaShowImageInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/padding_extra_large"
+            android:layout_marginTop="@dimen/main_menu_description_margin"
+            android:text="@string/image_info" />
+            -->
+            <ImageView
+                android:id="@+id/slideShowIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_extra_large"
+                android:layout_toRightOf="@+id/textViewZoomOut"
+                android:padding="5dp"
+                android:src="@drawable/slide_show_icon" />
+            <com.iwedia.gui.components.A4TVTextView
+                android:id="@+id/textViewSlideShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:layout_marginTop="@dimen/padding_small"
+                android:layout_toRightOf="@+id/slideShowIcon"
+                android:text="@string/slide_show" />
+            <com.iwedia.gui.components.A4TVTextView
+                android:id="@+id/multimediaShowImageInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_small"
+                android:layout_toLeftOf="@+id/imageView1"
+                android:text="@string/image_info" />
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="top|right"
+                android:layout_marginBottom="@dimen/padding_small"
+                android:padding="10dp"
+                android:src="@drawable/product_info" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayoutSlideShow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF000000"
+        android:visibility="invisible" >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <ImageView
+                android:id="@+id/imageViewSlideShow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </ImageView>
+            <ImageView
+                android:id="@+id/imageViewRepeatSlideShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/media_controller_repeat_off_focused" >
+            </ImageView>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

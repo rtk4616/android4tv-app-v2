@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <com.iwedia.gui.components.A4TVButton
+            android:id="@+id/filterButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/filter_option_item_selector"
+            android:gravity="center"
+            android:text="@string/filter_button_text"
+            android:textColor="@drawable/filter_option_text_selector"
+            android:textSize="@dimen/content_filter_text_size" >
+        </com.iwedia.gui.components.A4TVButton>
+        <!-- Divider -->
+        <ImageView
+            android:id="@+id/filterButtonDivider"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/white" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_small" >
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background_ics1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_small" >
+        <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:orientation="vertical" >
+            <com.iwedia.gui.components.A4TVTextView
+                android:id="@+id/aTVTextViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_small"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:layout_marginTop="@dimen/padding_extra_small"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/focus_blue"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:layout_marginTop="@dimen/padding_extra_small"
+            android:orientation="vertical" >
+            <com.iwedia.gui.components.A4TVTextView
+                android:id="@+id/aTVTextViewMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/actionButtons"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alert_dialog_action_buttons_height"
+            android:gravity="center_horizontal"
+            android:weightSum="2" >
+            <com.iwedia.gui.components.A4TVButton
+                android:id="@+id/aTVButtonNegative"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="gone" />
+            <com.iwedia.gui.components.A4TVButton
+                android:id="@+id/aTVButtonPositive"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,85 @@
+<resources>
+    <dimen name="padding_extra_small">3dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="padding_extra_large">35dp</dimen>
+    <dimen name="main_menu_description_margin">2dp</dimen>
+    <dimen name="a4tvbutton_height">13dp</dimen>
+    <dimen name="a4tvbutton_width">33dp</dimen>
+    <dimen name="selected_item_name_font_size">20dp</dimen>
+    <dimen name="selected_item_name_font_size_1080p">20dp</dimen>
+    <dimen name="curl_progress_height">10dp</dimen>
+    <dimen name="alert_dialog_action_buttons_height">50dp</dimen>
+    <!-- Dialog paddings -->
+    <dimen name="dialog_stroke_width">2dp</dimen>
+    <dimen name="a4tvdialog_padding_left">20dp</dimen>
+    <dimen name="a4tvdialog_padding_right">20dp</dimen>
+    <dimen name="a4tvdialog_padding_top">10dp</dimen>
+    <dimen name="a4tvdialog_padding_botom">10dp</dimen>
+    <dimen name="a4tvdialog_spinner_padding_top">2dp</dimen>
+    <dimen name="a4tvdialog_textview_size">16dp</dimen>
+    <dimen name="a4tvdialog_progress_text_size">18dp</dimen>
+    <dimen name="a4tvdialog_button_text_size">13dp</dimen>
+    <dimen name="a4tvdialog_button_text_size_1080p">13dp</dimen>
+    <dimen name="layout_focus_corner_radius">4dp</dimen>
+    <dimen name="progress_corner_radius">7dp</dimen>
+    <dimen name="progress_corner_radius_ics">10dp</dimen>
+    <dimen name="scrollbar">30dp</dimen>
+    <dimen name="selection_stroke_width">3dp</dimen>
+    <!-- Content list paddings -->
+    <dimen name="content_list_no_image_name">22dp</dimen>
+    <dimen name="content_list_no_image_name_1080p">22dp</dimen>
+    <dimen name="content_list_no_image_index">43dp</dimen>
+    <dimen name="content_list_no_image_index_1080p">43dp</dimen>
+    <dimen name="content_list_banner_text_size">17dp</dimen>
+    <dimen name="content_item_text_size">12dp</dimen>
+    <dimen name="content_item_text_size_1080p">12dp</dimen>
+    <dimen name="content_filter_text_size_1080p">12dp</dimen>
+    <dimen name="content_filter_text_size">18dp</dimen>
+    <dimen name="content_filter_padding">3dp</dimen>
+    <!-- EPG values -->
+    <dimen name="epg_item_color_width">7dp</dimen>
+    <dimen name="epg_vertical_textview_size">25dp</dimen>
+    <dimen name="epg_no_data_text_size">28dp</dimen>
+    <!-- Toast -->
+    <dimen name="toast_text_size">18sp</dimen>
+    <!-- INFO BANNER -->
+    <dimen name="dock_height1">145dp</dimen>
+    <dimen name="dock_height">110dp</dimen>
+    <dimen name="text_size_5">22sp</dimen>
+    <dimen name="text_size_0">19sp</dimen>
+    <dimen name="text_size_1">15sp</dimen>
+    <dimen name="text_size_2">14sp</dimen>
+    <dimen name="text_size_3">12sp</dimen>
+    <dimen name="text_size_4">10sp</dimen>
+    <dimen name="progress_bar_height">3dp</dimen>
+    <dimen name="channel_icon_height">45dp</dimen>
+    <dimen name="channel_icon_width">140dp</dimen>
+    <dimen name="channel_icon_height1">60dp</dimen>
+    <dimen name="channel_icon_width1">180dp</dimen>
+    <dimen name="padding1">2dp</dimen>
+    <dimen name="padding2">3dp</dimen>
+    <dimen name="padding3">6dp</dimen>
+    <dimen name="padding4">8dp</dimen>
+    <dimen name="padding5">9dp</dimen>
+    <dimen name="padding6">12dp</dimen>
+    <dimen name="padding7">16dp</dimen>
+    <dimen name="padding8">18dp</dimen>
+    <dimen name="padding9">36dp</dimen>
+    <dimen name="separator">15dp</dimen>
+    <!-- separator + arrow width -->
+    <dimen name="channel_name_left_padding">26dp</dimen>
+    <dimen name="channel_area">180dp</dimen>
+    <!-- Infobaner images -->
+    <dimen name="infobaner_arrow_width">11dp</dimen>
+    <dimen name="infobaner_arrow_width1">14dp</dimen>
+    <dimen name="dtv_service_width">34dp</dimen>
+    <dimen name="dtv_service_height">18dp</dimen>
+    <dimen name="dtv_service_width1">45dp</dimen>
+    <dimen name="dtv_service_height1">24dp</dimen>
+    <dimen name="sand_clock_width">7dp</dimen>
+    <dimen name="sand_clock_height">11dp</dimen>
+    <dimen name="sand_clock_width1">9dp</dimen>
+    <dimen name="sand_clock_height1">14dp</dimen>
+</resources>

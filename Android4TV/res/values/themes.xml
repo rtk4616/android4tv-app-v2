@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Themes go here -->
+    <!-- ======================================= -->
+    <style name="Gray" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        <item name="android:buttonStyle">@style/a4tvbutton_gray</item>
+        <item name="A4TVtexViewProps">@style/a4tvtextview_gray</item>
+        <item name="A4TVDialog">@style/dialog_gray</item>
+        <item name="A4TVDialogTransparent">@style/dialog_gray_without_background</item>
+        <!-- <item name="A4TVEditText">@drawable/a4tvedittext_gray</item> -->
+        <item name="android:editTextStyle">@style/a4tvedittext_gray</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <!-- <item name="android:spinnerStyle">@style/a4tvspinner_gray</item> -->
+        <!-- <item name="android:spinnerItemStyle">@style/a4tvspinner_item</item> -->
+        <item name="A4TVDot">@style/a4tvdot_gray</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scroll</item>
+        <item name="android:scrollbarSize">@dimen/scrollbar</item>
+        <item name="android:seekBarStyle">@style/a4tvprogressbar_gray</item>
+        <item name="LayoutFocusDrawable">@drawable/layout_focus</item>
+        <item name="A4TVSpinner">@drawable/a4tvspinner_gray</item>
+        <item name="Epg_gallery_background">@drawable/epg_gallery_item_background</item>
+        <item name="Epg_button_selector">@style/epg_button_selector</item>
+        <item name="Epg_zoom_image">@style/epg_zoom_control_ics</item>
+        <item name="Epg_unzoom_image">@style/epg_unzoom_control_ics</item>
+        <item name="DialogSmallUpperDividerLine">@null</item>
+        <item name="DialogSmallDividerLine">@null</item>
+        <item name="DialogContextDividerLine">@drawable/drop_down_divider_line_ics</item>
+        <item name="DialogContextBackground">@drawable/drop_down_background_ics</item>
+        <item name="A4TVDialogContext">@style/dialog_context_ics</item>
+        <item name="MainMenuDescriptionBackground">@drawable/down_stripe</item>
+        <item name="MainMenuStripeBackground">@drawable/main_menu_background</item>
+        <item name="MainMenuSelectionBoxBackground">@drawable/selected_item_background</item>
+        <!-- ICONS -->
+        <item name="MainMenuIconsListsMain0">@drawable/content_list</item>
+        <item name="MainMenuIconsListsMain1">@drawable/multimedia_icon</item>
+        <item name="MainMenuIconsListsMain2">@drawable/applications</item>
+        <item name="MainMenuIconsListsMain3">@drawable/input_selection</item>
+        <item name="MainMenuIconsListsMain4">@drawable/google_play</item>
+        <item name="MainMenuIconsListsMain5">@drawable/settings_icon</item>
+        <item name="MainMenuIconsListsSubSettings0">@drawable/tv_settings</item>
+        <item name="MainMenuIconsListsSubSettings1">@drawable/network</item>
+        <item name="MainMenuIconsListsSubSettings2">@drawable/time_and_date</item>
+        <item name="MainMenuIconsListsSubSettings3">@drawable/language_and_keyboard</item>
+        <item name="MainMenuIconsListsSubSettings4">@drawable/input_devices</item>
+        <item name="MainMenuIconsListsSubSettings5">@drawable/applications_settings</item>
+        <item name="MainMenuIconsListsSubSettings6">@drawable/external_local_file_storage_settings</item>
+        <item name="MainMenuIconsListsSubSettings7">@drawable/account_sync</item>
+        <item name="MainMenuIconsListsSubSettings8">@drawable/voice_input_output_settings</item>
+        <item name="MainMenuIconsListsSubSettings9">@drawable/main_menu_dlna_icon</item>
+        <item name="MainMenuIconsListsSubSettings10">@drawable/product_info</item>
+        <item name="MainMenuIconsListsSubSettings11">@drawable/software_upgrade</item>
+        <item name="MainMenuIconsListsSubSettings12">@drawable/energy_save</item>
+        <item name="MainMenuIconsListsSubSettings13">@drawable/factory_reset</item>
+        <item name="MainMenuIconsListsSubSettings14">@drawable/timers</item>
+        <item name="MainMenuIconsListsTVSettings0">@drawable/channel_installation</item>
+        <item name="MainMenuIconsListsTVSettings1">@drawable/security</item>
+        <item name="MainMenuIconsListsTVSettings2">@drawable/sound_settings</item>
+        <item name="MainMenuIconsListsTVSettings3">@drawable/picture_settings</item>
+        <item name="MainMenuIconsListsTVSettings4">@drawable/subtitles</item>
+        <item name="MainMenuIconsListsTVSettings5">@drawable/hbbtv</item>
+        <item name="MainMenuIconsListsTVSettings6">@drawable/teletext</item>
+        <item name="MainMenuIconsListsTVSettings7">@drawable/pvr_menu</item>
+        <item name="MainMenuIconsListsTVSettings8">@drawable/storemode</item>
+        <item name="MainMenuIconsListsTVSettings9">@drawable/screensaver</item>
+        <item name="MainMenuIconsListsTVSettings10">@drawable/ci_icon</item>
+        <item name="MainMenuIconsListsTVSettings11">@drawable/osd_selection_icon</item>
+        <item name="MainMenuIconsListsTVSettings12">@drawable/pip_icon</item>
+        <item name="MainMenuIconsListsSecuritySettings0">@drawable/parential_guidance</item>
+        <item name="MainMenuIconsListsSecuritySettings1">@drawable/password</item>
+        <item name="MainMenuIconsListsSecuritySettings2">@drawable/program_blocking</item>
+        <!-- ICONS END -->
+    </style>
+    <!-- ======================================= -->
+    <!-- ICS theme -->
+    <style name="ICS_like" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        <!-- Main views -->
+        <item name="A4TVtexViewProps">@style/a4tvtextview_ics</item>
+        <item name="A4TVSpinner">@drawable/a4tvspinner_ics</item>
+        <!-- <item name="A4TVEditText">@drawable/a4tvedittext_gray</item> -->
+        <item name="android:editTextStyle">@style/a4tvedittext_ics</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:seekBarStyle">@style/a4tvprogressbar_ics</item>
+        <item name="android:buttonStyle">@style/a4tvbutton_ics</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scroll_ics</item>
+        <item name="android:scrollbarTrackVertical">@drawable/scroll_line_ics</item>
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="LayoutFocusDrawable">@drawable/focus_line_ics</item>
+        <item name="A4TVDot">@style/a4tvdot_ics</item>
+        <item name="DialogSmallUpperDividerLine">@drawable/gradient_line_ics</item>
+        <item name="DialogSmallDividerLine">@drawable/dialog_divider_line_ics</item>
+        <item name="DialogContextDividerLine">@drawable/drop_down_divider_line_ics</item>
+        <item name="DialogContextBackground">@drawable/drop_down_background_ics</item>
+        <item name="A4TVDialogContext">@style/dialog_context_ics</item>
+        <item name="A4TVSwitchButton">@drawable/a4tvbutton_on_off_ics</item>
+        <!-- Dialogs -->
+        <item name="A4TVDialog">@style/dialog_ics</item>
+        <item name="A4TVDialogTransparent">@style/dialog_ics_without_background</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- epg fields -->
+        <item name="Epg_gallery_background">@style/epg_gallery_item_ics</item>
+        <item name="Epg_button_selector">@style/epg_button_selector_ics</item>
+        <item name="Epg_zoom_image">@style/epg_zoom_control_ics</item>
+        <item name="Epg_unzoom_image">@style/epg_unzoom_control_ics</item>
+        <!-- Main menu fields -->
+        <item name="MainMenuDescriptionBackground">@drawable/down_stripe</item>
+        <item name="MainMenuStripeBackground">@drawable/main_menu_background</item>
+        <item name="MainMenuSelectionBoxBackground">@drawable/selected_item_background</item>
+        <!-- ICONS -->
+        <item name="MainMenuIconsListsMain0">@drawable/content_list</item>
+        <item name="MainMenuIconsListsMain1">@drawable/multimedia_icon</item>
+        <item name="MainMenuIconsListsMain2">@drawable/applications</item>
+        <item name="MainMenuIconsListsMain3">@drawable/input_selection</item>
+        <item name="MainMenuIconsListsMain4">@drawable/google_play</item>
+        <item name="MainMenuIconsListsMain5">@drawable/settings_icon</item>
+        <item name="MainMenuIconsListsSubSettings0">@drawable/tv_settings</item>
+        <item name="MainMenuIconsListsSubSettings1">@drawable/network</item>
+        <item name="MainMenuIconsListsSubSettings2">@drawable/time_and_date</item>
+        <item name="MainMenuIconsListsSubSettings3">@drawable/language_and_keyboard</item>
+        <item name="MainMenuIconsListsSubSettings4">@drawable/input_devices</item>
+        <item name="MainMenuIconsListsSubSettings5">@drawable/applications_settings</item>
+        <item name="MainMenuIconsListsSubSettings6">@drawable/external_local_file_storage_settings</item>
+        <item name="MainMenuIconsListsSubSettings7">@drawable/account_sync</item>
+        <item name="MainMenuIconsListsSubSettings8">@drawable/voice_input_output_settings</item>
+        <item name="MainMenuIconsListsSubSettings9">@drawable/main_menu_dlna_icon</item>
+        <item name="MainMenuIconsListsSubSettings10">@drawable/product_info</item>
+        <item name="MainMenuIconsListsSubSettings11">@drawable/software_upgrade</item>
+        <item name="MainMenuIconsListsSubSettings12">@drawable/energy_save</item>
+        <item name="MainMenuIconsListsSubSettings13">@drawable/factory_reset</item>
+        <item name="MainMenuIconsListsSubSettings14">@drawable/timers</item>
+        <item name="MainMenuIconsListsTVSettings0">@drawable/channel_installation</item>
+        <item name="MainMenuIconsListsTVSettings1">@drawable/security</item>
+        <item name="MainMenuIconsListsTVSettings2">@drawable/sound_settings</item>
+        <item name="MainMenuIconsListsTVSettings3">@drawable/picture_settings</item>
+        <item name="MainMenuIconsListsTVSettings4">@drawable/subtitles</item>
+        <item name="MainMenuIconsListsTVSettings5">@drawable/hbbtv</item>
+        <item name="MainMenuIconsListsTVSettings6">@drawable/teletext</item>
+        <item name="MainMenuIconsListsTVSettings7">@drawable/pvr_menu</item>
+        <item name="MainMenuIconsListsTVSettings8">@drawable/storemode</item>
+        <item name="MainMenuIconsListsTVSettings9">@drawable/screensaver</item>
+        <item name="MainMenuIconsListsTVSettings10">@drawable/ci_icon</item>
+        <item name="MainMenuIconsListsTVSettings11">@drawable/osd_selection_icon</item>
+        <item name="MainMenuIconsListsTVSettings12">@drawable/pip_icon</item>
+        <item name="MainMenuIconsListsSecuritySettings0">@drawable/parential_guidance</item>
+        <item name="MainMenuIconsListsSecuritySettings1">@drawable/password</item>
+        <item name="MainMenuIconsListsSecuritySettings2">@drawable/program_blocking</item>
+        <!-- ICONS END -->
+    </style>
+</resources>

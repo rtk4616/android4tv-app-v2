@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">IWEDIA_SERVICE</string>
+    <string name="startserv">Start proxy service</string>
+    <string name="stopserv">Stop proxy service</string>
+    <string name="month1">january</string>
+    <string name="month2">february</string>
+    <string name="month3">march</string>
+    <string name="month4">april</string>
+    <string name="month5">may</string>
+    <string name="month6">june</string>
+    <string name="month7">july</string>
+    <string name="month8">august</string>
+    <string name="month9">september</string>
+    <string name="month10">october</string>
+    <string name="month11">november</string>
+    <string name="month12">december</string>
+    <string name="permissions_format"><xliff:g id="perm_line1">%1$s</xliff:g>, <xliff:g id="perm_line2">%2$s</xliff:g></string>
+    <string name="cam_inserted">CAM inserted</string>
+    <string name="cam_removed">CAM removed</string>
+    <string name="invalid_host_certificate">Invalid host certificate</string>
+</resources>

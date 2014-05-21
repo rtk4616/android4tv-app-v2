@@ -1,0 +1,138 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+    <!-- Main menu background image -->
+    <ImageView
+        android:id="@+id/mainMenuGalleryBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/main_menu_background"
+        android:clickable="false"
+        android:dither="true"
+        android:gravity="center" />
+    <!-- Gallery element -->
+    <com.iwedia.gui.mainmenu.gallery.A4TVGallery
+        android:id="@+id/mainMenuGallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center" />
+    <!-- Main menu overlay layout -->
+    <FrameLayout
+        android:id="@+id/mainMenuOverlayLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center" >
+        <!-- Selected item frame layout -->
+        <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mainMenuSelectedFrameLayout"
+            android:layout_width="110dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center" >
+            <!-- Selected squere -->
+            <ImageView
+                android:id="@+id/mainMenuSelectedImageBackground"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:src="@drawable/selected_item_background" >
+            </ImageView>
+            <!-- Selected icon -->
+            <ImageView
+                android:id="@+id/mainMenuSelectedImageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center" >
+            </ImageView>
+            <!-- Selected item name -->
+            <com.iwedia.gui.components.A4TVTextView
+                android:id="@+id/aTVTextViewIconsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:shadowColor="#000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:textStyle="bold"
+                android:textSize="@dimen/selected_item_name_font_size" />
+        </FrameLayout>
+        <!-- Root of submenu item -->
+        <ImageView
+            android:id="@+id/mainMenuRootSubmenu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/applications" />
+    </FrameLayout>
+    <!-- Selected item data -->
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <!-- Name of selected item -->
+        <!-- Selection dots -->
+        <LinearLayout
+            android:id="@+id/linearLayoutForIconsDots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="70dp"
+            android:gravity="center" >
+        </LinearLayout>
+        <!-- Info bar -->
+        <LinearLayout
+            android:id="@+id/linearLayoutForMenuInfo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_weight="2"
+            android:background="?MainMenuDescriptionBackground"
+            android:padding="@dimen/main_menu_description_margin"
+            android:weightSum="2" >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|top"
+                android:orientation="horizontal" >
+                <com.iwedia.gui.components.A4TVTextView
+                    android:id="@+id/aTVTextViewMoreInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:gravity="top|left" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|top"
+                android:orientation="horizontal" >
+                <com.iwedia.gui.components.A4TVTextView
+                    android:id="@+id/aTVTextViewInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|right"
+                    android:text="@string/main_menu_description_info" />
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_marginBottom="@dimen/padding_small"
+                    android:src="@drawable/product_info" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

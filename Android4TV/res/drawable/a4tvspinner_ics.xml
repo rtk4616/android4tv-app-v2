@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- set drawables for different states for spinner -->
+    <item android:drawable="@drawable/spinner_expanded_ics" android:state_selected="true"></item>
+    <item android:drawable="@drawable/spinner_normal_ics" android:state_enabled="true"></item>
+    <item android:drawable="@drawable/spinner_disabled_ics" android:state_enabled="false"></item>
+</selector>
