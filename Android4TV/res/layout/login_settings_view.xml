@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_small"
+    android:paddingLeft="@dimen/padding_medium"
+    android:paddingRight="@dimen/padding_small"
+    android:paddingTop="@dimen/padding_small" >
+    <com.iwedia.gui.components.A4TVEditText
+        android:id="@+id/editTextLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:hint="@string/tv_menu_network_wireless_settings_manual_add_wireless_network_name"
+        android:inputType="text"
+        android:textColorHint="@color/white" >
+    </com.iwedia.gui.components.A4TVEditText>
+    <com.iwedia.gui.components.A4TVEditText
+        android:id="@+id/editTextLoginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:hint="@string/tv_menu_network_wireless_settings_enter_password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        android:visibility="gone" />
+</LinearLayout>

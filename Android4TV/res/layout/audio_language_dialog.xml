@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_medium"
+    android:weightSum="5" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:orientation="vertical" >
+        <com.iwedia.gui.components.A4TVTextView
+            android:id="@+id/aTVTextViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_audio_language"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <ImageView
+            android:id="@+id/imageViewHorizLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.iwedia.gui.components.A4TVTextView
+            android:id="@+id/aTVTextViewMenuTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:text="@string/choose_audio_top_menu_value"
+            android:visibility="gone" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayoutDialogContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.6"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_medium" >
+        <ListView
+            android:id="@+id/listViewAudioLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_weight="1"
+            android:listSelector="#0000" >
+        </ListView>
+    </LinearLayout>
+    <com.iwedia.gui.components.A4TVTextView
+        android:id="@+id/aTVTextViewMenuBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/padding_medium"
+        android:layout_weight="1.2"
+        android:text="@string/choose_audio_bottom_menu_value"
+        android:visibility="gone" />
+</LinearLayout>

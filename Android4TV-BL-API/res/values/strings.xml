@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Android4TVServiceActivity!</string>
+    <string name="app_name">Android4TVProxyService</string>
+    <string name="startserv">Start proxy service</string>
+    <string name="stopserv">Stop proxy service</string>
+    <string name="invokeserv">Get counter</string>
+    <string name="bindserv">Bind service</string>
+    <string name="unbindserv">Unbind service</string>
+    <string name="default_result">N/A</string>
+    <string name="servicestatus">Service status: N/A</string>
+
+</resources>

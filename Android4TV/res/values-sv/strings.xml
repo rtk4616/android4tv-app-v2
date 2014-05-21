@@ -1,0 +1,1532 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">Android4TV2.0</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="main_menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="spinner_choose_title">Choose:</string>
+    <string name="program_block">Program block</string>
+    <string name="null_pointer_error">Null pointer error!</string>
+    <string name="proxy_service_is_null">Proxy service is null!</string>
+    <string name="zero_number">0</string>
+    <string name="scaning">Scanning</string>
+    <string name="connecting">Connecting</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="google_play_error">There is no Google Play installed!</string>
+    <string name="not_implemented">Not implemented yet</string>
+    <string name="exit_massage">Are you sure you want to exit?</string>
+    <string name="ask_massage">Are you sure?</string>
+    <string name="ask_massage_factory_reset">This will erase all saved data!</string>
+    <string name="factory_reset_success">Factory reset is successfully done.</string>
+    <string name="factory_reset_fail">Factory reset has failed!</string>
+    <string name="already_in_favorite_list">Item is already in favorite list!</string>
+    <string name="already_in_this_folder">Already in this folder!</string>
+    <string name="already_active">Already active</string>
+    <string name="loading_message">Please wait…</string>
+    <string name="loading_title">Loading</string>
+    <string name="no_enough_space_on_screen">There is no enough empty space on screen!</string>
+    <string name="loading_data">Loading data</string>
+    <string name="aborting_scan">Aborting scan</string>
+    <string name="inputs_not_enabled">Inputs are not enabled!</string>
+    <string name="input_not_connected">Input is not connected!</string>
+    <string name="connected_input">Connected input!</string>
+    <string name="disconnected_input">Disconnected input!</string>
+    <string name="connected_input_is_disabled">Connected input is disabled!</string>
+    <string name="input_is_disabled">Input is disabled!</string>
+    <string name="previous_input_is_disabled">Previous input is disabled!</string>
+    <string name="folder_is_empty">Folder is empty!</string>
+    <string name="format_is_not_supported">File format is not supported!</string>
+    <string name="teletext_hide">Teletext hide!</string>
+    <string name="choose_audio_language">Choose audio language</string>
+    <string name="choose_audio_top_menu_value">A4TVTextView??? - change me in strings.xml</string>
+    <string name="choose_audio_bottom_menu_value">A4TVTextView??? - change me in strings.xml</string>
+    <string name="choose_teletext_language">Choose Teletext language</string>
+    <string name="only_one_audio_language">Only one audio language!</string>
+    <string name="open_default_subtitle_language">Opening default subtitle language!</string>
+    <string name="no_subtitle_language">There is no subtitle language!</string>
+    <string name="open_default_teletext_language">Opening default teletext language!</string>
+    <string name="no_teletext_available">There is no teletext available!</string>
+    <string name="no_teletext_language">There is no teletext!</string>
+    <string name="choose_subtitle_language">Choose subtitle language</string>
+    <string name="multimedia_no_application_available">There is no available application for this action!</string>
+    <string name="no_accout_message">No available accounts to add!</string>
+    <string name="epg_no_data">No data available!</string>
+    <string name="epg_load_next_day">Load data for next day!</string>
+    <string name="epg_load_previous_day">Load data for previous day!</string>
+    <string name="epg_day_showing">Day:</string>
+    <string name="epg_genre">Genre:</string>
+    <string name="epg_imdb_info">Show IMDB info</string>
+    <string name="epg_return">Return</string>
+    <string name="epg_event_not_scheduled">Event recording is not scheduled</string>
+    <string name="epg_error_with_number">Not possible to show channel with that number!</string>
+    <string name="epg_not_possible_to_zapp">Not possible to show EPG in recording mode!</string>
+    <string name="epg_not_supported">EPG is not supported for this input!</string>
+    <string name="pvr_file_is_deleted">PVR file is deleted.</string>
+    <string name="all_pvr_files_are_deleted">All PVR files are deleted.</string>
+    <string name="pvr_schedule_file_is_deleted">PVR schedule file is deleted.</string>
+    <string name="software_upgrade_text_part_one">There is a system update available (Version:</string>
+    <string name="software_upgrade_text_part_two_upgrade">) \n Do you want to upgrade your system?</string>
+    <string name="software_upgrade_text_part_two_downgrade">) \n Do you want to downgrade your system?</string>
+    <string name="first_time_install_text">Welcome to Android world!</string>
+    <string name="first_time_install_end_text">This is first time install ending text!!!!</string>
+    <string name="first_time_install_set_language_and_country">Select language and country</string>
+    <string name="first_time_install_set_tv_mode">Select TV format</string>
+    <string name="first_time_install_set_accounts">Add user accounts</string>
+    <string name="first_time_install_setup_network">Setup network connection</string>
+    <string name="first_time_install_scan">Start scan procedure</string>
+    <string name="first_time_install_scan_restart">Restart scan procedure</string>
+    <string name="first_time_install_just_finish">Just finish</string>
+    <string name="first_time_install_next">Advance to next set up</string>
+    <string name="first_time_install_next_button_text">Next</string>
+    <string name="first_time_install_no_services_found">No services found! Restart scan?</string>
+    <string name="first_time_install_end_fti">Thank you for using Android4TV</string>
+    <string name="reminder_event_triggered">Reminder event triggered! Do you want to change channel?</string>
+    <string name="no_usb">No USB inserted!</string>
+    <string name="no_usb_zip_file">No upgrade ZIP file on USB root directory!</string>
+    <string name="upgrade_invalid_zip">Invalid ZIP file on USB device!</string>
+    <string name="upgrade_finished_over_usb">Upgrade finished. Rebooting in 5 seconds!</string>
+    <string name="upgrade_no_new_version">Your system is up to date!</string>
+    <string name="parental_state_change">Confirm parental control change</string>
+    <string name="config_file_error">Error in config file!</string>
+    <string name="no_channel">Trying to tune to non existing service!</string>
+    <string name="download_speed">Download speed</string>
+    <string name="connection_time">Connection time</string>
+    <string name="progress">Progress</string>
+    <string name="kbs">kB/s</string>
+    <string name="milisec">miliseconds</string>
+    <string name="reminder_error">Error adding reminder!</string>
+    <string name="connected">Connected</string>
+    <string name="syncing">Syncing</string>
+    <string name="cam_inserted">CAM inserted</string>
+    <string name="cam_removed">CAM removed</string>
+    <string name="no_cam_present">No CAM present</string>
+    <string name="invalid_host_certificate">Invalid host certificate</string>
+    <string name="cam_not_started">Not able to start CI session</string>
+    <string name="manual_scan_prompt">Are you sure? All services will be erased!</string>
+    <string name="error_with_playing_audio">Not supported audio!</string>
+    <string name="channel_change_fail">Channel change failed!</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="usb_media_storage_is_full">Usb media storage is full.</string>
+    <string name="usb_mounted">Media mounted</string>
+    <string name="usb_ejected">Media ejected</string>
+    <string name="usb_unmountable">Media can not be mounted - bad or unsupported filesystem</string>
+    <string name="parental_error">Error setting parental level</string>
+    <string name="under">Under</string>
+    <string name="empty_list">Empty channel list!</string>
+    <string name="no_services_found_during_scan">No services found!</string>
+    <string name="no_service_space">Service data base is full! Aborting scan!</string>
+    <string name="error_during_scan">Error occurred during scan!</string>
+    <string name="freq_error">Please set correct frequency!</string>
+    <string name="name_error">Please set correct name!</string>
+    <string name="already_exist">Already exist</string>
+    <string name="downloading">Downloading</string>
+    <string name="checking">Checking</string>
+    <string name="not_supported_dual_scenario">Requested dual video scenario is not supported!</string>
+    <string name="not_supported_action_for_input">Requested action is not supported for inputs!</string>
+    <string name="swich_to_previous_content">Swich to previous content!</string>
+    <string name="source_swiching">Open new source!</string>
+    <string name="middleware_is_initialized">Middleware är nu initierad!</string>
+    <string name="parental_guidance_is_off">Parental guidance is off!</string>
+    <string name="parental_guidance_is_set_on">Parental guidance is set on under</string>
+    <string name="store_mode_video_presentation_not_exist">Video presentation does not exist!</string>
+    <string name="image_info">Press Info for more details</string>
+    <string name="picture_has_not_more_details">Picture hasn\'t more details!</string>
+    <string name="rotate_left">Rotate left</string>
+    <string name="rotate_right">Rotate right</string>
+    <string name="zoom_in">Zoom in</string>
+    <string name="zoom_out">Zoom out</string>
+    <string-array name="picture_mode_settings">
+        <item>@string/spinner_item_dynamic</item>
+        <item>@string/spinner_item_standard</item>
+        <item>@string/spinner_item_sport</item>
+        <item>@string/spinner_item_eco</item>
+        <item>@string/spinner_item_cinema</item>
+        <item>@string/spinner_item_user</item>
+    </string-array>
+    <string name="spinner_item_dynamic">Dynamic</string>
+    <string name="spinner_item_standard">Standard</string>
+    <string name="spinner_item_sport">Sports</string>
+    <string name="spinner_item_eco">Eco</string>
+    <string name="spinner_item_cinema">Cinema</string>
+    <string name="spinner_item_user">Custom</string>
+    <string-array name="sound_mode_settings">
+        <item>@string/spinner_item_standard</item>
+        <item>@string/spinner_item_music</item>
+        <item>@string/spinner_item_movie</item>
+        <item>@string/spinner_item_sports</item>
+        <item>@string/spinner_item_speech</item>
+        <item>@string/spinner_item_user</item>
+    </string-array>
+    <string name="spinner_item_sound_mode_normal">Normal</string>
+    <string name="spinner_item_sound_mode_srs">SRS Effects</string>
+    <string name="spinner_item_sound_mode_spatial">Spatial Effect</string>
+    <string-array name="sound_mode">
+        <item>@string/spinner_item_sound_mode_normal</item>
+        <item>@string/spinner_item_sound_mode_srs</item>
+        <item>@string/spinner_item_sound_mode_spatial</item>
+    </string-array>
+    <!-- PIP Position array -->
+    <string name="pip_settings_position_upperright">Upper right corner</string>
+    <string name="pip_settings_position_upperleft">Upper left corner</string>
+    <string name="pip_settings_position_lowerleft">Lower left corner</string>
+    <string name="pip_settings_position_lowerright">Lower right corner</string>
+    <string-array name="pip_settings_position">
+        <item>@string/pip_settings_position_upperright</item>
+        <item>@string/pip_settings_position_upperleft</item>
+        <item>@string/pip_settings_position_lowerleft</item>
+        <item>@string/pip_settings_position_lowerright</item>
+    </string-array>
+    <!-- PIP Size array -->
+    <string name="pip_settings_size_1_9">1/9</string>
+    <string name="pip_settings_size_1_16">1/16</string>
+    <string-array name="pip_settings_size">
+        <item>@string/pip_settings_size_1_9</item>
+        <item>@string/pip_settings_size_1_16</item>
+    </string-array>
+    <string name="spinner_item_music">Music</string>
+    <string name="spinner_item_movie">Movie</string>
+    <string name="spinner_item_sports">Sports</string>
+    <string name="spinner_item_speech">Speech</string>
+    <string name="epg_genre_news">News</string>
+    <string name="epg_genre_show">Show</string>
+    <string name="epg_genre_children">Children</string>
+    <string name="epg_genre_culture">Culture</string>
+    <string name="epg_genre_politics">Politics</string>
+    <string name="epg_genre_science">Science</string>
+    <string name="epg_genre_hobies">Hobbies</string>
+    <string-array name="tv_menu_sound_settings_spdif_mode_spinner">
+        <item>@string/tv_menu_sound_settings_spdif_mode_spinner_item_dolby_digital</item>
+        <item>@string/tv_menu_sound_settings_spdif_mode_spinner_item_pcm</item>
+        <item>@string/tv_menu_sound_settings_spdif_mode_spinner_item_off</item>
+    </string-array>
+    <string name="tv_menu_sound_settings_spdif_mode_spinner_item_pcm">PCM</string>
+    <string name="tv_menu_sound_settings_spdif_mode_spinner_item_dolby_digital">Digital</string>
+    <string name="tv_menu_sound_settings_spdif_mode_spinner_item_off">Off</string>
+    <string-array name="tv_menu_sound_settings_output_mode_spinner">
+        <item>@string/tv_menu_sound_settings_analog_output_mode_spinner_item_disabled</item>
+        <item>@string/tv_menu_sound_settings_analog_output_mode_spinner_item_fixed</item>
+        <item>@string/tv_menu_sound_settings_analog_output_mode_spinner_item_variable</item>
+    </string-array>
+    <string name="tv_menu_sound_settings_analog_output_mode_spinner_item_disabled">Disabled</string>
+    <string name="tv_menu_sound_settings_analog_output_mode_spinner_item_fixed">Fixed</string>
+    <string name="tv_menu_sound_settings_analog_output_mode_spinner_item_variable">Variable</string>
+    <string-array name="tv_menu_subtitle_settings_subtitle_mode_spinner">
+        <item>@string/tv_menu_subtitle_settings_subtitle_mode_spinner_item_size</item>
+        <item>@string/tv_menu_sound_settings_spdif_mode_spinner_item_dolby_digital</item>
+    </string-array>
+    <string-array name="tv_menu_subtitle_settings_subtitle_mode">
+        <item>@string/tv_menu_subtitle_settings_subtitle_mode_normal</item>
+        <item>@string/tv_menu_subtitle_settings_subtitle_mode_hard_of_hearing</item>
+    </string-array>
+    <string-array name="tv_menu_subtitle_settings_subtitle_type">
+        <item>@string/tv_menu_subtitle_settings_subtitle_type_dvb</item>
+        <item>@string/tv_menu_subtitle_settings_subtitle_type_teletext</item>
+    </string-array>
+    <string name="tv_menu_subtitle_settings_subtitle_mode_spinner_item_size">Size [small/normal/large]</string>
+    <string name="tv_menu_subtitle_settings_subtitle_mode_spinner_item_font">Font [list]</string>
+    <string name="tv_menu_subtitle_settings_subtitle_mode_spinner_item_style">Style [list]</string>
+    <string name="tv_menu_subtitle_settings_subtitle_mode_normal">Normal</string>
+    <string name="tv_menu_subtitle_settings_subtitle_mode_hard_of_hearing">Hard of Hearing</string>
+    <string name="tv_menu_subtitle_settings_subtitle_type_dvb">DVB</string>
+    <string name="tv_menu_subtitle_settings_subtitle_type_teletext">Teletext</string>
+    <string-array name="tv_menu_network_settings_network_type">
+        <item>@string/button_text_ethernet</item>
+        <item>@string/tv_menu_network_settings_wireless</item>
+    </string-array>
+    <string-array name="tv_menu_time_and_date_settings_select_time_zone">
+        <item>@string/gmtm12</item>
+        <item>@string/gmtm11</item>
+        <item>@string/gmtm10</item>
+        <item>@string/gmtm9</item>
+        <item>@string/gmtm8</item>
+        <item>@string/gmtm7</item>
+        <item>@string/gmtm6</item>
+        <item>@string/gmtm5</item>
+        <item>@string/gmtm4</item>
+        <item>@string/gmtm3</item>
+        <item>@string/gmtm2</item>
+        <item>@string/gmtm1</item>
+        <item>@string/gmt</item>
+        <item>@string/gmtp1</item>
+        <item>@string/gmtp2</item>
+        <item>@string/gmtp3</item>
+        <item>@string/gmtp4</item>
+        <item>@string/gmtp5</item>
+        <item>@string/gmtp6</item>
+        <item>@string/gmtp7</item>
+        <item>@string/gmtp8</item>
+        <item>@string/gmtp9</item>
+        <item>@string/gmtp10</item>
+        <item>@string/gmtp11</item>
+        <item>@string/gmtp12</item>
+    </string-array>
+    <string name="gmtm12">GMT-12</string>
+    <string name="gmtm11">GMT-11</string>
+    <string name="gmtm10">GMT-11</string>
+    <string name="gmtm9">GMT-11</string>
+    <string name="gmtm8">GMT-11</string>
+    <string name="gmtm7">GMT-11</string>
+    <string name="gmtm6">GMT-11</string>
+    <string name="gmtm5">GMT-11</string>
+    <string name="gmtm4">GMT-11</string>
+    <string name="gmtm3">GMT-11</string>
+    <string name="gmtm2">GMT-11</string>
+    <string name="gmtm1">GMT-11</string>
+    <string name="gmt">GMT</string>
+    <string name="gmtp1">GMT+1</string>
+    <string name="gmtp2">GMT+2</string>
+    <string name="gmtp3">GMT+3</string>
+    <string name="gmtp4">GMT+4</string>
+    <string name="gmtp5">GMT+5</string>
+    <string name="gmtp6">GMT+6</string>
+    <string name="gmtp7">GMT+7</string>
+    <string name="gmtp8">GMT+8</string>
+    <string name="gmtp9">GMT+9</string>
+    <string name="gmtp10">GMT+10</string>
+    <string name="gmtp11">GMT+11</string>
+    <string name="gmtp12">GMT+12</string>
+    <string-array name="manual_tunning_settings_symbol_rate">
+        <item>@string/symbol_rate_22000</item>
+        <item>@string/symbol_rate_27500</item>
+    </string-array>
+    <string name="symbol_rate_default">Default symbol rate</string>
+    <string name="symbol_rate_22000">Symbol rate 22000</string>
+    <string name="symbol_rate_27500">Symbol rate 27500</string>
+    <string-array name="manual_tunning_settings_scrambled">
+        <item>@string/all_services</item>
+        <item>@string/only_scrambled</item>
+        <item>@string/only_free</item>
+    </string-array>
+    <string name="all_services">All services</string>
+    <string name="only_scrambled">Only scrambled</string>
+    <string name="only_free">Only free</string>
+    <string-array name="manual_tunning_settings_polarization">
+        <item>@string/horizontal_polarization</item>
+        <item>@string/vertical_polarization</item>
+        <item>@string/circular_left_polarization</item>
+        <item>@string/circular_right_polarization</item>
+        <item>@string/all_polarization</item>
+    </string-array>
+    <string-array name="manual_tunning_settings_modulation">
+        <item>@string/modulation_16qam</item>
+        <item>@string/modulation_64qam</item>
+        <item>@string/modulation_128qam</item>
+        <item>@string/modulation_256qam</item>
+    </string-array>
+    <string-array name="manual_tunning_settings_system">
+        <item>@string/system_pal_bg</item>
+        <item>@string/system_pal_i</item>
+        <item>@string/system_pal_dk</item>
+        <item>@string/system_scm_l</item>
+    </string-array>
+    <string-array name="manual_tunning_nordic_band">
+        <item>@string/nordic_band_s</item>
+        <item>@string/nordic_band_d</item>
+        <item>@string/nordic_band_k</item>
+    </string-array>
+    <string name="modulation_16qam">16-QAM</string>
+    <string name="modulation_64qam">64-QAM</string>
+    <string name="modulation_128qam">128-QAM</string>
+    <string name="modulation_256qam">256-QAM</string>
+    <string name="horizontal_polarization">Horizontal</string>
+    <string name="vertical_polarization">Vertical</string>
+    <string name="circular_left_polarization">Circular left</string>
+    <string name="circular_right_polarization">Circular right</string>
+    <string name="all_polarization">All</string>
+    <string name="system_pal_bg">Pal B/G</string>
+    <string name="system_pal_i">Pal I</string>
+    <string name="system_pal_dk">Pal D/K</string>
+    <string name="system_pal_l">Pal L</string>
+    <string name="system_pal_l1">Pal L1</string>
+    <string name="system_scm_bg">Secam B/G</string>
+    <string name="system_scm_dk">Secam D/K</string>
+    <string name="system_scm_l">Secam L</string>
+    <string name="system_scm_l1">Secam L1</string>
+    <string name="nordic_band_s">S</string>
+    <string name="nordic_band_d">D</string>
+    <string name="nordic_band_k">K</string>
+    <string-array name="manual_tunning_settings_fec">
+        <item>@string/p2</item>
+        <item>@string/p3</item>
+        <item>@string/p4</item>
+        <item>@string/p5</item>
+        <item>@string/p6</item>
+        <item>@string/p7</item>
+        <item>@string/p8</item>
+        <item>@string/auto</item>
+    </string-array>
+    <string name="p2">1 ⁄ 2</string>
+    <string name="p3">2 ⁄ 3</string>
+    <string name="p4">3 ⁄ 4</string>
+    <string name="p5">4 ⁄ 5</string>
+    <string name="p6">5 ⁄ 6</string>
+    <string name="p7">6 ⁄ 7</string>
+    <string name="p8">7 ⁄ 8</string>
+    <string name="auto">Auto</string>
+    <string-array name="tv_menu_time_and_date_settings_select_date_format">
+        <item>@string/month.day.year</item>
+        <item>@string/day.month.year</item>
+        <item>@string/year.month.day</item>
+    </string-array>
+    <string name="day.month.year">DD/MM/YYYY</string>
+    <string name="month.day.year">MM/DD/YYYY</string>
+    <string name="year.month.day">YYYY/MM/DD</string>
+    <!-- input settings -->
+    <!-- hdmi cec -->
+    <!-- <string-array name="tv_menu_factory_input_settings_hdmi_cec_spinner"> -->
+    <!-- <item>@string/tv_menu_factory_input_settings_spinner_item_auto_tv_power</item> -->
+    <!-- <item>@string/tv_menu_factory_input_settings_spinner_item_hdmi_cec</item> -->
+    <!-- <item>@string/tv_menu_factory_input_settings_spinner_item_auto_link_power_off</item> -->
+    <!-- <item>@string/tv_menu_factory_input_settings_spinner_item_speaker_output</item> -->
+    <!-- <item>@string/tv_menu_factory_input_settings_spinner_item_device_list</item> -->
+    <!-- <item>@string/tv_menu_factory_input_settings_spinner_item_device_scan</item> -->
+    <!-- </string-array> -->
+    <string name="tv_menu_factory_input_settings_spinner_item_auto_tv_power">Auto TV power [on/off]</string>
+    <string name="tv_menu_factory_input_settings_spinner_item_hdmi_cec">HDMI CEC[on/off]</string>
+    <string name="tv_menu_factory_input_settings_spinner_item_auto_link_power_off">Auto link power off</string>
+    <string name="tv_menu_factory_input_settings_spinner_item_speaker_output">Speaker output [on/off]</string>
+    <string name="tv_menu_factory_input_settings_spinner_item_device_list">Device list [list]</string>
+    <string name="tv_menu_factory_input_settings_spinner_item_device_scan">Device scan</string>
+    <string-array name="tv_menu_language_settings_keyboard_settings_spinner">
+        <item>@string/tv_menu_language_settings_spinner_item_keyboard_types</item>
+        <item>@string/tv_menu_language_settings_spinner_item_text_input</item>
+        <item>@string/tv_menu_language_settings_spinner_item_tutorial</item>
+        <item>@string/tv_menu_language_settings_spinner_item_user_dictionary</item>
+    </string-array>
+    <string name="tv_menu_language_settings_spinner_item_keyboard_types">Keyboard types [QWERTY/custom]</string>
+    <string name="tv_menu_language_settings_spinner_item_text_input">Text input(Set options for text prediction)</string>
+    <string name="tv_menu_language_settings_spinner_item_tutorial">Tutorial(Learn about how to enter text)</string>
+    <string name="tv_menu_language_settings_spinner_item_user_dictionary">User dictionary(add, delete and edit words in user dictionary)</string>
+    <string-array name="tv_menu_storage_settings_external_file_storage_spinner">
+        <item>@string/tv_menu_storage_settings_spinner_item_total_space</item>
+        <item>@string/tv_menu_storage_settings_spinner_item_available_space</item>
+        <item>@string/tv_menu_storage_settings_spinner_item_unmount</item>
+        <item>@string/tv_menu_storage_settings_spinner_item_format</item>
+    </string-array>
+    <string name="tv_menu_storage_settings_spinner_item_total_space">Total space</string>
+    <string name="tv_menu_storage_settings_spinner_item_available_space">Available space</string>
+    <string name="tv_menu_storage_settings_spinner_item_unmount">Un-mount</string>
+    <string name="tv_menu_storage_settings_spinner_item_format">Format</string>
+    <string name="main_menu_description_info">Info</string>
+    <string name="button_text_yes">Yes</string>
+    <string name="button_text_later">Later</string>
+    <string name="button_text_connect">Connect</string>
+    <string name="button_text_no">No</string>
+    <string name="button_text_edit">Edit</string>
+    <string name="button_text_add">Add</string>
+    <string name="button_text_cancel">Cancel</string>
+    <string name="button_text_sync">Sync</string>
+    <string name="button_text_enable">Enable</string>
+    <string name="button_text_off">Off</string>
+    <string name="button_text_english">English</string>
+    <string name="button_text_serbia">Serbia</string>
+    <string name="button_text_ethernet">Ethernet</string>
+    <string name="button_text_begin">Begin</string>
+    <string name="button_text_on">On</string>
+    <string name="button_text_choose">Choose</string>
+    <string name="button_text_configure">Configure</string>
+    <string name="button_text_info">Info</string>
+    <string name="button_text_view">View</string>
+    <string name="button_text_ok">Ok</string>
+    <string name="button_text_disable">Disable</string>
+    <string name="button_text_gmt_4m">GMT - 4</string>
+    <string name="button_text_gmt_3m">GMT - 3</string>
+    <string name="button_text_gmt_2m">GMT - 2</string>
+    <string name="button_text_gmt_1m">GMT - 1</string>
+    <string name="button_text_gmt">GMT</string>
+    <string name="button_text_gmt_1p">GMT + 1</string>
+    <string name="button_text_dtv">DTV</string>
+    <string name="button_text_start">Start</string>
+    <string name="button_text_confirm">Confirm</string>
+    <string name="button_text_tune">Tune</string>
+    <string name="button_text_move">Move</string>
+    <string name="button_text_delete">Delete</string>
+    <string name="button_text_delete_all">Delete All</string>
+    <string name="button_text_standard">Standard</string>
+    <string name="button_text_pcm">PCM</string>
+    <string name="button_text_music">Music</string>
+    <string name="button_text_block">Block</string>
+    <string name="button_text_unblock">Unblock</string>
+    <string name="button_text_set">Set</string>
+    <string name="button_text_change">Change</string>
+    <string name="button_text_remove">Remove</string>
+    <string name="button_text_reset">Reset</string>
+    <string name="button_text_listen">Listen</string>
+    <string name="main_menu_content_list">CONTENT LIST</string>
+    <string name="main_menu_content_list_filter_all">All</string>
+    <string name="main_menu_content_list_dvb_t">DVB T</string>
+    <string name="main_menu_content_list_ip">IP</string>
+    <string name="main_menu_content_list_dvb_s">DVB S</string>
+    <string name="main_menu_content_list_dvb_c">DVB C</string>
+    <string name="main_menu_content_list_atv">ATV</string>
+    <string name="main_menu_content_list_atsc_s">ATSC S</string>
+    <string name="main_menu_content_list_atsc_t">ATSC T</string>
+    <string name="main_menu_content_list_atsc_c">ATSC C</string>
+    <string name="main_menu_content_list_ntsc">NTSC</string>
+    <string name="main_menu_content_list_radio">Radio</string>
+    <string name="main_menu_content_list_inputs">Inputs</string>
+    <string name="main_menu_content_list_apps">Apps</string>
+    <string name="main_menu_content_list_widgets">Widgets</string>
+    <string name="main_menu_content_list_operator_profile">OP</string>
+    <string name="main_menu_content_list_data">Data</string>
+    <string name="main_menu_content_list_pip">PiP</string>
+    <string name="main_menu_content_list_recently_watched">Recently accessed:</string>
+    <string name="main_menu_content_list_favourite">Favorites:</string>
+    <string name="main_menu_content_list_all">All:</string>
+    <string name="main_menu_content_list_theme">Theme</string>
+    <string name="multimedia_pvr_record">Record</string>
+    <string name="multimedia_pvr_record_sorted_mode">Change sort mode</string>
+    <string name="multimedia_pvr_record_sorted_order">Change sort order</string>
+    <string name="multimedia_pvr_playlist">PVR playlist is empty.</string>
+    <string name="multimedia_pvr_schedule">Schedule</string>
+    <string name="title">Title:</string>
+    <string name="duration">Duration:</string>
+    <string name="description">Description:</string>
+    <string name="date">Date:</string>
+    <string name="start_time">Start time:</string>
+    <string name="end_time">End time:</string>
+    <string name="multimedia">Multimedia Explorer</string>
+    <string name="multimedia_all">All</string>
+    <string name="multimedia_recently_watched">Recently watched:</string>
+    <string name="multimedia_favourite">Favorites:</string>
+    <string name="multimedia_file_explorer">File explorer:</string>
+    <string name="multimedia_file_info">File info:</string>
+    <string name="multimedia_file_path">File path:</string>
+    <string name="epg">EPG</string>
+    <string name="epg_reminder">Reminders</string>
+    <string name="reminder_message_title">Set reminder to this show?</string>
+    <string name="epg_reminder_error_list_full">Reminder list is full!</string>
+    <string name="epg_reminder_error_exist">Event is already in reminder list!</string>
+    <string name="epg_reminder_added">Event is added to reminder list!</string>
+    <string name="smart_record_message_title">Schedule recording for this show?</string>
+    <string name="electronic_program_guide">Electronic Program Guide</string>
+    <string name="epg_schedule_reminder">Schedule Reminder</string>
+    <string name="epg_scheduled_reminder">Reminder</string>
+    <string name="epg_scheduled_record">PVR record</string>
+    <string name="epg_scheduled_record_passed">Some PVR record is passed</string>
+    <string name="epg_scheduled_record_in_5mins">will start in 5 minutes</string>
+    <string name="epg_scheduled_reminder_passed">passed</string>
+    <string name="epg_schedule_recording">Schedule Recording</string>
+    <string name="epg_reminder_go_to_channel">Go to channel</string>
+    <string name="epg_menu">Epg Menu</string>
+    <string name="google_play">Google Play</string>
+    <string name="teletext">Teletext</string>
+    <string name="tv_menu_picture_settings">Picture settings</string>
+    <string name="tv_menu_picture_settings_picture_mode">Picture mode</string>
+    <string name="tv_menu_picture_settings_aspect_ratio">Aspect ratio</string>
+    <string name="tv_menu_picture_settings_brightness">Brightness</string>
+    <string name="tv_menu_picture_settings_contrast">Contrast</string>
+    <string name="tv_menu_picture_settings_color">Color</string>
+    <string name="tv_menu_picture_settings_color_temperature">Color temperature</string>
+    <string name="tv_menu_picture_settings_tint">Tint</string>
+    <string name="tv_menu_picture_settings_sharpness">Sharpness</string>
+    <string name="tv_menu_picture_settings_hue">Hue</string>
+    <string name="tv_menu_picture_settings_saturation">Saturation</string>
+    <string name="tv_menu_picture_settings_backlight">Backlight</string>
+    <string name="tv_menu_picture_settings_advanced_video">Advanced video</string>
+    <string name="tv_menu_picture_settings_theme">Theme</string>
+    <string name="tv_menu_picture_settings_aspect_ratio_auto">Auto</string>
+    <string name="tv_menu_picture_settings_aspect_ratio_normal_4_3">Normal 4:3</string>
+    <string name="tv_menu_picture_settings_aspect_ratio_zoom_14_9">Zoom 14:9</string>
+    <string name="tv_menu_picture_settings_aspect_ratio_panorama">Panorama</string>
+    <string name="tv_menu_picture_settings_aspect_ratio_letterbox">Letterbox</string>
+    <string name="tv_menu_picture_settings_aspect_ratio_full">Full</string>
+    <string name="tv_menu_picture_settings_aspect_ratio_cinema_16_9">Cinema 16:9</string>
+    <string name="tv_menu_picture_settings_aspect_ratio_cinema_14_9">Cinema 14:9</string>
+    <string name="tv_menu_picture_settings_nr">Noise reduction</string>
+    <string name="tv_menu_picture_settings_nr_mode_off">Off</string>
+    <string name="tv_menu_picture_settings_nr_mode_low">Low</string>
+    <string name="tv_menu_picture_settings_nr_mode_middle">Middle</string>
+    <string name="tv_menu_picture_settings_nr_mode_high">High</string>
+    <string name="tv_menu_picture_settings_nr_mode_auto">Auto</string>
+    <string-array name="tv_menu_picture_settings_nr">
+        <item>@string/tv_menu_picture_settings_nr_mode_off</item>
+        <item>@string/tv_menu_picture_settings_nr_mode_low</item>
+        <item>@string/tv_menu_picture_settings_nr_mode_middle</item>
+        <item>@string/tv_menu_picture_settings_nr_mode_high</item>
+        <item>@string/tv_menu_picture_settings_nr_mode_auto</item>
+    </string-array>
+    <string name="tv_menu_picture_settings_curl_settings">Curl settings</string>
+    <string name="tv_menu_picture_settings_osd_selection">Osd configuration</string>
+    <string name="tv_menu_picture_settings_curl_settings_delay_time_set">Set delay</string>
+    <string name="tv_menu_picture_settings_curl_settings_delay_time">Curl delay time</string>
+    <string name="tv_menu_picture_settings_curl_settings_delay_time_updated">Curl delay time is updated.</string>
+    <string name="tv_menu_picture_settings_color_temperature_normal">Normal</string>
+    <string name="tv_menu_picture_settings_color_temperature_cool">Cool</string>
+    <string name="tv_menu_picture_settings_color_temperature_warm">Warm</string>
+    <string name="curl_effect_on_off">Curl effect on channel change</string>
+    <string name="curl_enabled">Curl enabled</string>
+    <string name="spinner_item_osd_selection_curl">Curl Banner</string>
+    <string name="spinner_item_osd_selection_info_banner">Standard Info Banner</string>
+    <string name="spinner_item_osd_selection_none">None</string>
+    <string-array name="osd_selection_mode">
+        <item>@string/spinner_item_osd_selection_curl</item>
+        <item>@string/spinner_item_osd_selection_info_banner</item>
+        <item>@string/spinner_item_osd_selection_none</item>
+    </string-array>
+    <string-array name="tv_menu_picture_settings_color_temperature_values">
+        <item>@string/tv_menu_picture_settings_color_temperature_cool</item>
+        <item>@string/tv_menu_picture_settings_color_temperature_normal</item>
+        <item>@string/tv_menu_picture_settings_color_temperature_warm</item>
+    </string-array>
+    <!-- Delay time values -->
+    <string name="tv_menu_picture_settings_curl_settings_delay_time_3_seconds">3 seconds</string>
+    <string name="tv_menu_picture_settings_curl_settings_delay_time_5_seconds">5 seconds</string>
+    <string name="tv_menu_picture_settings_curl_settings_delay_time_10_seconds">10 seconds</string>
+    <string name="tv_menu_picture_settings_curl_settings_delay_time_15_seconds">15 seconds</string>
+    <string name="tv_menu_picture_settings_curl_settings_delay_time_20_seconds">20 seconds</string>
+    <string-array name="tv_menu_picture_settings_aspect_ratio_digital_group">
+        <item>@string/tv_menu_picture_settings_aspect_ratio_auto</item>
+        <item>@string/tv_menu_picture_settings_aspect_ratio_normal_4_3</item>
+        <item>@string/tv_menu_picture_settings_aspect_ratio_zoom_14_9</item>
+        <item>@string/tv_menu_picture_settings_aspect_ratio_panorama</item>
+        <item>@string/tv_menu_picture_settings_aspect_ratio_letterbox</item>
+        <item>@string/tv_menu_picture_settings_aspect_ratio_full</item>
+        <item>@string/tv_menu_picture_settings_aspect_ratio_cinema_16_9</item>
+        <item>@string/tv_menu_picture_settings_aspect_ratio_cinema_14_9</item>
+    </string-array>
+    <string-array name="tv_menu_picture_settings_aspect_ratio_analog_group">
+        <item>@string/tv_menu_picture_settings_aspect_ratio_auto</item>
+        <item>@string/tv_menu_picture_settings_aspect_ratio_normal_4_3</item>
+        <item>@string/tv_menu_picture_settings_aspect_ratio_zoom_14_9</item>
+        <item>@string/tv_menu_picture_settings_aspect_ratio_panorama</item>
+        <item>@string/tv_menu_picture_settings_aspect_ratio_letterbox</item>
+        <item>@string/tv_menu_picture_settings_aspect_ratio_cinema_16_9</item>
+        <item>@string/tv_menu_picture_settings_aspect_ratio_cinema_14_9</item>
+    </string-array>
+    <string-array name="tv_menu_picture_settings_aspect_ratio_vga_group">
+        <item>@string/tv_menu_picture_settings_aspect_ratio_normal_4_3</item>
+        <item>@string/tv_menu_picture_settings_aspect_ratio_cinema_16_9</item>
+    </string-array>
+    <string-array name="picture_settings_curl_settings_delay_time_array">
+        <item>@string/tv_menu_picture_settings_curl_settings_delay_time_3_seconds</item>
+        <item>@string/tv_menu_picture_settings_curl_settings_delay_time_5_seconds</item>
+        <item>@string/tv_menu_picture_settings_curl_settings_delay_time_10_seconds</item>
+        <item>@string/tv_menu_picture_settings_curl_settings_delay_time_15_seconds</item>
+        <item>@string/tv_menu_picture_settings_curl_settings_delay_time_20_seconds</item>
+    </string-array>
+    <string name="tv_menu_sound_settings">Sound settings</string>
+    <string name="tv_menu_sound_settings_sound_mode">Sound mode</string>
+    <string name="tv_menu_sound_settings_post_processing">Sound Equalizer</string>
+    <string name="tv_menu_sound_settings_spdif_mode">SPDIF mode</string>
+    <string name="tv_menu_sound_settings_treble">Treble</string>
+    <string name="tv_menu_sound_settings_balance">Balance [L/R]</string>
+    <string name="tv_menu_sound_settings_first_audio">First audio</string>
+    <string name="tv_menu_sound_settings_second_audio">Second audio</string>
+    <string name="tv_menu_sound_settings_audio_description">Audio Description</string>
+    <string name="tv_menu_sound_settings_bass">Bass</string>
+    <string name="tv_menu_sound_settings_eq_band_1">EQ Band 120Hz</string>
+    <string name="tv_menu_sound_settings_eq_band_2">EQ Band 500Hz</string>
+    <string name="tv_menu_sound_settings_eq_band_3">EQ Band 1500Hz</string>
+    <string name="tv_menu_sound_settings_eq_band_4">EQ Band 5kHz</string>
+    <string name="tv_menu_sound_settings_eq_band_5">EQ Band 10kHz</string>
+    <string name="tv_menu_sound_settings_surround_sound">Surround sound</string>
+    <string name="tv_menu_sound_settings_auto_volume">Auto volume [on/off]</string>
+    <string name="tv_menu_sound_settings_srs_trusurround">SRS TruSurround</string>
+    <string name="tv_menu_sound_settings_srs_trubass">SRS TruBass</string>
+    <string name="tv_menu_sound_settings_srs_dialog_clarity">SRS Dialog Clarity</string>
+    <string name="tv_menu_sound_settings_bass_enhancer">Bass Enhancer</string>
+    <string name="tv_menu_sound_settings_headphones_volume">Headphones volume</string>
+    <string name="tv_menu_sound_settings_headphones_mode">Headphones output mode</string>
+    <string name="tv_menu_sound_settings_delay">Delay</string>
+    <string name="tv_menu_sound_settings_clear_voice">Clear Voice</string>
+    <string name="tv_menu_sound_settings_analog_output_mode">Analog output mode</string>
+    <string name="tv_menu_sound_settings_tv_speakers">TV speakers</string>
+    <string name="tv_menu_sound_settings_theme">Theme</string>
+    <string name="tv_menu_sound_mode_stereo"> Stereo</string>
+    <string name="tv_menu_sound_mode_single_mono">Single Mono</string>
+    <string name="tv_menu_sound_dual_mono">Dual Mono</string>
+    <string name="tv_menu_sound_sap">SAP</string>
+    <string name="tv_menu_hbb_settings">Hbb settings</string>
+    <string name="tv_menu_hbb_settings_hbb_tv_enable">Hbb TV enable</string>
+    <string name="tv_menu_hbb_settings_theme">Theme</string>
+    <string name="tv_menu_dlna_settings_server_on_off">Enable server</string>
+    <string name="tv_menu_dlna_settings_renderer_on_off">Enable renderer</string>
+    <string name="tv_menu_subtitle_settings">Subtitle settings</string>
+    <string name="tv_menu_teletext_settings">Teletext settings</string>
+    <string name="tv_menu_subtitle_settings_subtitle_enabled">Subtitle enable</string>
+    <string name="tv_menu_subtitle_settings_teletext_language">Teletext language</string>
+    <string name="tv_menu_subtitle_settings_epg_language">EPG language</string>
+    <string name="tv_menu_subtitle_settings_subtitle_language">Subtitle first language</string>
+    <string name="tv_menu_subtitle_settings_subtitle_second_language">Subtitle second language</string>
+    <string name="tv_menu_subtitle_settings_subtitle_mode">Subtitle Mode</string>
+    <string name="tv_menu_subtitle_settings_subtitle_type">Subtitle Type</string>
+    <string name="tv_menu_teletext_settings_language">Teletext first language</string>
+    <string name="tv_menu_teletext_settings_second_language">Teletext second language</string>
+    <string name="tv_menu_subtitle_settings_theme">Theme</string>
+    <string name="tv_menu_channel_installation_settings">Channel installation</string>
+    <string name="tv_menu_channel_installation_settings_tuner_type">Tuner type</string>
+    <string name="tv_menu_channel_installation_settings_channel_tuning_mode">Channel tuning mode</string>
+    <string name="tv_menu_channel_installation_settings_table_type">Table type</string>
+    <string name="tv_menu_channel_installation_settings_cable">Cable</string>
+    <string name="tv_menu_channel_installation_settings_air">Air</string>
+    <string name="tv_menu_channel_installation_settings_satellite_name">Satellite name</string>
+    <string name="tv_menu_channel_installation_settings_auto_tunning">Auto tuning</string>
+    <string name="tv_menu_channel_installation_settings_operator_tunning">Operator profile scan</string>
+    <string name="tv_menu_channel_installation_settings_manual_tunning">Manual tuning</string>
+    <string name="tv_menu_channel_installation_settings_manual_tunning_abort_not_supported">Aborting manual scan is not supported!</string>
+    <string name="tv_menu_channel_installation_settings_signal_info">Signal info</string>
+    <string name="tv_menu_channel_installation_settings_programme_edit">Program edit</string>
+    <string name="tv_menu_channel_installation_settings_satelite_edit">Satellite edit</string>
+    <string name="tv_menu_channel_installation_settings_ci_info">CI info</string>
+    <string name="tv_menu_channel_installation_settings_ci_remove">Operator profile remove</string>
+    <string name="tv_menu_channel_installation_settings_set_cicam_id">Set CICAM id</string>
+    <string name="tv_menu_channel_installation_settings_auto_channel_number">Auto channel number [on/off]</string>
+    <string name="tv_menu_channel_installation_settings_theme">Theme</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings">Manual tuning</string>
+    <string name="tv_menu_channel_installation_manual_tunning_keep_current_list">Keep current channel list</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_frequency">Frequency</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_frequency_scan">Current Frequency:</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_signal_strength">Signal strength</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_signal_quality">Signal quality</string>
+    <string name="tv_menu_channel_installation_scan_progress">Scanning progress</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_channel_number_dvbt">Channel number</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_nordic_band">Channel band</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_frequency_hint">Frequency (KHz)</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_dtv_frequency_hint">Channel number</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_symbol_rate_dvbc_hint">Signals (KSymbols/s)</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_symbol_rate_dvbs_hint">Signals (Mbaud)</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_scrambled">Scrambled</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_symbol_rate">Symbol rate</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_polarization">Polarization</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_modulation">Modulation</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_network_id">Network ID</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_fec">FEC</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_start_search">Start Search</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_theme">Theme</string>
+    <string name="tv_menu_channel_installation_settings_wrong_symbol_rate">Wrong symbol rate entered!</string>
+    <string name="tv_menu_channel_installation_signal_info_service_name">Service name</string>
+    <string name="tv_menu_channel_installation_signal_info_service_id">Service ID</string>
+    <string name="tv_menu_channel_installation_signal_info_channel_id">Channel ID</string>
+    <string name="tv_menu_channel_installation_signal_info_centre_frequency">Frequency</string>
+    <string name="tv_menu_channel_installation_signal_info_multiplex">Multiplex</string>
+    <string name="tv_menu_channel_installation_signal_info_network">Network</string>
+    <string name="tv_menu_channel_installation_signal_info_network_id">Network ID</string>
+    <string name="tv_menu_channel_installation_signal_info_bit_error_level">Bit error level</string>
+    <string name="tv_menu_channel_installation_signal_info_signal_strength">Signal strength</string>
+    <string name="tv_menu_channel_installation_signal_info_signal_quality">Signal quality</string>
+    <string name="tv_menu_channel_installation_manual_tunning_start_search_settings">Start Search</string>
+    <string name="tv_menu_channel_installation_manual_tunning_start_search_settings_scaning">Scanning for channels, please wait</string>
+    <string name="tv_menu_channel_installation_manual_tunning_start_search_settings_dtv_services">DTV Services:16</string>
+    <string name="tv_menu_channel_installation_manual_tunning_start_search_settings_radio_services">Radio Services:1</string>
+    <string name="tv_menu_channel_installation_manual_tunning_start_search_settings_data_services">Data Services:2</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_system">System</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_fine_tune">Fine Tune</string>
+    <string name="content_list_name">Android4TV</string>
+    <string name="filter_button_text">Filter</string>
+    <string name="multimedia_content_list_name">Android 4 TV</string>
+    <string-array name="tv_menu_channel_installation_settings_tuner_type">
+        <item>@string/main_menu_content_list_dvb_s</item>
+        <item>@string/main_menu_content_list_dvb_t</item>
+        <item>@string/main_menu_content_list_dvb_c</item>
+        <item>@string/main_menu_content_list_ip</item>
+    </string-array>
+    <string-array name="tv_menu_channel_installation_settings_tuner_type_rk2010">
+        <item>@string/main_menu_content_list_dvb_t</item>
+        <item>@string/main_menu_content_list_ip</item>
+    </string-array>
+    <string name="tv_menu_parential_security_settings">Parental guidance</string>
+    <string name="tv_menu_parential_security_settings_parential_guidance">Parental guidance</string>
+    <string name="tv_menu_parential_security_settings_theme">Theme</string>
+    <string name="tv_menu_password_security_settings">Password</string>
+    <string name="tv_menu_password_security_settings_set_password">Set password</string>
+    <string name="tv_menu_password_security_settings_change_password">Change password</string>
+    <string name="tv_menu_password_security_settings_remove_password">Reset password</string>
+    <string name="tv_menu_password_security_settings_theme">Theme</string>
+    <string name="tv_menu_account_settings">Accounts &amp; Sync</string>
+    <string name="tv_menu_account_settings_background_data">Background data</string>
+    <string name="tv_menu_account_settings_auto_sync">Auto sync</string>
+    <string name="tv_menu_account_settings_click_to_sync">Click to sync now</string>
+    <string name="tv_menu_account_settings_manage_accounts">Manage accounts</string>
+    <string name="tv_menu_account_settings_manage_account">Manage account</string>
+    <string name="tv_menu_account_settings_manage_accounts_sync_off">Sync is OFF</string>
+    <string name="tv_menu_account_settings_manage_accounts_sync_on">Sync is ON</string>
+    <string name="tv_menu_account_settings_add_account">Add account</string>
+    <string name="tv_menu_account_settings_add_gmail_account">example@gmail.com</string>
+    <string name="tv_menu_account_settings_add_yahoo_account">example@yahoo.com</string>
+    <string name="tv_menu_account_settings_theme">Theme</string>
+    <string name="tv_menu_applications_settings">Applications</string>
+    <string name="tv_menu_applications_settings_unknown_sources">Unknown sources</string>
+    <string name="tv_menu_applications_settings_manage_applications">Manage applications</string>
+    <string name="tv_menu_applications_settings_manage">Manage</string>
+    <string name="tv_menu_applications_settings_running">See all</string>
+    <string name="tv_menu_applications_settings_running_services">Running services</string>
+    <string name="tv_menu_applications_settings_theme">Theme</string>
+    <string name="tv_menu_applications_settings_manage_applications_choose_by_type">Choose applications by type</string>
+    <string name="tv_menu_applications_settings_manage_applications_downloaded">Downloaded</string>
+    <string name="tv_menu_applications_settings_manage_applications_running">Running</string>
+    <string name="tv_menu_applications_settings_manage_applications_All">All</string>
+    <string name="tv_menu_applications_settings_manage_applications_on_external_storage">On external storage</string>
+    <string name="tv_menu_applications_settings_manage_applications_force_stop">Force stop</string>
+    <string name="tv_menu_applications_settings_manage_applications_uninstall">Uninstall/Disable</string>
+    <string name="tv_menu_applications_settings_manage_applications_uninstall_btn">Uninstall</string>
+    <string name="tv_menu_applications_settings_manage_applications_disable">Disable</string>
+    <string name="tv_menu_applications_settings_manage_applications_enable">Enable</string>
+    <string name="tv_menu_applications_settings_manage_applications_storage">Storage</string>
+    <string name="tv_menu_applications_settings_manage_applications_storage_total">Total</string>
+    <string name="tv_menu_applications_settings_manage_applications_storage_app">App</string>
+    <string name="tv_menu_applications_settings_manage_applications_storage_usb">USB storage app</string>
+    <string name="tv_menu_applications_settings_manage_applications_storage_data">Data</string>
+    <string name="tv_menu_applications_settings_manage_applications_storage_sd_card">External</string>
+    <string name="tv_menu_applications_settings_manage_applications_clear_data">Clear data</string>
+    <string name="tv_menu_applications_settings_manage_applications_cache">Cache</string>
+    <string name="tv_menu_applications_settings_manage_applications_cache_clear">Clear cache</string>
+    <string name="tv_menu_applications_settings_manage_applications_default">Launch by default</string>
+    <string name="tv_menu_applications_settings_manage_applications_default_clear">Clear defaults</string>
+    <string name="tv_menu_applications_settings_manage_applications_permissions">Permissions</string>
+    <string-array name="tv_menu_applications_settings_manage_applications">
+        <item>@string/tv_menu_applications_settings_manage_applications_downloaded</item>
+        <item>@string/tv_menu_applications_settings_manage_applications_running</item>
+        <item>@string/tv_menu_applications_settings_manage_applications_All</item>
+        <item>@string/tv_menu_applications_settings_manage_applications_on_external_storage</item>
+    </string-array>
+    <string name="tv_menu_energy_settings">Energy Save</string>
+    <string name="tv_menu_energy_settings_energy_save_enable">Energy save enable</string>
+    <string name="tv_menu_energy_settings_theme">Theme</string>
+    <string name="tv_menu_storage_settings">External &amp; Local file storage</string>
+    <string name="tv_menu_storage_settings_external_file_storage">External file storage</string>
+    <string name="tv_menu_storage_settings_local_file_storage">Local file storage</string>
+    <string name="tv_menu_storage_settings_factory_data_reset">Factory data reset</string>
+    <string name="tv_menu_storage_settings_theme">Theme</string>
+    <string name="available">Available</string>
+    <string name="tv_menu_factory_reset_settings">Factory reset</string>
+    <string name="tv_menu_factory_reset_settings_reset">Reset</string>
+    <string name="tv_menu_factory_reset_settings_theme">Theme</string>
+    <string name="tv_menu_factory_input_settings">Input settings</string>
+    <string name="tv_menu_factory_input_settings_hdmi_cec">HDMI CEC</string>
+    <string name="tv_menu_factory_input_settings_input_labels">Input labels</string>
+    <string name="tv_menu_factory_input_settings_theme">Theme</string>
+    <string name="tv_menu_language_settings">Language &amp; Keyboard</string>
+    <string name="tv_menu_language_settings_select_language">Select language</string>
+    <string name="tv_menu_language_settings_select_country">Select country</string>
+    <string name="tv_menu_language_settings_audio_language">Audio language</string>
+    <string name="tv_menu_language_settings_keyboard_settings">Keyboard settings</string>
+    <string name="tv_menu_language_settings_text_size">Text size</string>
+    <string name="tv_menu_language_settings_text_size_small">Small</string>
+    <string name="tv_menu_language_settings_text_size_normal">Normal</string>
+    <string name="tv_menu_language_settings_text_size_large">Large</string>
+    <string name="tv_menu_language_settings_text_size_huge">Huge</string>
+    <string-array name="tv_menu_language_settings_text_size_array">
+        <item>@string/tv_menu_language_settings_text_size_small</item>
+        <item>@string/tv_menu_language_settings_text_size_normal</item>
+        <item>@string/tv_menu_language_settings_text_size_large</item>
+        <item>@string/tv_menu_language_settings_text_size_huge</item>
+    </string-array>
+    <string name="tv_menu_language_settings_theme">Theme</string>
+    <string name="tv_menu_network_settings">Network</string>
+    <string name="tv_menu_network_settings_network_type">Choose network type</string>
+    <string name="tv_menu_network_settings_wireless_settings">Wireless Settings</string>
+    <string name="tv_menu_network_settings_wired_settings">Ethernet Settings</string>
+    <string name="tv_menu_network_settings_advanced_network_setup">Advanced network setup</string>
+    <string name="tv_menu_network_settings_network_connection_test">Network connection test</string>
+    <string name="tv_menu_network_settings_theme">Theme</string>
+    <string name="tv_menu_network_settings_wireless">Wireless</string>
+    <string name="tv_menu_network_wireless_settings">Wireless Settings</string>
+    <string name="tv_menu_network_wireless_settings_wireless">Wireless</string>
+    <string name="tv_menu_network_wireless_settings_networks">Find wireless networks</string>
+    <string name="tv_menu_network_wireless_settings_network">Network</string>
+    <string name="tv_menu_network_wireless_settings_manual_add_wireless_network_name">Enter name</string>
+    <string name="tv_menu_network_wireless_settings_add_wireless_network">Add hidden wireless network</string>
+    <string name="tv_menu_network_wireless_settings_enter_password">Enter password</string>
+    <string name="tv_menu_network_wireless_settings_repeat_password">Repeat password</string>
+    <string name="tv_menu_network_wireless_settings_enter_new_password">Enter new password</string>
+    <string name="tv_menu_network_wireless_settings_repeat_new_password">Repeat new password</string>
+    <string name="tv_menu_network_wireless_settings_enter_password_error_message">Wrong password entered!</string>
+    <string name="tv_menu_network_wireless_settings_enter_password_changed_message">Password is changed</string>
+    <string name="tv_menu_network_wireless_settings_enter_password_reseted_message">Password is reset.</string>
+    <string name="enter_password_no_more_attempts_message">You can not make further attempts for next 10 minutes!</string>
+    <string name="enter_password_no_more_attempts_active">“No Attempt” period activated!</string>
+    <string name="tv_menu_network_wireless_settings_enter_password_error">Password is already setted!!</string>
+    <string name="tv_menu_network_wireless_settings_enter_password_success_message">Password is set!</string>
+    <string name="tv_menu_network_wireless_settings_encryption">Encryption</string>
+    <string name="tv_menu_network_wireless_settings_theme">Theme</string>
+    <string name="tv_menu_network_wireless_info">Network Information</string>
+    <string name="tv_menu_network_wireless_info_AP">Access point</string>
+    <string name="tv_menu_network_wireless_info_link_speed">Link speed</string>
+    <string name="tv_menu_network_wireless_info_signal_strength">Signal strength</string>
+    <string name="tv_menu_network_wireless_info_enc_method">Encryption method</string>
+    <string name="tv_menu_network_wireless_wps_config">WPS Settings</string>
+    <string name="tv_menu_network_wireless_wps_config_enroll">WPS Enrollee</string>
+    <string name="tv_menu_network_wireless_wps_config_registrar">WPS Registrar</string>
+    <string name="tv_menu_network_wireless_wps_config_pbc">WPS PBC</string>
+    <string name="tv_menu_network_wireless_add_hidden_network">Add wireless network</string>
+    <string name="tv_menu_network_wireless_add_hidden_network_add">Add</string>
+    <string name="tv_menu_network_wireless_add_hidden_network_security">Security</string>
+    <string name="tv_menu_network_wireless_add_hidden_network_security_none">None</string>
+    <string name="tv_menu_network_wireless_add_hidden_network_security_wep">WEP</string>
+    <string name="tv_menu_network_wireless_add_hidden_network_security_wpa">WPA</string>
+    <string name="tv_menu_network_wireless_add_hidden_network_security_wpa2_psk">WPA2 PSK</string>
+    <string name="tv_menu_network_wireless_add_hidden_network_ssid">Network SSID</string>
+    <string name="tv_menu_network_wireless_add_hidden_network_password">Password</string>
+    <string name="tv_menu_network_wireless_add_hidden_network_add_none"></string>
+    <string name="tv_menu_network_wired_info">Network Information</string>
+    <string name="tv_menu_network_wired_info_IP">IP address</string>
+    <string name="tv_menu_network_wired_info_netmask">Netmask address</string>
+    <string name="tv_menu_network_wired_info_gateway">Gateway address </string>
+    <string name="tv_menu_network_wired_dns">DNS address</string>
+    <string name="tv_menu_network_wired_dns1">DNS1 address</string>
+    <string name="tv_menu_network_wired_dns2">DNS2 address</string>
+    <string name="tv_menu_network_wired_test">Network Test</string>
+    <string name="tv_menu_network_advanced_network_setup_settings">Advanced network setup</string>
+    <string name="tv_menu_network_advanced_network_setup_settings_ip_address">IP address</string>
+    <string name="tv_menu_network_advanced_network_setup_settings_dns">DNS</string>
+    <string name="tv_menu_network_advanced_network_setup_settings_mac_address">MAC address</string>
+    <string name="tv_menu_network_advanced_network_setup_settings_proxy_settings">Proxy settings</string>
+    <string name="tv_menu_network_advanced_network_setup_settings_theme">Theme</string>
+    <string name="tv_menu_pip_settings_position">PiP position</string>
+    <string name="tv_menu_pip_settings_size">PiP size</string>
+    <string name="tv_menu_pip_settings_custom_settings">Custom settings</string>
+    <string name="tv_menu_product_info_settings">Product info</string>
+    <string name="tv_menu_product_info_settings_legal_information">Legal information</string>
+    <string name="tv_menu_product_info_settings_firmware_version">Android version</string>
+    <string name="tv_menu_product_info_settings_model_number">Model number</string>
+    <string name="tv_menu_product_info_settings_build_number">Build number</string>
+    <string name="tv_menu_product_info_settings_software_version">Software version</string>
+    <string name="tv_menu_product_info_settings_ip_address">IP address</string>
+    <string name="tv_menu_product_info_settings_mac_address">MAC address</string>
+    <string name="tv_menu_product_info_settings_kernel">Kernel version</string>
+    <string name="tv_menu_product_info_settings_theme">Theme</string>
+    <string name="tv_menu_software_upgrade_settings">Software upgrade</string>
+    <string name="tv_menu_software_upgrade_settings_auto_upgrade">Auto upgrade</string>
+    <string name="tv_menu_software_upgrade_settings_manually_uprade">Manual upgrade</string>
+    <string name="tv_menu_software_upgrade_settings_manually_uprade_current_version">Current version</string>
+    <string name="tv_menu_software_upgrade_settings_manually_uprade_upgrade">Upgrade over network</string>
+    <string name="tv_menu_software_upgrade_settings_manually_uprade_usb">Upgrade over USB</string>
+    <string name="tv_menu_software_upgrade_settings_manually_uprade_btn">Upgrade</string>
+    <string name="tv_menu_software_upgrade_settings_unavailable">Unavailable</string>
+    <string name="tv_menu_software_upgrade_settings_bsp">Board support packages</string>
+    <string name="tv_menu_software_upgrade_settings_hal">Hardware abstraction layer</string>
+    <string name="tv_menu_software_upgrade_settings_mwl">Middleware</string>
+    <string name="tv_menu_software_upgrade_settings_mal">Middleware abstraction layer</string>
+    <string name="tv_menu_software_upgrade_settings_svn_version">Bundle version</string>
+    <string name="tv_menu_software_upgrade_settings_software_version">Application version</string>
+    <string name="tv_menu_software_upgrade_settings_theme">Theme</string>
+    <string name="tv_menu_time_and_date_settings">Time and Date settings</string>
+    <string name="tv_menu_time_and_date_settings_automatic">Automatic</string>
+    <string name="tv_menu_time_and_date_settings_set_date">Set date</string>
+    <string name="tv_menu_time_and_date_settings_select_time_zone">Select time zone</string>
+    <string name="tv_menu_time_and_date_settings_set_time">Set time</string>
+    <string name="tv_menu_time_and_date_settings_use_24_hour_format">Use 24 hour format</string>
+    <string name="tv_menu_time_and_date_settings_select_date_format">Select date format</string>
+    <string name="tv_menu_timers_settings">Timers settings</string>
+    <string name="tv_menu_timers_settings_no_signal">No Signal Off</string>
+    <string name="tv_menu_timers_settings_no_operation">No Operation Off</string>
+    <string name="tv_menu_timers_settings_off_timers">Off Timers Settings</string>
+    <string name="tv_menu_timers_settings_on_timers">On Timers Settings</string>
+    <string name="tv_menu_timers_settings_time">Time</string>
+    <string name="tv_menu_timers_settings_delete_toast">Timer is deleted successfully</string>
+    <string name="tv_menu_timers_settings_delete_toast_failed">Failed to delete timer</string>
+    <string name="tv_menu_off_timers_settings">Off timers settings</string>
+    <string name="tv_menu_off_timers_add">Add Off Timer</string>
+    <string name="tv_menu_off_timers_delete">Delete Off Timer</string>
+    <string name="tv_menu_off_timers_list">List Off Timer</string>
+    <string name="tv_menu_off_timers_repeat_mode_off">Off</string>
+    <string name="tv_menu_off_timers_repeat_mode_once">Once</string>
+    <string name="tv_menu_off_timers_repeat_mode_weekly">Once</string>
+    <string name="tv_menu_off_timers_repeat_mode_every_day">Every day</string>
+    <string name="tv_menu_off_timers_repeat_mode_monday_to_friday">Mon~Fri</string>
+    <string name="tv_menu_off_timers_repeat_mode_monday_to_saturday">Mon~Sat</string>
+    <string name="tv_menu_off_timers_repeat_mode_saturday_to_sunday">Sat~Sun</string>
+    <string name="tv_menu_off_timers_repeat_mode_sunday">Sunday</string>
+    <string name="tv_menu_off_timers_repeat_mode">Repeat mode</string>
+    <string name="tv_menu_off_timers_repeat_mode_minutes">Minutes</string>
+    <string name="tv_menu_off_timers_repeat_mode_hours">Hours</string>
+    <string name="tv_menu_time_and_date_settings_timer">Timer</string>
+    <string name="tv_menu_time_and_date_settings_theme">Theme</string>
+    <string name="tv_menu_time_and_date_select_time_zone_settings">Select time zone</string>
+    <string name="tv_menu_time_and_date_select_time_zone_settings_theme">Theme</string>
+    <string name="tv_menu_time_and_date_set_time_settings_enter_time">Enter time</string>
+    <string name="tv_menu_time_and_date_set_time_settings_hour_time">h:</string>
+    <string name="tv_menu_time_and_date_set_time_settings_minute_time">m</string>
+    <string name="tv_menu_time_and_date_set_time_settings_theme">Theme</string>
+    <string name="tv_menu_voice_settings">Voice Settings</string>
+    <string name="tv_menu_voice_settings_text_to_speach_settings">Text to speech settings</string>
+    <string name="tv_menu_voice_settings_listen_to_an_example">Listen to an example</string>
+    <string name="tv_menu_voice_settings_always_use_my_settings">Always use my settings[y/n]</string>
+    <string name="tv_menu_voice_settings_language">Language</string>
+    <string name="tv_menu_voice_settings_theme">Theme</string>
+    <string name="tv_menu_service_mode_menu">Service Mode Menu</string>
+    <string name="tv_menu_service_mode_menu_system_settings">System Settings</string>
+    <string name="tv_menu_service_mode_menu_panel_settings">Panel Settings</string>
+    <string name="tv_menu_service_mode_menu_video_settings">Video Settings</string>
+    <string name="tv_menu_service_mode_menu_sound_settings">Sound Settings</string>
+    <string name="tv_menu_service_mode_menu_debugging_data">Debbuging Data</string>
+    <string name="tv_menu_service_mode_menu_rc_button">RC Button</string>
+    <string name="tv_menu_service_mode_menu_panel_button">Panel Button</string>
+    <string name="tv_menu_service_mode_menu_menu_button">Menu Button</string>
+    <string name="tv_menu_service_mode_menu_input_mode_start">Input Mode Start</string>
+    <string name="tv_menu_service_mode_menu_input_mode_fixed">Input Mode Fixed</string>
+    <string name="tv_menu_service_mode_menu_input_tv_mode">Input TV Mode Program Number</string>
+    <string name="tv_menu_service_mode_menu_reset">Reset</string>
+    <string name="tv_menu_service_mode_menu_commit">Commit</string>
+    <string name="tv_menu_service_mode_menu_on_screen_display">On Screen Display</string>
+    <string name="tv_menu_service_mode_menu_on_factory_mode">Factory Mode</string>
+    <string name="tv_menu_service_mode_menu_maximum_volume">Maximum Volume</string>
+    <string name="tv_menu_service_mode_menu_volume_fixed">Volume Fixed</string>
+    <string name="tv_menu_service_mode_menu_volume_fixed_level">Volume Fixed Level</string>
+    <string name="tv_menu_service_mode_menu_main_version">Main Version</string>
+    <string name="tv_menu_service_mode_menu_hardware_version">Hardware Version</string>
+    <string name="tv_menu_service_mode_menu_normal_standby_cause">Normal Standby Cause</string>
+    <string name="tv_menu_service_mode_menu_standby_cause_reset">Standby Cause Reset</string>
+    <string name="tv_menu_service_mode_menu_pattern">Pattern</string>
+    <string name="tv_menu_service_mode_menu_normal">Normal</string>
+    <string name="tv_menu_service_mode_menu_atv">ATV</string>
+    <string name="tv_menu_service_mode_menu_dtv">DTV</string>
+    <string name="tv_menu_service_mode_menu_scart">SCART</string>
+    <string name="tv_menu_service_mode_menu_component">COMPONENT</string>
+    <string name="tv_menu_service_mode_menu_pc_rgb">PC_RGB</string>
+    <string name="tv_menu_service_mode_menu_hdmi1">HDMI 1</string>
+    <string name="tv_menu_service_mode_menu_hdmi2">HDMI 2</string>
+    <string name="tv_menu_service_mode_menu_hdmi3">HDMI 3</string>
+    <string name="tv_menu_service_mode_menu_hdmi4">HDMI 4</string>
+    <string name="tv_menu_service_mode_menu_cause_ir">Stanby cause IR</string>
+    <string name="tv_menu_service_mode_menu_keypad">Keypad</string>
+    <string name="tv_menu_service_mode_menu_sleep_timer">Sleep Timer</string>
+    <string name="tv_menu_service_mode_menu_no_signal">No Signal</string>
+    <string name="tv_menu_pvr_menu">PVR Menu</string>
+    <string name="tv_menu_pvr_manual_reminder">Manual Event Reminder</string>
+    <string name="tv_menu_pvr_manual_schedule">Manual Scheduled Recording</string>
+    <string name="tv_menu_pvr_settings">PVR Settings</string>
+    <string name="tv_menu_pvr_settings_device">Device</string>
+    <string name="tv_menu_pvr_settings_speed_test_result">Speed Test Result (KB/s)</string>
+    <string name="tv_menu_pvr_settings_free_space">Free space (GB)</string>
+    <string name="tv_menu_pvr_settings_total_space">Total space (GB)</string>
+    <string name="tv_menu_pvr_settings_set_path">Enable selected device</string>
+    <string name="tv_menu_pvr_settings_performing_speed_test">Performing Speed Test</string>
+    <string name="tv_menu_pvr_settings_wrong">USB device does not meet minimum requirements for PVR usage!</string>
+    <string name="tv_menu_pvr_settings_sd_streams">USB device can be used for PVR usage only on SD streams</string>
+    <string name="tv_menu_pvr_settings_sd_hd_streams">USB device can be used for PVR usage on both HD and SD streams</string>
+    <string name="tv_menu_pvr_settings_start_speed_test">Start Speed Test</string>
+    <string name="tv_menu_pvr_manual_reminder_channel">Channel</string>
+    <string name="tv_menu_pvr_manual_reminder_time">Start time</string>
+    <string name="tv_menu_pvr_manual_reminder_date">Start date</string>
+    <string name="tv_menu_pvr_manual_scheduled_recording_repeat">Repeat</string>
+    <string name="tv_menu_pvr_manual_reminder_add">Add reminder</string>
+    <string name="tv_menu_pvr_manual_scheduled_recording_add">Add schedule</string>
+    <string name="tv_menu_pvr_schedule_repeat_once">Once</string>
+    <string name="tv_menu_pvr_schedule_repeat_daily">Daily</string>
+    <string name="tv_menu_pvr_schedule_repeat_weekly">Weekly</string>
+    <string name="tv_menu_pvr_schedule_repeat_monthly">Monthly</string>
+    <string name="tv_menu_pvr_manual_reminder_toast">Reminder is added successfully</string>
+    <string name="tv_menu_pvr_manual_reminder_toast_failed">Wrong time selected!!! Please try again</string>
+    <string name="tv_menu_pvr_schedule_date_end">End date</string>
+    <string name="tv_menu_pvr_schedule_time_end">End time</string>
+    <string name="tv_menu_pvr_schedule_toast">Schedule recording is added successfully</string>
+    <string name="tv_menu_pvr_schedule_toast_failed">Wrong time selected!!! Please try again</string>
+    <string name="smart_record_error">Error adding PVR event to list!</string>
+    <string name="epg_smart_record_added">PVR event is added to list!</string>
+    <string name="epg_smart_record_error_conflit_found">PVR scheduled recording shall not be created!</string>
+    <string name="epg_smart_record_error_reschedule">PVR scheduled recording shall be rescheduled!</string>
+    <string name="epg_smart_record_started">PVR scheduled recording started!</string>
+    <string name="tv_menu_screensaver_settings">Screen Saver settings</string>
+    <string name="tv_menu_screensaver_start">Screen Saver</string>
+    <string name="tv_menu_screensaver_set_time">Set Wait Time</string>
+    <string name="tv_menu_store_mode_settings">Store Mode settings</string>
+    <string name="tv_menu_store_mode_start">Store Mode</string>
+    <string name="tv_menu_store_mode_launch_video_presentation">Launch Video Presentation</string>
+    <string name="tv_menu_source_menu_broadcast">Broadcast</string>
+    <string name="tv_menu_source_menu_terrestrial">Terrestrial</string>
+    <string name="tv_menu_source_menu_cable">Cable</string>
+    <string name="tv_menu_source_menu_satellite">Satellite</string>
+    <string name="tv_menu_source_menu_analog">Analog</string>
+    <string name="tv_menu_source_menu_radio">Radio</string>
+    <string name="tv_menu_source_menu_data">Data</string>
+    <string name="tv_menu_source_menu_cvbs">CVBS</string>
+    <string name="tv_menu_source_menu_vga">VGA</string>
+    <string name="tv_menu_source_menu_component">Component</string>
+    <string name="tv_menu_source_menu_hdmi1">HDMI 1</string>
+    <string name="tv_menu_source_menu_hdmi2">HDMI 2</string>
+    <string name="tv_menu_source_menu_hdmi3">HDMI 3</string>
+    <string name="tv_menu_source_menu_hdmi4">HDMI 4</string>
+    <string name="tv_menu_network_id">Network ID</string>
+    <string name="tv_menu_cable_network_settings">Cable Network Settings</string>
+    <string name="tv_menu_store_values">Store Values</string>
+    <string name="tv_menu_network_id_selection">Network ID Selection</string>
+    <string-array name="tv_menu_manual_pvr_schedule_repeat">
+        <item>@string/tv_menu_pvr_schedule_repeat_once</item>
+        <item>@string/tv_menu_pvr_schedule_repeat_daily</item>
+        <item>@string/tv_menu_pvr_schedule_repeat_weekly</item>
+        <item>@string/tv_menu_pvr_schedule_repeat_monthly</item>
+    </string-array>
+    <string-array name="tv_menu_off_timers_repeat_mode">
+        <!-- <item>@string/tv_menu_off_timers_repeat_mode_off</item> -->
+        <item>@string/tv_menu_off_timers_repeat_mode_once</item>
+        <item>@string/tv_menu_off_timers_repeat_mode_weekly</item>
+        <item>@string/tv_menu_off_timers_repeat_mode_every_day</item>
+        <item>@string/tv_menu_off_timers_repeat_mode_monday_to_friday</item>
+        <item>@string/tv_menu_off_timers_repeat_mode_monday_to_saturday</item>
+        <item>@string/tv_menu_off_timers_repeat_mode_saturday_to_sunday</item>
+        <item>@string/tv_menu_off_timers_repeat_mode_sunday</item>
+    </string-array>
+    <string-array name="tv_menu_network_wireless_add_hidden_network_security">
+        <item>@string/tv_menu_network_wireless_add_hidden_network_security_none</item>
+        <item>@string/tv_menu_network_wireless_add_hidden_network_security_wep</item>
+        <item>@string/tv_menu_network_wireless_add_hidden_network_security_wpa</item>
+        <item>@string/tv_menu_network_wireless_add_hidden_network_security_wpa2_psk</item>
+    </string-array>
+    <string-array name="tv_menu_system_settings_input_mode">
+        <item>@string/tv_menu_service_mode_menu_normal</item>
+        <item>@string/tv_menu_service_mode_menu_atv</item>
+        <item>@string/tv_menu_service_mode_menu_dtv</item>
+        <item>@string/tv_menu_service_mode_menu_scart</item>
+        <item>@string/tv_menu_service_mode_menu_component</item>
+        <item>@string/tv_menu_service_mode_menu_pc_rgb</item>
+        <item>@string/tv_menu_service_mode_menu_hdmi1</item>
+        <item>@string/tv_menu_service_mode_menu_hdmi2</item>
+        <item>@string/tv_menu_service_mode_menu_hdmi3</item>
+        <item>@string/tv_menu_service_mode_menu_hdmi4</item>
+    </string-array>
+    <string-array name="tv_menu_debugging_data_normal_standby_cause">
+        <item>@string/tv_menu_service_mode_menu_cause_ir</item>
+        <item>@string/tv_menu_service_mode_menu_keypad</item>
+        <item>@string/tv_menu_service_mode_menu_sleep_timer</item>
+        <item>@string/tv_menu_service_mode_menu_no_signal</item>
+    </string-array>
+    <string-array name="main_menu_item_names">
+        <item>@string/main_menu_item_content_list</item>
+        <item>@string/main_menu_item_multimedia</item>
+        <item>@string/main_menu_item_applications</item>
+        <item>@string/main_menu_item_input_selection</item>
+        <item>@string/main_menu_item_google_play</item>
+        <item>@string/main_menu_item_settings</item>
+    </string-array>
+    <string-array name="main_menu_item_names_tv_features">
+        <item>@string/main_menu_item_content_list</item>
+        <item>@string/main_menu_item_multimedia</item>
+        <item>@string/main_menu_item_applications</item>
+        <item>@string/main_menu_item_google_play</item>
+        <item>@string/main_menu_item_settings</item>
+    </string-array>
+    <string-array name="channel_installation_table_type">
+        <item>@string/table_type_sdt</item>
+        <item>@string/table_type_hrc</item>
+        <item>@string/table_type_irc</item>
+    </string-array>
+    <string-array name="channel_installation_channel_tuning_mode">
+        <item>@string/tuning_mode_digital</item>
+        <item>@string/tuning_mode_analog</item>
+    </string-array>
+    <string name="main_menu_item_content_list">Innehåll lista</string>
+    <string name="main_menu_item_multimedia">Multimedia</string>
+    <string name="main_menu_item_applications">Tillämpningar</string>
+    <string name="main_menu_item_input_selection">Val av ingång</string>
+    <string name="main_menu_item_google_play">Google Play</string>
+    <string name="main_menu_item_settings">Inställningar</string>
+    <string name="table_type_sdt">SDT</string>
+    <string name="table_type_hrc">HRC</string>
+    <string name="table_type_irc">IRC</string>
+    <string name="tuning_mode_digital">Digital</string>
+    <string name="tuning_mode_analog">Analog</string>
+    <string-array name="settings_menu_item_names">
+        <item>@string/settings_menu_item_tv_settings</item>
+        <item>@string/settings_menu_item_network</item>
+        <item>@string/settings_menu_item_time_and_date</item>
+        <item>@string/settings_menu_item_language_and_keyboard</item>
+        <item>@string/settings_menu_item_input_devices</item>
+        <item>@string/settings_menu_item_applications</item>
+        <item>@string/settings_menu_item_exteral_and_local_file_storage</item>
+        <item>@string/settings_menu_item_account_and_sync</item>
+        <item>@string/settings_menu_item_voice_input</item>
+        <item>@string/settings_menu_item_dlna</item>
+        <item>@string/settings_menu_item_product_info</item>
+        <item>@string/settings_menu_item_software_update</item>
+        <item>@string/settings_menu_item_energy_save</item>
+        <item>@string/settings_menu_item_factory_reset</item>
+        <item>@string/settings_menu_item_timer</item>
+    </string-array>
+    <string-array name="settings_menu_item_names_no_tv_features">
+        <item>@string/settings_menu_item_tv_settings</item>
+        <item>@string/settings_menu_item_network</item>
+        <item>@string/settings_menu_item_time_and_date</item>
+        <item>@string/settings_menu_item_language_and_keyboard</item>
+        <item>@string/settings_menu_item_applications</item>
+        <item>@string/settings_menu_item_exteral_and_local_file_storage</item>
+        <item>@string/settings_menu_item_account_and_sync</item>
+        <item>@string/settings_menu_item_dlna</item>
+        <item>@string/settings_menu_item_product_info</item>
+        <item>@string/settings_menu_item_software_update</item>
+        <item>@string/settings_menu_item_factory_reset</item>
+        <item>@string/settings_menu_item_timer</item>
+    </string-array>
+    <string-array name="settings_menu_item_names_no_dlna">
+        <item>@string/settings_menu_item_tv_settings</item>
+        <item>@string/settings_menu_item_network</item>
+        <item>@string/settings_menu_item_time_and_date</item>
+        <item>@string/settings_menu_item_language_and_keyboard</item>
+        <item>@string/settings_menu_item_input_devices</item>
+        <item>@string/settings_menu_item_applications</item>
+        <item>@string/settings_menu_item_exteral_and_local_file_storage</item>
+        <item>@string/settings_menu_item_account_and_sync</item>
+        <item>@string/settings_menu_item_voice_input</item>
+        <item>@string/settings_menu_item_product_info</item>
+        <item>@string/settings_menu_item_software_update</item>
+        <item>@string/settings_menu_item_energy_save</item>
+        <item>@string/settings_menu_item_factory_reset</item>
+        <item>@string/settings_menu_item_timer</item>
+    </string-array>
+    <string-array name="settings_menu_item_names_no_dlna_no_tv_features">
+        <item>@string/settings_menu_item_tv_settings</item>
+        <item>@string/settings_menu_item_network</item>
+        <item>@string/settings_menu_item_time_and_date</item>
+        <item>@string/settings_menu_item_language_and_keyboard</item>
+        <item>@string/settings_menu_item_applications</item>
+        <item>@string/settings_menu_item_exteral_and_local_file_storage</item>
+        <item>@string/settings_menu_item_account_and_sync</item>
+        <item>@string/settings_menu_item_product_info</item>
+        <item>@string/settings_menu_item_software_update</item>
+        <item>@string/settings_menu_item_factory_reset</item>
+        <item>@string/settings_menu_item_timer</item>
+    </string-array>
+    <string name="settings_menu_item_tv_settings">TV-inställningar</string>
+    <string name="settings_menu_item_network">Nätverk</string>
+    <string name="settings_menu_item_time_and_date">Tid och datum</string>
+    <string name="settings_menu_item_language_and_keyboard">Språk och tangentbord</string>
+    <string name="settings_menu_item_input_devices">Inmatningsenheter</string>
+    <string name="settings_menu_item_applications">Tillämpningar</string>
+    <string name="settings_menu_item_exteral_and_local_file_storage">Fillagring</string>
+    <string name="settings_menu_item_account_and_sync">Konto och synkronisering</string>
+    <string name="settings_menu_item_voice_input">Voice Input</string>
+    <string name="settings_menu_item_dlna">DLNA</string>
+    <string name="settings_menu_item_product_info">Produktinfo</string>
+    <string name="settings_menu_item_software_update">Programuppdatering</string>
+    <string name="settings_menu_item_energy_save">Energispar</string>
+    <string name="settings_menu_item_factory_reset">Fabriksåterställning</string>
+    <string name="settings_menu_item_timer">Timers</string>
+    <string-array name="tv_settings_menu_item_names">
+        <item>@string/tv_settings_menu_item_channel_installation</item>
+        <item>@string/tv_settings_menu_item_security</item>
+        <item>@string/tv_settings_menu_item_sound_settings</item>
+        <item>@string/tv_settings_menu_item_picture_settings</item>
+        <item>@string/tv_settings_menu_item_subtitles</item>
+        <item>@string/tv_settings_menu_hbb_settings</item>
+        <item>@string/tv_settings_menu_item_teletext</item>
+        <item>@string/tv_settings_menu_item_pvr</item>
+        <item>@string/tv_settings_menu_item_store_mode</item>
+        <item>@string/tv_settings_menu_item_screensaver</item>
+        <item>@string/tv_settings_menu_ci_settings</item>
+        <item>@string/tv_settings_menu_osd_selection</item>
+        <item>@string/tv_settings_menu_pip_settings</item>
+    </string-array>
+    <string-array name="tv_settings_menu_item_names_no_hbb">
+        <item>@string/tv_settings_menu_item_channel_installation</item>
+        <item>@string/tv_settings_menu_item_security</item>
+        <item>@string/tv_settings_menu_item_sound_settings</item>
+        <item>@string/tv_settings_menu_item_picture_settings</item>
+        <item>@string/tv_settings_menu_item_subtitles</item>
+        <item>@string/tv_settings_menu_item_teletext</item>
+        <item>@string/tv_settings_menu_item_pvr</item>
+        <item>@string/tv_settings_menu_item_store_mode</item>
+        <item>@string/tv_settings_menu_item_screensaver</item>
+        <item>@string/tv_settings_menu_ci_settings</item>
+        <item>@string/tv_settings_menu_osd_selection</item>
+        <item>@string/tv_settings_menu_pip_settings</item>
+    </string-array>
+    <string name="tv_settings_menu_item_channel_installation">Installation Kanal</string>
+    <string name="tv_settings_menu_item_security">Säkerhet</string>
+    <string name="tv_settings_menu_item_sound_settings">Ljudinställningar</string>
+    <string name="tv_settings_menu_item_picture_settings">Bildinställningar</string>
+    <string name="tv_settings_menu_item_subtitles">Undertexter</string>
+    <string name="tv_settings_menu_hbb_settings">HBB Inställningar</string>
+    <string name="tv_settings_menu_item_teletext">Text-TV</string>
+    <string name="tv_settings_menu_item_pvr">PVR</string>
+    <string name="tv_settings_menu_item_store_mode">Affär-läge</string>
+    <string name="tv_settings_menu_item_screensaver">Skärmsläckare</string>
+    <string name="tv_settings_menu_ci_settings">CI Inställningar</string>
+    <string name="tv_settings_menu_osd_selection">OSD Konfiguration</string>
+    <string name="tv_settings_menu_pip_settings">PIP Inställningar</string>
+    <string-array name="security_settings_menu_item_names">
+        <item>@string/security_settings_menu_item_parential_guidance</item>
+        <item>@string/security_settings_menu_item_security</item>
+        <item>@string/security_settings_menu_item_program_blocking</item>
+    </string-array>
+    <string name="security_settings_menu_item_parential_guidance">Parental Guidance</string>
+    <string name="security_settings_menu_item_security">Password</string>
+    <string name="security_settings_menu_item_program_blocking">Program Blocking</string>
+    <string-array name="main_menu_item_description">
+        <item>@string/main_menu_description_content_list</item>
+        <item>@string/main_menu_description_multimedia</item>
+        <item>@string/main_menu_description_applications</item>
+        <item>@string/main_menu_description_input_selection</item>
+        <item>@string/main_menu_description_google_play</item>
+        <item>@string/main_menu_description_settings</item>
+    </string-array>
+    <string-array name="main_menu_item_description_no_tv_features">
+        <item>@string/main_menu_description_content_list</item>
+        <item>@string/main_menu_description_multimedia</item>
+        <item>@string/main_menu_description_applications</item>
+        <item>@string/main_menu_description_google_play</item>
+        <item>@string/main_menu_description_settings</item>
+    </string-array>
+    <string name="main_menu_description_content_list">Innehåll lista</string>
+    <string name="main_menu_description_multimedia">Multimedia</string>
+    <string name="main_menu_description_applications">Tillämpningar</string>
+    <string name="main_menu_description_input_selection">Val av ingång</string>
+    <string name="main_menu_description_google_play">Google Play</string>
+    <string name="main_menu_description_settings">Enhetsinställningar</string>
+    <string-array name="settings_menu_description_names_description">
+        <item>@string/settings_menu_description_tv_settings</item>
+        <item>@string/settings_menu_description_network</item>
+        <item>@string/settings_menu_description_time_and_date</item>
+        <item>@string/settings_menu_description_language_and_keyboard</item>
+        <item>@string/settings_menu_description_input_devices</item>
+        <item>@string/settings_menu_description_applications</item>
+        <item>@string/settings_menu_description_exteral_and_local_file_storage</item>
+        <item>@string/settings_menu_description_account_and_sync</item>
+        <item>@string/settings_menu_description_voice_input</item>
+        <item>@string/settings_menu_description_dlna</item>
+        <item>@string/settings_menu_description_product_info</item>
+        <item>@string/settings_menu_description_software_update</item>
+        <item>@string/settings_menu_description_energy_save</item>
+        <item>@string/settings_menu_description_factory_reset</item>
+        <item>@string/settings_menu_description_timer</item>
+    </string-array>
+    <string-array name="settings_menu_description_names_description_no_tv_features">
+        <item>@string/settings_menu_description_tv_settings</item>
+        <item>@string/settings_menu_description_network</item>
+        <item>@string/settings_menu_description_time_and_date</item>
+        <item>@string/settings_menu_description_language_and_keyboard</item>
+        <item>@string/settings_menu_description_applications</item>
+        <item>@string/settings_menu_description_exteral_and_local_file_storage</item>
+        <item>@string/settings_menu_description_account_and_sync</item>
+        <item>@string/settings_menu_description_dlna</item>
+        <item>@string/settings_menu_description_product_info</item>
+        <item>@string/settings_menu_description_software_update</item>
+        <item>@string/settings_menu_description_factory_reset</item>
+        <item>@string/settings_menu_description_timer</item>
+    </string-array>
+    <string-array name="settings_menu_description_names_description_no_dlna">
+        <item>@string/settings_menu_description_tv_settings</item>
+        <item>@string/settings_menu_description_network</item>
+        <item>@string/settings_menu_description_time_and_date</item>
+        <item>@string/settings_menu_description_language_and_keyboard</item>
+        <item>@string/settings_menu_description_input_devices</item>
+        <item>@string/settings_menu_description_applications</item>
+        <item>@string/settings_menu_description_exteral_and_local_file_storage</item>
+        <item>@string/settings_menu_description_account_and_sync</item>
+        <item>@string/settings_menu_description_voice_input</item>
+        <item>@string/settings_menu_description_product_info</item>
+        <item>@string/settings_menu_description_software_update</item>
+        <item>@string/settings_menu_description_energy_save</item>
+        <item>@string/settings_menu_description_factory_reset</item>
+        <item>@string/settings_menu_description_timer</item>
+    </string-array>
+    <string-array name="settings_menu_description_names_description_no_dlna_no_tv_features">
+        <item>@string/settings_menu_description_tv_settings</item>
+        <item>@string/settings_menu_description_network</item>
+        <item>@string/settings_menu_description_time_and_date</item>
+        <item>@string/settings_menu_description_language_and_keyboard</item>
+        <item>@string/settings_menu_description_applications</item>
+        <item>@string/settings_menu_description_exteral_and_local_file_storage</item>
+        <item>@string/settings_menu_description_account_and_sync</item>
+        <item>@string/settings_menu_description_product_info</item>
+        <item>@string/settings_menu_description_software_update</item>
+        <item>@string/settings_menu_description_factory_reset</item>
+        <item>@string/settings_menu_description_timer</item>
+    </string-array>
+    <string name="settings_menu_description_tv_settings">TV-inställningar</string>
+    <string name="settings_menu_description_network">Wifi och nätverksinställningar</string>
+    <string name="settings_menu_description_time_and_date">Tid och datum</string>
+    <string name="settings_menu_description_language_and_keyboard">Språk och tangentbord</string>
+    <string name="settings_menu_description_input_devices">Ingångar Ledning</string>
+    <string name="settings_menu_description_applications">Applikationer Inställningar</string>
+    <string name="settings_menu_description_exteral_and_local_file_storage">Fillagring Inställningar</string>
+    <string name="settings_menu_description_account_and_sync">Konto och synkronisering</string>
+    <string name="settings_menu_description_dlna">DLNA Inställningar</string>
+    <string name="settings_menu_description_voice_input">Röstinställningar</string>
+    <string name="settings_menu_description_product_info">Information om produkten</string>
+    <string name="settings_menu_description_software_update">Programuppdatering Förvaltning</string>
+    <string name="settings_menu_description_energy_save">Energibesparing Förvaltning</string>
+    <string name="settings_menu_description_factory_reset">Återställ Ledning</string>
+    <string name="settings_menu_description_timer">Timers</string>
+    <string-array name="tv_settings_menu_description_names">
+        <item>@string/tv_settings_menu_description_channel_installation</item>
+        <item>@string/tv_settings_menu_description_security</item>
+        <item>@string/tv_settings_menu_description_sound_settings</item>
+        <item>@string/tv_settings_menu_description_picture_settings</item>
+        <item>@string/tv_settings_menu_description_subtitles</item>
+        <item>@string/tv_settings_menu_description_hbb_settings</item>
+        <item>@string/tv_settings_menu_description_teletext</item>
+        <item>@string/tv_settings_menu_description_pvr</item>
+        <item>@string/tv_settings_menu_description_store_mode</item>
+        <item>@string/tv_settings_menu_description_screensaver</item>
+        <item>@string/tv_settings_menu_description_ci_settings</item>
+        <item>@string/tv_settings_menu_description_osd_selection</item>
+        <item>@string/tv_settings_menu_description_pip_settings</item>
+    </string-array>
+    <string-array name="tv_settings_menu_description_names_no_hbb">
+        <item>@string/tv_settings_menu_description_channel_installation</item>
+        <item>@string/tv_settings_menu_description_security</item>
+        <item>@string/tv_settings_menu_description_sound_settings</item>
+        <item>@string/tv_settings_menu_description_picture_settings</item>
+        <item>@string/tv_settings_menu_description_subtitles</item>
+        <item>@string/tv_settings_menu_description_teletext</item>
+        <item>@string/tv_settings_menu_description_pvr</item>
+        <item>@string/tv_settings_menu_description_store_mode</item>
+        <item>@string/tv_settings_menu_description_screensaver</item>
+        <item>@string/tv_settings_menu_description_ci_settings</item>
+    </string-array>
+    <string name="tv_settings_menu_description_channel_installation">Kanalinstallationsinställningar</string>
+    <string name="tv_settings_menu_description_security">Säkerhetsinställningar</string>
+    <string name="tv_settings_menu_description_sound_settings">Ljudinställningar</string>
+    <string name="tv_settings_menu_description_picture_settings">Skärm-och bildinställningar</string>
+    <string name="tv_settings_menu_description_subtitles">Undertext Inställningar</string>
+    <string name="tv_settings_menu_description_hbb_settings">HBB Inställningar</string>
+    <string name="tv_settings_menu_description_teletext">Text-TV-inställningar</string>
+    <string name="tv_settings_menu_description_pvr">PVR-menyn</string>
+    <string name="tv_settings_menu_description_store_mode">Lagra Inställningar för</string>
+    <string name="tv_settings_menu_description_screensaver">Inställningar för skärmsläckaren</string>
+    <string name="tv_settings_menu_description_ci_settings">CI Inställningar</string>
+    <string name="tv_settings_menu_description_osd_selection">OSD Konfiguration</string>
+    <string name="tv_settings_menu_description_pip_settings">PIP Inställningar</string>
+    <string-array name="security_settings_menu_description_names">
+        <item>@string/security_settings_menu_description_parential_guidance</item>
+        <item>@string/security_settings_menu_description_security</item>
+        <item>@string/security_settings_menu_description_program_blocking</item>
+    </string-array>
+    <string name="security_settings_menu_description_parential_guidance">Parental Guidance Settings</string>
+    <string name="security_settings_menu_description_security">Password Settings</string>
+    <string name="security_settings_menu_description_program_blocking">Manage Program Blocking</string>
+    <string name="channel_search_number_of_dtv_services">Number of DTV services:</string>
+    <string name="channel_search_number_of_radio_services">Radio services:</string>
+    <string name="channel_search_number_of_data_services">Data services:</string>
+    <string name="channel_search_scanning">Scanning for channels, please wait</string>
+    <string name="scan_finished">Scan finished!</string>
+    <string name="scan_not_available_for_ip">Not available for IP channels!</string>
+    <string name="add_to_favourites">Add to favorites</string>
+    <string name="remove_from_favourites">Remove from favorites</string>
+    <string name="remove_from_schedulue">Remove from schedule list</string>
+    <string name="remove_from_pvr_record">Remove file from list</string>
+    <string name="remove_all_files_from_list">Remove all files from list</string>
+    <string name="remove_from_recently">Remove from recently list</string>
+    <string name="remove_from_reminders">Cancel reminder</string>
+    <string name="play_in_full_screen">Play in full screen</string>
+    <string name="play_in_pip">Play in PiP</string>
+    <string name="play_in_pap">Play in PAP</string>
+    <string name="lock_channel">Lock</string>
+    <string name="unlock_channel">Unlock</string>
+    <string name="enable_input">Enable</string>
+    <string name="disable_input">Disable</string>
+    <string name="rename_content">Rename</string>
+    <string name="cancel">Cancel</string>
+    <string name="cant_remove_from_recently">Active content can\'t be removed!</string>
+    <string-array name="add_to_favourites_dropdown">
+        <item>@string/add_to_favourites</item>
+        <item>@string/cancel</item>
+    </string-array>
+    <string-array name="remove_from_favourites_dropdown">
+        <item>@string/remove_from_favourites</item>
+        <item>@string/cancel</item>
+    </string-array>
+    <string-array name="add_to_favourites_remove_from_recenlty_dropdown">
+        <item>@string/remove_from_recently</item>
+        <item>@string/add_to_favourites</item>
+        <item>@string/cancel</item>
+    </string-array>
+    <string-array name="remove_from_schedule_dropdown">
+        <item>@string/remove_from_schedulue</item>
+        <item>@string/cancel</item>
+    </string-array>
+    <string-array name="remove_from_pvr_list_dropdown">
+        <item>@string/add_to_favourites</item>
+        <item>@string/remove_from_pvr_record</item>
+        <item>@string/remove_all_files_from_list</item>
+        <item>@string/cancel</item>
+    </string-array>
+    <string-array name="renderer_video_play_mode_dropdown">
+        <item>@string/play_in_full_screen</item>
+        <item>@string/play_in_pip</item>
+        <item>@string/play_in_pap</item>
+        <item>@string/cancel</item>
+    </string-array>
+    <string-array name="renderer_play_mode_dropdown">
+        <item>@string/play</item>
+        <item>@string/cancel</item>
+    </string-array>
+    <string-array name="reminders_dropdown">
+        <item>@string/remove_from_reminders</item>
+        <item>@string/cancel</item>
+    </string-array>
+    <string name="subtitle_dialog_open">Subtitle show</string>
+    <string name="subtitle_dialog_close">Subtitle hide</string>
+    <string name="unknown">Unknown</string>
+    <string name="no_signal">No signal available!</string>
+    <string name="close">Close!</string>
+    <string name="scrambled">Scrambled service!</string>
+    <string name="locked">Locked service!</string>
+    <string name="parental_control_activated">Under parental control!</string>
+    <string name="radio">Radio service!</string>
+    <string name="data_service">Data service!</string>
+    <string name="parental_control_title">Parental control</string>
+    <string name="parental_control_enter_pin">Enter PIN code:</string>
+    <string name="parental_control_enter_pin_hint">Enter PIN code</string>
+    <string name="parental_control_ok">Ok</string>
+    <!-- Renderer -->
+    <string name="dlna_renderer_play_file_from_controller">Do you want to play file?</string>
+    <string name="dlna_renderer_wrong_extension">File with this extension cannot be played!</string>
+    <string name="dlna_multimedia_decoding_error">This file can not be played!</string>
+    <string name="dlna_renderer_play">Renderer Play</string>
+    <string name="dlna_renderer_pause">Renderer Pause</string>
+    <string name="dlna_renderer_stop">Renderer Stop</string>
+    <!-- DLNA -->
+    <string name="dlna_playback_no_next_file">There is no next file!</string>
+    <string name="dlna_playback_no_previous_file">There is no previous file!</string>
+    <string name="dlna_media_server_died">Media server died!</string>
+    <!-- PVR -->
+    <string name="pvr_no_usb">Please, input USB-drive first!</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+    <string name="fast_forward">Fast Forward</string>
+    <string name="rewind">Rewind</string>
+    <string name="record">Recording</string>
+    <string name="shedule_record">Schedule Recording</string>
+    <string name="prepare_record">Preparing Record</string>
+    <string name="pvr_not_possible_to_zapp">Not possible to change channel in recording mode!</string>
+    <string name="pvr_warning_disk_full">WARNING: There is only 10% disc space left unused</string>
+    <string name="pvr_disk_full">Disk is Full</string>
+    <string name="pvr_low_disk_space">Low Disk Space</string>
+    <string name="menu_not_possible_to_zapp">Not possible to enter Menu in recording mode!</string>
+    <string name="pvr_disabled">PVR features are disabled!</string>
+    <string name="timeshift_disabled">Timeshift feature is disabled!</string>
+    <string name="action_is_not_available">Action isn\'t available in this mode!</string>
+    <!-- Time shift -->
+    <string name="play_timeshift">Timeshift Play</string>
+    <string name="pause_timeshift">Timeshift Pause</string>
+    <string name="fast_forward_timeshift">Timeshift FF</string>
+    <string name="rewind_timeshift">Timeshift RW</string>
+    <string name="prepare_timeshift">Preparing TimeShift</string>
+    <!-- Subtitle languages -->
+    <string name="subtitle_language_none">None</string>
+    <!-- Parental guidence -->
+    <string name="wrong_pin_entered">Wrong pin entered!</string>
+    <string name="now">Now:</string>
+    <string name="next">Next:</string>
+    <string name="error_while_decoding_image">Error while decoding image!</string>
+    <string name="app_recreate">Application will be recreated!</string>
+    <string name="pvr_schedule_start_message">PVR Schedule mode entered.</string>
+    <!-- Info banner -->
+    <string name="infobaner_channel_name">120. Animal Planet</string>
+    <string name="infobaner_channel_progress_start">1:45:00</string>
+    <string name="infobaner_channel_progress_duraion">1h 20min</string>
+    <string name="infobaner_channel_current">Dance Hits 80\'s</string>
+    <string name="infobaner_short_description">Short Description</string>
+    <string name="infobaner_time">8:00/9:20</string>
+    <string name="infobaner_long_description">South Park is an American animated sitcom created by Trey Parker and Matt Stone for the Comedy Central television net. South Park is an American animated sitcom created by Trey Parker and Matt Stone for the Comedy Central television net. South Park is an American animated sitcom created by Trey Parker and Matt Stone for the Comedy Central television net.South Park is an American animated sitcom created by Trey Parker and Matt Stone for the Comedy Central television net. South Park is an American animated sitcom created by Trey Parker and Matt Stone for the Comedy Central television net. South Park is an American animated sitcom created by Trey Parker and Matt Stone for the Comedy Central television net.</string>
+    <string name="infobaner_teletex">TTX</string>
+    <string name="infobaner_subtitle">SUB</string>
+    <string name="infobaner_hd">HD</string>
+    <string name="infobaner_audio">AUD</string>
+    <string name="infobaner_time_from_stream">10:43 AM</string>
+    <string name="infobaner_date_from_stream">2013/09/13</string>
+    <string name="infobaner_date_epg_error">Error while getting EPG information.</string>
+    <string name="elapsed">"Elapsed:"</string>
+    <string name="progress_start_time">"00:00:00"</string>
+    <string name="recording">Recording: </string>
+    <string name="playing">Playing: </string>
+    <string name="resolution">Resolution : </string>
+    <string name="frame_rate">Frame Rate :</string>
+    <string name="curl_view_enabled_success">Curl banner enabled success</string>
+    <string name="info_banner_enabled_success">Standard Info banner enabled success</string>
+    <string name="change_curl">Are you sure you want to change curl?</string>
+    <string name="curl_enabled_success">Curl change success</string>
+</resources>

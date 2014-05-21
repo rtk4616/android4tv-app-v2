@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentListItemMainLayoutOut"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:weightSum="2" >
+    <!-- Item 1 -->
+    <LinearLayout
+        android:id="@+id/contentListItemMainLayoutInner1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/content_list_item_selector"
+        android:orientation="vertical"
+        android:weightSum="4" >
+        <!-- Content info bar -->
+        <LinearLayout
+            android:id="@+id/contentInfoBarContainer1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4.1" >
+            <ImageView
+                android:id="@+id/contentFilterTypeImage1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/t_filter_selector" />
+            <com.iwedia.gui.components.A4TVTextView
+                android:id="@+id/contentListItemText1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:textColor="@drawable/content_list_item_text_selector"
+                android:textSize="@dimen/content_item_text_size" />
+            <ImageView
+                android:id="@+id/contentDividerSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"
+                android:src="@drawable/vertical_divider_small" />
+        </LinearLayout>
+        <!-- Image and index -->
+        <LinearLayout
+            android:id="@+id/contentContentContainer1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:weightSum="4.1" >
+            <!-- Frame -->
+            <FrameLayout
+                android:id="@+id/contentContentFrame1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4" >
+                <!-- Content image -->
+                <ImageView
+                    android:id="@+id/contentListItemImage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/s_non_select" />
+                <!-- Index if there is no image -->
+                <com.iwedia.gui.components.A4TVTextView
+                    android:id="@+id/contentIndexText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/content_list_text_blue"
+                    android:textSize="@dimen/content_list_no_image_index"
+                    android:textStyle="bold"
+                    android:visibility="visible" >
+                </com.iwedia.gui.components.A4TVTextView>
+                <!-- Name if there is no image -->
+                <com.iwedia.gui.components.A4TVTextView
+                    android:id="@+id/contentNameText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textSize="@dimen/content_list_no_image_name"
+                    android:textStyle="bold"
+                    android:visibility="visible" >
+                </com.iwedia.gui.components.A4TVTextView>
+            </FrameLayout>
+            <!-- Big divider -->
+            <ImageView
+                android:id="@+id/contentDividerBig1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|right"
+                android:layout_weight="0.1"
+                android:src="@drawable/vertical_divider_big" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- Item 2 -->
+    <LinearLayout
+        android:id="@+id/contentListItemMainLayoutInner2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/content_list_item_selector"
+        android:orientation="vertical"
+        android:weightSum="4" >
+        <!-- Content info bar -->
+        <LinearLayout
+            android:id="@+id/contentInfoBarContainer2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4.1" >
+            <ImageView
+                android:id="@+id/contentFilterTypeImage2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/t_filter_selector" />
+            <com.iwedia.gui.components.A4TVTextView
+                android:id="@+id/contentListItemText2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:textColor="@drawable/content_list_item_text_selector"
+                android:textSize="@dimen/content_item_text_size" />
+            <ImageView
+                android:id="@+id/contentDividerSmall2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"
+                android:src="@drawable/vertical_divider_small" />
+        </LinearLayout>
+        <!-- Image and index -->
+        <LinearLayout
+            android:id="@+id/contentContentContainer2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:weightSum="4.1" >
+            <!-- Frame -->
+            <FrameLayout
+                android:id="@+id/contentContentFrame2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4" >
+                <!-- Content image -->
+                <ImageView
+                    android:id="@+id/contentListItemImage2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/s_non_select" />
+                <!-- Index if there is no image -->
+                <com.iwedia.gui.components.A4TVTextView
+                    android:id="@+id/contentIndexText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/content_list_text_blue"
+                    android:textSize="@dimen/content_list_no_image_index"
+                    android:textStyle="bold"
+                    android:visibility="visible" >
+                </com.iwedia.gui.components.A4TVTextView>
+                <!-- Name if there is no image -->
+                <com.iwedia.gui.components.A4TVTextView
+                    android:id="@+id/contentNameText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textSize="@dimen/content_list_no_image_name"
+                    android:textStyle="bold"
+                    android:visibility="visible" >
+                </com.iwedia.gui.components.A4TVTextView>
+                <!-- Scrambled channel -->
+            </FrameLayout>
+            <!-- Big divider -->
+            <ImageView
+                android:id="@+id/contentDividerBig2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|right"
+                android:layout_weight="0.1"
+                android:src="@drawable/vertical_divider_big" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+EURO#rtp://239.186.54.15:49310
+VerimatrixScrambled#rtp://239.186.54.16:49310
+SWISS#rtp://239.168.227.35:5004
+Animal Planet#http://178.49.132.73/streaming/animalplanet/tvrec/playlist.m3u8 
+NASA#http://www.nasa.gov/multimedia/nasatv/NTV-Public-IPS.m3u8
+ALU1#alu:rtp://239.186.68.1:10000
+ALU2#alu:rtp://239.186.68.2:10000

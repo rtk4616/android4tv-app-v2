@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="android4tv">
+        <!-- View styles -->
+        <attr name="A4TVtexViewProps" format="reference" />
+        <attr name="A4TVDialog" format="reference" />
+        <attr name="A4TVDialogTransparent" format="reference" />
+        <attr name="A4TVDialogContext" format="reference" />
+        <!-- <attr name="A4TVEditText" format="reference" /> -->
+        <attr name="A4TVSpinner" format="reference" />
+        <attr name="A4TVDot" format="reference" />
+        <attr name="A4TVSwitchButton" format="reference" />
+        <!-- Dialog items -->
+        <attr name="DialogSmallUpperDividerLine" format="reference" />
+        <attr name="DialogSmallDividerLine" format="reference" />
+        <attr name="DialogContextDividerLine" format="reference" />
+        <attr name="DialogContextBackground" format="reference" />
+        <attr name="LayoutFocusDrawable" format="reference" />
+        <!-- Main menu -->
+        <attr name="MainMenuDescriptionBackground" format="reference" />
+        <attr name="MainMenuStripeBackground" format="reference" />
+        <attr name="MainMenuSelectionBoxBackground" format="reference" />
+        <!-- Icons lists for main menu -->
+        <attr name="MainMenuIconsListsMain0" format="reference" />
+        <attr name="MainMenuIconsListsMain1" format="reference" />
+        <attr name="MainMenuIconsListsMain2" format="reference" />
+        <attr name="MainMenuIconsListsMain3" format="reference" />
+        <attr name="MainMenuIconsListsMain4" format="reference" />
+        <attr name="MainMenuIconsListsMain5" format="reference" />
+        <attr name="MainMenuIconsListsSubSettings0" format="reference" />
+        <attr name="MainMenuIconsListsSubSettings1" format="reference" />
+        <attr name="MainMenuIconsListsSubSettings2" format="reference" />
+        <attr name="MainMenuIconsListsSubSettings3" format="reference" />
+        <attr name="MainMenuIconsListsSubSettings4" format="reference" />
+        <attr name="MainMenuIconsListsSubSettings5" format="reference" />
+        <attr name="MainMenuIconsListsSubSettings6" format="reference" />
+        <attr name="MainMenuIconsListsSubSettings7" format="reference" />
+        <attr name="MainMenuIconsListsSubSettings8" format="reference" />
+        <attr name="MainMenuIconsListsSubSettings9" format="reference" />
+        <attr name="MainMenuIconsListsSubSettings10" format="reference" />
+        <attr name="MainMenuIconsListsSubSettings11" format="reference" />
+        <attr name="MainMenuIconsListsSubSettings12" format="reference" />
+        <attr name="MainMenuIconsListsSubSettings13" format="reference" />
+        <attr name="MainMenuIconsListsSubSettings14" format="reference" />
+        <attr name="MainMenuIconsListsTVSettings0" format="reference" />
+        <attr name="MainMenuIconsListsTVSettings1" format="reference" />
+        <attr name="MainMenuIconsListsTVSettings2" format="reference" />
+        <attr name="MainMenuIconsListsTVSettings3" format="reference" />
+        <attr name="MainMenuIconsListsTVSettings4" format="reference" />
+        <attr name="MainMenuIconsListsTVSettings5" format="reference" />
+        <attr name="MainMenuIconsListsTVSettings6" format="reference" />
+        <attr name="MainMenuIconsListsTVSettings7" format="reference" />
+        <attr name="MainMenuIconsListsTVSettings8" format="reference" />
+        <attr name="MainMenuIconsListsTVSettings9" format="reference" />
+        <attr name="MainMenuIconsListsTVSettings10" format="reference" />
+        <attr name="MainMenuIconsListsTVSettings11" format="reference" />
+        <attr name="MainMenuIconsListsTVSettings12" format="reference" />
+        <attr name="MainMenuIconsListsSecuritySettings0" format="reference" />
+        <attr name="MainMenuIconsListsSecuritySettings1" format="reference" />
+        <attr name="MainMenuIconsListsSecuritySettings2" format="reference" />
+        <!-- EPG ITEMS -->
+        <attr name="Epg_gallery_background" format="reference" />
+        <attr name="Epg_button_selector" format="reference" />
+        <attr name="Epg_zoom_image" format="reference" />
+        <attr name="Epg_unzoom_image" format="reference" />
+    </declare-styleable>
+</resources>

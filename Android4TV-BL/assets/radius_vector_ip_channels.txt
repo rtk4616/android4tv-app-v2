@@ -1,0 +1,29 @@
+RTS 1#http://edge1.vektor.net/vektor_live/rts_1.stream/playlist.m3u8
+RTS 2#http://edge1.vektor.net/vektor_live/rts_2.stream/playlist.m3u8
+B92#http://edge1.vektor.net/vektor_live/b92.stream/playlist.m3u8
+B92 info#http://edge1.vektor.net/vektor_live/b92_info.stream/playlist.m3u8
+Prva#http://edge1.vektor.net/vektor_live/prva.stream/playlist.m3u8
+Pink#http://edge1.vektor.net/vektor_live/pink.stream/playlist.m3u8
+Pink 2#http://edge1.vektor.net/vektor_live/pink_2.stream/playlist.m3u8
+Pink Music#http://edge1.vektor.net/vektor_live/pink_music.stream/playlist.m3u8
+Pink Kids#http://edge1.vektor.net/vektor_live/pink_kids.stream/playlist.m3u8
+HRT 1#http://edge1.vektor.net/vektor_live/hrt_1.stream/playlist.m3u8
+HRT 2#http://edge1.vektor.net/vektor_live/hrt_2.stream/playlist.m3u8
+OBN#http://edge1.vektor.net/vektor_live/obn.stream/playlist.m3u8
+BN#http://edge1.vektor.net/vektor_live/bn.stream/playlist.m3u8
+RTRS#http://edge1.vektor.net/vektor_live/rtrs.stream/playlist.m3u8
+RTCG#http://edge1.vektor.net/vektor_live/rtcg.stream/playlist.m3u8
+KCN#http://edge1.vektor.net/vektor_live/kcn.stream/playlist.m3u8
+KCN 2#http://edge1.vektor.net/vektor_live/kcn_2.stream/playlist.m3u8
+KCN 3#http://edge1.vektor.net/vektor_live/kcn_3.stream/playlist.m3u8
+DM#http://edge1.vektor.net/vektor_live/dm_sat.stream/playlist.m3u8
+SOS#http://edge1.vektor.net/vektor_live/sos.stream/playlist.m3u8
+Studio B#http://edge1.vektor.net/vektor_live/studio_b.stream/playlist.m3u8
+RTV#http://edge1.vektor.net/vektor_live/rtv_1.stream/playlist.m3u8
+Happy#http://edge1.vektor.net/vektor_live/happy.stream/playlist.m3u8
+CNN#http://edge1.vektor.net/vektor_live/cnn.stream/playlist.m3u8
+Travel#http://edge1.vektor.net/vektor_live/.stream/playlist.m3u8
+Fashion TV#http://edge1.vektor.net/vektor_live/fashion_tv.stream/playlist.m3u8
+MTV#http://edge1.vektor.net/vektor_live/mtv.stream/playlist.m3u8
+BALKANIKA#http://edge1.vektor.net/vektor_live/balkanika.stream/playlist.m3u8
+PALMA+#http://edge1.vektor.net/vektor_live/palma_plus.stream/playlist.m3u8

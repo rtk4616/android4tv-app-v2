@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentListMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_list_black_background"
+    android:orientation="vertical"
+    android:weightSum="28.5" >
+    <!-- Top banner -->
+    <LinearLayout
+        android:id="@+id/contentListTopBanner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/top_banner_background"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="3.4" >
+        <!-- Text and icon -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1.5"
+            android:orientation="horizontal"
+            android:weightSum="8" >
+            <ImageView
+                android:id="@+id/contentListIcon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginTop="@dimen/padding_small"
+                android:layout_weight="1"
+                android:src="@drawable/channel_installation" />
+            <com.iwedia.gui.components.A4TVTextView
+                android:id="@+id/contentListTopBannerText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="7"
+                android:gravity="left|center_vertical"
+                android:text="@string/tv_menu_channel_installation_settings_auto_tunning" >
+            </com.iwedia.gui.components.A4TVTextView>
+        </LinearLayout>
+        <!-- Filter options -->
+        <ImageView
+            android:id="@+id/arrowLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:src="@drawable/left_arrow_small" />
+        <HorizontalScrollView
+            android:id="@+id/contentFilterOptionsScroll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:scrollbars="@null" >
+            <LinearLayout
+                android:id="@+id/contentListInputFilterBanner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <!-- All button -->
+                <Button
+                    android:id="@+id/contentListInputFilterAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_small"
+                    android:layout_marginRight="@dimen/padding_small"
+                    android:background="@drawable/content_list_item_selector"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="@string/main_menu_content_list_filter_all"
+                    android:textColor="@drawable/content_list_item_text_selector"
+                    android:textSize="@dimen/a4tvdialog_textview_size" />
+                <ImageView
+                    android:id="@+id/contentDividerSmall11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/vertical_divider_small" />
+                <!-- DVB T -->
+                <Button
+                    android:id="@+id/contentListInputFilterDVBT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_small"
+                    android:layout_marginRight="@dimen/padding_small"
+                    android:background="@drawable/content_list_item_selector"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="@string/main_menu_content_list_dvb_t"
+                    android:textColor="@drawable/content_list_item_text_selector"
+                    android:textSize="@dimen/a4tvdialog_textview_size" />
+                <ImageView
+                    android:id="@+id/contentDividerSmall12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/vertical_divider_small" />
+                <!-- DVB S -->
+                <Button
+                    android:id="@+id/contentListInputFilterDVBS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_small"
+                    android:layout_marginRight="@dimen/padding_small"
+                    android:background="@drawable/content_list_item_selector"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="@string/main_menu_content_list_dvb_s"
+                    android:textColor="@drawable/content_list_item_text_selector"
+                    android:textSize="@dimen/a4tvdialog_textview_size" />
+                <ImageView
+                    android:id="@+id/contentDividerSmall13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/vertical_divider_small" />
+                <!-- DVB C -->
+                <Button
+                    android:id="@+id/contentListInputFilterDVBC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_small"
+                    android:layout_marginRight="@dimen/padding_small"
+                    android:background="@drawable/content_list_item_selector"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="@string/main_menu_content_list_dvb_c"
+                    android:textColor="@drawable/content_list_item_text_selector"
+                    android:textSize="@dimen/a4tvdialog_textview_size" />
+                <ImageView
+                    android:id="@+id/contentDividerSmall13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/vertical_divider_small" />
+                <!-- DVB C -->
+                <Button
+                    android:id="@+id/contentListInputFilterIP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_small"
+                    android:layout_marginRight="@dimen/padding_small"
+                    android:background="@drawable/content_list_item_selector"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="@string/main_menu_content_list_ip"
+                    android:textColor="@drawable/content_list_item_text_selector"
+                    android:textSize="@dimen/a4tvdialog_textview_size" />
+            </LinearLayout>
+        </HorizontalScrollView>
+        <ImageView
+            android:id="@+id/arrowRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:src="@drawable/right_arrow_small" >
+        </ImageView>
+    </LinearLayout>
+    <!-- Recently watched banner -->
+    <LinearLayout
+        android:id="@+id/contentListRecentlyWatched"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@drawable/bar"
+        android:orientation="horizontal" >
+        <com.iwedia.gui.components.A4TVTextView
+            android:id="@+id/contentListRecentlyWatchedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:layout_marginRight="@dimen/padding_small"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/channel_search_scanning"
+            android:textColor="#FFFF"
+            android:textSize="@dimen/content_list_banner_text_size" />
+    </LinearLayout>
+    <!-- Recently list -->
+    <LinearLayout
+        android:id="@+id/contentRecentlyListContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11.5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_large" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:id="@+id/linearLayoutForScannedFrequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/padding_extra_small"
+                android:layout_marginTop="@dimen/a4tvdialog_padding_top"
+                android:visibility="visible"
+                android:weightSum="10" >
+                <com.iwedia.gui.components.A4TVTextView
+                    android:id="@+id/aTVTextViewFr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:singleLine="true"
+                    android:text="@string/tv_menu_channel_installation_manual_tunning_settings_frequency_scan" />
+                <com.iwedia.gui.components.A4TVTextView
+                    android:id="@+id/aTVTextViewScannedFrequency"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_small"
+                    android:layout_weight="7" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/padding_extra_small"
+                android:weightSum="10" >
+                <com.iwedia.gui.components.A4TVTextView
+                    android:id="@+id/aTVTextViewStr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:singleLine="true"
+                    android:text="@string/tv_menu_channel_installation_manual_tunning_settings_signal_strength" />
+                <com.iwedia.gui.components.A4TVProgressBar
+                    android:id="@+id/aTVProgressBarSignalStrengthIndicator"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_small"
+                    android:layout_weight="7"
+                    android:thumb="@null" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/padding_extra_small"
+                android:weightSum="10" >
+                <com.iwedia.gui.components.A4TVTextView
+                    android:id="@+id/aTVTextViewQu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:singleLine="true"
+                    android:text="@string/tv_menu_channel_installation_manual_tunning_settings_signal_quality" />
+                <com.iwedia.gui.components.A4TVProgressBar
+                    android:id="@+id/aTVProgressBarSignalQualityIndicator"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_small"
+                    android:layout_weight="7"
+                    android:thumb="@null" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:weightSum="10" >
+                <com.iwedia.gui.components.A4TVTextView
+                    android:id="@+id/aTVTextViewSc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:singleLine="true"
+                    android:text="@string/tv_menu_channel_installation_scan_progress" />
+                <com.iwedia.gui.components.A4TVProgressBar
+                    android:id="@+id/aTVProgressBarScanProgress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_small"
+                    android:layout_weight="7"
+                    android:thumb="@null" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- All banner -->
+    <RelativeLayout
+        android:id="@+id/contentListAll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@drawable/bar"
+        android:orientation="horizontal" >
+        <com.iwedia.gui.components.A4TVTextView
+            android:id="@+id/aTVTextViewNu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:includeFontPadding="false"
+            android:text="@string/channel_search_number_of_dtv_services" />
+        <com.iwedia.gui.components.A4TVTextView
+            android:id="@+id/aTVTextViewNumberOfServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/aTVTextViewNu"
+            android:includeFontPadding="false"
+            android:text="@string/zero_number" />
+        <com.iwedia.gui.components.A4TVTextView
+            android:id="@+id/aTVTextViewRa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_extra_large"
+            android:layout_toRightOf="@id/aTVTextViewNumberOfServices"
+            android:includeFontPadding="false"
+            android:text="@string/channel_search_number_of_radio_services" />
+        <com.iwedia.gui.components.A4TVTextView
+            android:id="@+id/aTVTextViewNumberOfRadioServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/aTVTextViewRa"
+            android:includeFontPadding="false"
+            android:text="@string/zero_number" />
+        <com.iwedia.gui.components.A4TVTextView
+            android:id="@+id/aTVTextViewDa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_extra_large"
+            android:layout_toRightOf="@id/aTVTextViewNumberOfRadioServices"
+            android:includeFontPadding="false"
+            android:text="@string/channel_search_number_of_data_services" />
+        <com.iwedia.gui.components.A4TVTextView
+            android:id="@+id/aTVTextViewNumberOfDataServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/aTVTextViewDa"
+            android:includeFontPadding="false"
+            android:text="@string/zero_number" />
+    </RelativeLayout>
+    <!-- All list -->
+    <LinearLayout
+        android:id="@+id/contentAllListContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="26" >
+        <!-- Left arrow -->
+        <ImageView
+            android:id="@+id/contentListLeftArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/left_arrow_big" />
+        <!-- Recently watched content -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="24" >
+            <GridView
+                android:id="@+id/allItemsGrid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:listSelector="#00000000"
+                android:numColumns="6"
+                android:overScrollMode="never"
+                android:scrollbarAlwaysDrawVerticalTrack="false"
+                android:scrollbarTrackVertical="@null" >
+            </GridView>
+            <ImageView
+                android:id="@+id/allItemFirstGridDivider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/content_list_horiz_line" />
+            <ImageView
+                android:id="@+id/allItemSecondGridDivider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/content_list_horiz_line" />
+            <ImageView
+                android:id="@+id/allItemThirdGridDivider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/content_list_horiz_line" />
+        </FrameLayout>
+        <!-- Right arrow -->
+        <ImageView
+            android:id="@+id/contentListRightArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/right_arrow_big" />
+    </LinearLayout>
+    <!-- Info bar -->
+    <LinearLayout
+        android:id="@+id/linearLayoutForMenuInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_weight="2"
+        android:background="?MainMenuDescriptionBackground"
+        android:padding="@dimen/main_menu_description_margin"
+        android:weightSum="2" >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|top"
+            android:orientation="vertical" >
+            <com.iwedia.gui.components.A4TVTextView
+                android:id="@+id/aTVTextViewMoreInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:gravity="top|left"
+                android:text="@string/tv_menu_channel_installation_settings" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="top|right"
+            android:orientation="horizontal" >
+            <com.iwedia.gui.components.A4TVTextView
+                android:id="@+id/aTVTextViewInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top|right"
+                android:text="@string/main_menu_description_info" />
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_marginBottom="@dimen/padding_small"
+                android:src="@drawable/product_info" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

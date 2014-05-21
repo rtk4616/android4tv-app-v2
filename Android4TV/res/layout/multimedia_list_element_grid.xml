@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentListItemMainLayoutOut"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/content_list_item_selector"
+    android:orientation="vertical"
+    android:weightSum="4" >
+    <!-- Content info bar -->
+    <LinearLayout
+        android:id="@+id/contentInfoBarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4.1" >
+        <com.iwedia.gui.components.A4TVTextView
+            android:id="@+id/contentName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:text="@string/multimedia_content_list_name"
+            android:textColor="@drawable/content_list_item_text_selector" />
+        <ImageView
+            android:id="@+id/contentDividerSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:src="@drawable/vertical_divider_small" />
+    </LinearLayout>
+    <!-- Image and index -->
+    <LinearLayout
+        android:id="@+id/contentContentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:weightSum="4.1" >
+        <!-- Frame -->
+        <FrameLayout
+            android:id="@+id/contentContentFrame"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4" >
+            <!-- Content image -->
+            <ImageView
+                android:id="@+id/contentImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/s_non_select" />
+            <!-- Name if there is no image -->
+            <com.iwedia.gui.components.A4TVTextView
+                android:id="@+id/contentNameText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textSize="@dimen/content_list_no_image_name"
+                android:textStyle="bold" >
+            </com.iwedia.gui.components.A4TVTextView>
+            <!-- Incomplete record -->
+            <ImageView
+                android:id="@+id/contentIncompleteImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginTop="20dp" />
+            <!-- Manual record -->
+            <ImageView
+                android:id="@+id/contentManualImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginTop="20dp" />
+        </FrameLayout>
+        <!-- Big divider -->
+        <ImageView
+            android:id="@+id/contentDividerBig"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="0.1"
+            android:src="@drawable/vertical_divider_big" />
+    </LinearLayout>
+</LinearLayout>

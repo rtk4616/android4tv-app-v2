@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ViewFlipper
+        android:id="@+id/multimediaViewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <!-- First Screen -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <LinearLayout
+                android:id="@+id/multimediaMainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/content_list_black_background"
+                android:orientation="vertical"
+                android:weightSum="28.5" >
+                <!-- Top banner -->
+                <LinearLayout
+                    android:id="@+id/multimediaTopBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/bar"
+                    android:orientation="horizontal"
+                    android:weightSum="3.4" >
+                    <!-- Text and icon -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="8" >
+                        <ImageView
+                            android:id="@+id/multimediaIcon"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_large"
+                            android:layout_marginTop="@dimen/padding_small"
+                            android:layout_weight="1"
+                            android:src="@drawable/multimedia_icon" />
+                        <com.iwedia.gui.components.A4TVTextView
+                            android:id="@+id/multimediatText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="7"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/main_menu_item_multimedia" >
+                        </com.iwedia.gui.components.A4TVTextView>
+                    </LinearLayout>
+                    <!-- Filter options -->
+                    <ImageView
+                        android:id="@+id/arrowLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/left_arrow_small" />
+                    <HorizontalScrollView
+                        android:id="@+id/multimediaFilterOptionsScroll"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:scrollbars="@null" >
+                        <LinearLayout
+                            android:id="@+id/multimediaInputFilterBanner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                    <ImageView
+                        android:id="@+id/arrowRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/right_arrow_small" >
+                    </ImageView>
+                </LinearLayout>
+                <!-- Recently watched banner -->
+                <LinearLayout
+                    android:id="@+id/multimediaRecentlyWatched"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/bar"
+                    android:orientation="horizontal" >
+                    <com.iwedia.gui.components.A4TVTextView
+                        android:id="@+id/multimediaRecentlyWatchedText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/padding_large"
+                        android:layout_marginRight="@dimen/padding_small"
+                        android:gravity="center"
+                        android:text="@string/multimedia_recently_watched"
+                        android:textColor="#FFFF"
+                        android:textSize="@dimen/content_list_banner_text_size" />
+                </LinearLayout>
+                <!-- Recently list -->
+                <LinearLayout
+                    android:id="@+id/multimediaRecentlyListContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:orientation="horizontal"
+                    android:weightSum="26" >
+                    <!-- Left arrow -->
+                    <ImageView
+                        android:id="@+id/multimediaRecentlyLeftArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/left_arrow_big" />
+                    <!-- Recently watched content -->
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="24" >
+                        <GridView
+                            android:id="@+id/multimediaRecentlyWatchedItemsGrid"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:listSelector="#00000000"
+                            android:numColumns="6" >
+                        </GridView>
+                        <ImageView
+                            android:id="@+id/multimediaRecentlyGridDivider"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/content_list_horiz_line" />
+                    </FrameLayout>
+                    <!-- Right arrow -->
+                    <ImageView
+                        android:id="@+id/multimediaRecentlyRightArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/right_arrow_big" />
+                </LinearLayout>
+                <!-- Favorite watched banner -->
+                <LinearLayout
+                    android:id="@+id/multimediaFavorites"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/bar"
+                    android:orientation="horizontal" >
+                    <com.iwedia.gui.components.A4TVTextView
+                        android:id="@+id/multimediaFavoriteText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/padding_large"
+                        android:layout_marginRight="@dimen/padding_small"
+                        android:gravity="center"
+                        android:text="@string/multimedia_favourite"
+                        android:textColor="#FFFF"
+                        android:textSize="@dimen/content_list_banner_text_size" />
+                </LinearLayout>
+                <!-- Favorite list -->
+                <LinearLayout
+                    android:id="@+id/multimediaFavoriteListContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:orientation="horizontal"
+                    android:weightSum="26" >
+                    <!-- Left arrow -->
+                    <ImageView
+                        android:id="@+id/multimediaFavoriteLeftArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/left_arrow_big" />
+                    <!-- Favorite  content -->
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="24" >
+                        <GridView
+                            android:id="@+id/multimediaFavoriteItemsGrid"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:listSelector="#00000000"
+                            android:numColumns="6" >
+                        </GridView>
+                        <ImageView
+                            android:id="@+id/multimediaFavoriteGridDivider"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/content_list_horiz_line" />
+                    </FrameLayout>
+                    <!-- Right arrow -->
+                    <ImageView
+                        android:id="@+id/multimediaFavoriteRightArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/right_arrow_big" />
+                </LinearLayout>
+                <!-- All banner -->
+                <LinearLayout
+                    android:id="@+id/multimediaAll"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/bar"
+                    android:orientation="horizontal" >
+                    <com.iwedia.gui.components.A4TVTextView
+                        android:id="@+id/multimediaAllText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/padding_large"
+                        android:layout_marginRight="@dimen/padding_small"
+                        android:gravity="center"
+                        android:text="@string/multimedia_all"
+                        android:textColor="#FFFF"
+                        android:textSize="@dimen/content_list_banner_text_size" />
+                </LinearLayout>
+                <!-- All list -->
+                <LinearLayout
+                    android:id="@+id/multimediaListContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:orientation="horizontal"
+                    android:weightSum="26" >
+                    <!-- Left arrow -->
+                    <ImageView
+                        android:id="@+id/multimediaFirstAllLeftArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/left_arrow_big" />
+                    <!-- File browser content -->
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="24" >
+                        <GridView
+                            android:id="@+id/multimediaAllItemsGrid"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:listSelector="#00000000"
+                            android:numColumns="6" >
+                        </GridView>
+                        <ImageView
+                            android:id="@+id/multimediaAllItemFirstGridDivider"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/content_list_horiz_line" />
+                        <ImageView
+                            android:id="@+id/multimediaAllItemSecondGridDivider"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/content_list_horiz_line" />
+                        <ImageView
+                            android:id="@+id/multimediaAllItemThirdGridDivider"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/content_list_horiz_line" />
+                    </FrameLayout>
+                    <!-- Right arrow -->
+                    <ImageView
+                        android:id="@+id/multimediaFirstAllRightArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/right_arrow_big" />
+                </LinearLayout>
+                <!-- Info bar -->
+                <LinearLayout
+                    android:id="@+id/linearLayoutForMenuInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_weight="2"
+                    android:background="@drawable/down_stripe"
+                    android:padding="@dimen/main_menu_description_margin"
+                    android:weightSum="2" >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|top"
+                        android:orientation="vertical" >
+                        <com.iwedia.gui.components.A4TVTextView
+                            android:id="@+id/aTVTextViewMoreInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_large"
+                            android:gravity="top|left"
+                            android:text="@string/main_menu_description_multimedia" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="top|right"
+                        android:orientation="horizontal" >
+                        <com.iwedia.gui.components.A4TVTextView
+                            android:id="@+id/aTVTextViewInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="top|right"
+                            android:text="@string/main_menu_description_info" />
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|right"
+                            android:layout_marginBottom="@dimen/padding_small"
+                            android:src="@drawable/product_info" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Second Screen -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <LinearLayout
+                android:id="@+id/multimediaSecondMainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/content_list_black_background"
+                android:orientation="vertical"
+                android:weightSum="28.5" >
+                <!-- Top banner -->
+                <LinearLayout
+                    android:id="@+id/multimediaSecondTopBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/bar"
+                    android:orientation="horizontal"
+                    android:weightSum="3.4" >
+                    <!-- Text and icon -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="8" >
+                        <ImageView
+                            android:id="@+id/multimediaSecondIcon"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_large"
+                            android:layout_marginTop="@dimen/padding_small"
+                            android:layout_weight="1"
+                            android:src="@drawable/multimedia_icon" />
+                        <com.iwedia.gui.components.A4TVTextView
+                            android:id="@+id/multimediatSecondText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="7"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/main_menu_item_multimedia" >
+                        </com.iwedia.gui.components.A4TVTextView>
+                    </LinearLayout>
+                    <!-- Filter options -->
+                    <ImageView
+                        android:id="@+id/arrowLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/left_arrow_small" />
+                    <HorizontalScrollView
+                        android:id="@+id/multimediaSecondFilterOptionsScroll"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:scrollbars="@null" >
+                        <LinearLayout
+                            android:id="@+id/multimediaSecondInputFilterBanner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                    <ImageView
+                        android:id="@+id/arrowRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/right_arrow_small" >
+                    </ImageView>
+                </LinearLayout>
+                <!-- File path banner -->
+                <LinearLayout
+                    android:id="@+id/multimediaSecondFilePath"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/bar"
+                    android:orientation="horizontal" >
+                    <com.iwedia.gui.components.A4TVTextView
+                        android:id="@+id/multimediaFilePathText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/padding_large"
+                        android:layout_marginRight="@dimen/padding_small"
+                        android:gravity="center"
+                        android:text="@string/multimedia_file_path"
+                        android:textColor="#FFFF"
+                        android:textSize="@dimen/content_list_banner_text_size" />
+                </LinearLayout>
+                <!-- File path browser -->
+                <LinearLayout
+                    android:id="@+id/multimediaSecondPathBrowserContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:orientation="horizontal"
+                    android:weightSum="26" >
+                    <!-- Left arrow -->
+                    <ImageView
+                        android:id="@+id/multimediaSecondPathLeftArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/left_arrow_big" />
+                    <!-- Path browser content -->
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="24" >
+                        <GridView
+                            android:id="@+id/multimediaSecondPathBrowserItemsGrid"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:listSelector="#00000000"
+                            android:numColumns="6" >
+                        </GridView>
+                        <ImageView
+                            android:id="@+id/multimediaSecondPathBrowserGridDivider"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/content_list_horiz_line" />
+                    </FrameLayout>
+                    <!-- Right arrow -->
+                    <ImageView
+                        android:id="@+id/multimediaSecondPathRightArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/right_arrow_big" />
+                </LinearLayout>
+                <!-- File browser -->
+                <LinearLayout
+                    android:id="@+id/multimediaSecondFileBrowser"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/bar"
+                    android:orientation="horizontal" >
+                    <com.iwedia.gui.components.A4TVTextView
+                        android:id="@+id/multimediaSecondFileBrowserText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/padding_large"
+                        android:layout_marginRight="@dimen/padding_small"
+                        android:gravity="center"
+                        android:text="@string/multimedia_file_explorer"
+                        android:textColor="#FFFF"
+                        android:textSize="@dimen/content_list_banner_text_size" />
+                </LinearLayout>
+                <!-- File browser list -->
+                <LinearLayout
+                    android:id="@+id/multimediaListContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="16.5"
+                    android:orientation="horizontal"
+                    android:weightSum="26" >
+                    <!-- Left arrow -->
+                    <ImageView
+                        android:id="@+id/multimediaSecondAllLeftArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/left_arrow_big" />
+                    <!-- File browser content -->
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="24" >
+                        <GridView
+                            android:id="@+id/multimediaSecondFileBrowserItemsGrid"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:listSelector="#00000000"
+                            android:numColumns="6" >
+                        </GridView>
+                        <ImageView
+                            android:id="@+id/multimediaSecondFileBrowserItemFirstGridDivider"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/content_list_horiz_line" />
+                        <ImageView
+                            android:id="@+id/multimediaSecondFileBrowserItemSecondGridDivider"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/content_list_horiz_line" />
+                        <ImageView
+                            android:id="@+id/multimediaSecondFileBrowserItemThirdGridDivider"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/content_list_horiz_line" />
+                        <ImageView
+                            android:id="@+id/multimediaSecondFileBrowserItemFourthGridDivider"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/content_list_horiz_line" />
+                        <ImageView
+                            android:id="@+id/multimediaSecondFileBrowserItemFifthGridDivider"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/content_list_horiz_line" />
+                    </FrameLayout>
+                    <!-- Right arrow -->
+                    <ImageView
+                        android:id="@+id/multimediaSecondAllRightArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/right_arrow_big" />
+                </LinearLayout>
+                <!-- Info bar -->
+                <LinearLayout
+                    android:id="@+id/linearLayoutForMenuInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_weight="2"
+                    android:background="@drawable/down_stripe"
+                    android:padding="@dimen/main_menu_description_margin"
+                    android:weightSum="2" >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="left|top"
+                        android:orientation="horizontal" >
+                        <com.iwedia.gui.components.A4TVTextView
+                            android:id="@+id/aTVTextViewMoreInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_large"
+                            android:gravity="top|left"
+                            android:text="@string/main_menu_description_multimedia" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linearLayoutSortedPlaylistItemsByTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:gravity="left|top"
+                        android:orientation="horizontal"
+                        android:visibility="invisible" >
+                        <ImageView
+                            android:id="@+id/imageViewSortedPlaylistItemsByTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:src="@drawable/sorted_by" >
+                        </ImageView>
+                        <com.iwedia.gui.components.A4TVTextView
+                            android:id="@+id/textViewSortedPlaylistItemsByTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_small"
+                            android:layout_marginRight="@dimen/padding_medium"
+                            android:layout_marginTop="@dimen/main_menu_description_margin"
+                            android:text="@string/sort_item_in_playlist" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linearLayoutSortedPlaylistItemsByDuration"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:gravity="left|top"
+                        android:orientation="horizontal"
+                        android:visibility="invisible" >
+                        <ImageView
+                            android:id="@+id/imageViewSortedPlaylistItemsByDuration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:src="@drawable/zoom_in" >
+                        </ImageView>
+                        <com.iwedia.gui.components.A4TVTextView
+                            android:id="@+id/textViewSortedPlaylistItemsByDuration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_small"
+                            android:layout_marginRight="@dimen/padding_medium"
+                            android:layout_marginTop="@dimen/main_menu_description_margin"
+                            android:text="@string/sort_item_by_duration_in_playlist" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linearLayoutSortedPlaylistItemsByArtist"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:gravity="left|top"
+                        android:orientation="horizontal"
+                        android:visibility="invisible" >
+                        <ImageView
+                            android:id="@+id/imageViewSortedPlaylistItemsByArtist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:src="@drawable/sorted_by_order" >
+                        </ImageView>
+                        <com.iwedia.gui.components.A4TVTextView
+                            android:id="@+id/textViewSortedPlaylistItemsByArtist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_small"
+                            android:layout_marginRight="@dimen/padding_medium"
+                            android:layout_marginTop="@dimen/main_menu_description_margin"
+                            android:text="@string/sort_item_by_artist_in_playlist" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="top|right"
+                        android:orientation="horizontal" >
+                        <com.iwedia.gui.components.A4TVTextView
+                            android:id="@+id/aTVTextViewInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="top|right"
+                            android:text="@string/main_menu_description_info" />
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|right"
+                            android:layout_marginBottom="@dimen/padding_small"
+                            android:src="@drawable/product_info" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- PVR Screen -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <LinearLayout
+                android:id="@+id/multimediaPvrMainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/content_list_black_background"
+                android:orientation="vertical"
+                android:weightSum="28.5" >
+                <!-- Top banner -->
+                <LinearLayout
+                    android:id="@+id/multimediaPvrTopBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/bar"
+                    android:orientation="horizontal"
+                    android:weightSum="3.4" >
+                    <!-- Text and icon -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="8" >
+                        <ImageView
+                            android:id="@+id/multimediaPvrIcon"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_large"
+                            android:layout_marginTop="@dimen/padding_small"
+                            android:layout_weight="1"
+                            android:src="@drawable/multimedia_icon" />
+                        <com.iwedia.gui.components.A4TVTextView
+                            android:id="@+id/multimediatPvrText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="7"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/main_menu_item_multimedia" >
+                        </com.iwedia.gui.components.A4TVTextView>
+                    </LinearLayout>
+                    <!-- Filter options -->
+                    <ImageView
+                        android:id="@+id/arrowLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/left_arrow_small" />
+                    <HorizontalScrollView
+                        android:id="@+id/multimediaPvrFilterOptionsScroll"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:clickable="false"
+                        android:scrollbars="@null" >
+                        <LinearLayout
+                            android:id="@+id/multimediaPvrInputFilterBanner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                    <ImageView
+                        android:id="@+id/arrowRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/right_arrow_small" >
+                    </ImageView>
+                </LinearLayout>
+                <!-- File info banner -->
+                <LinearLayout
+                    android:id="@+id/multimediaSecondFilePath"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/bar"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+                    <com.iwedia.gui.components.A4TVTextView
+                        android:id="@+id/multimediaFileInfoText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_large"
+                        android:layout_marginRight="@dimen/padding_small"
+                        android:gravity="center"
+                        android:text="@string/multimedia_file_info"
+                        android:textColor="#FFFF"
+                        android:textSize="@dimen/content_list_banner_text_size" />
+                </LinearLayout>
+                <!-- File info -->
+                <LinearLayout
+                    android:id="@+id/multimediaSecondPathBrowserContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:orientation="horizontal" >
+                    <!-- Description content -->
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="24" >
+                        <!-- Description holder -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="10.1" >
+                            <!-- Description holder left -->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:orientation="vertical"
+                                android:weightSum="3" >
+                                <com.iwedia.gui.components.A4TVTextView
+                                    android:id="@+id/multimediaPVRInfoText1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:ellipsize="marquee"
+                                    android:gravity="center_vertical|right"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:singleLine="true" >
+                                </com.iwedia.gui.components.A4TVTextView>
+                                <com.iwedia.gui.components.A4TVTextView
+                                    android:id="@+id/multimediaPVRInfoText2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:ellipsize="marquee"
+                                    android:gravity="center_vertical|right"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:singleLine="true" >
+                                </com.iwedia.gui.components.A4TVTextView>
+                                <com.iwedia.gui.components.A4TVTextView
+                                    android:id="@+id/multimediaPVRInfoText3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:ellipsize="marquee"
+                                    android:gravity="center_vertical|right"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:singleLine="true" >
+                                </com.iwedia.gui.components.A4TVTextView>
+                            </LinearLayout>
+                            <!-- Description Divider -->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.1"
+                                android:gravity="center" >
+                                <ImageView
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="3dp"
+                                    android:layout_marginTop="3dp"
+                                    android:background="@drawable/vertical_divider_big" />
+                            </LinearLayout>
+                            <!-- Description holder right -->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:orientation="vertical"
+                                android:weightSum="4" >
+                                <com.iwedia.gui.components.A4TVTextView
+                                    android:id="@+id/multimediaPVRInfoText4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="left|top"
+                                    android:layout_weight="3"
+                                    android:gravity="top|left"
+                                    android:maxLines="4"
+                                    android:paddingTop="5dp" >
+                                </com.iwedia.gui.components.A4TVTextView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+                <!-- File browser -->
+                <LinearLayout
+                    android:id="@+id/multimediaPvrFileBrowser"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/bar"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+                    <com.iwedia.gui.components.A4TVTextView
+                        android:id="@+id/multimediaPvrFileBrowserText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/padding_large"
+                        android:layout_marginRight="@dimen/padding_small"
+                        android:gravity="center"
+                        android:text="@string/multimedia_pvr_playlist"
+                        android:textColor="#FFFF"
+                        android:textSize="@dimen/content_list_banner_text_size" />
+                </LinearLayout>
+                <!-- File browser list -->
+                <LinearLayout
+                    android:id="@+id/multimediaListContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="16.5"
+                    android:orientation="horizontal"
+                    android:weightSum="26" >
+                    <!-- Left arrow -->
+                    <ImageView
+                        android:id="@+id/multimediaPvrAllLeftArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/left_arrow_big" />
+                    <!-- File browser content -->
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="24" >
+                        <GridView
+                            android:id="@+id/multimediaPvrFileBrowserItemsGrid"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:listSelector="#00000000"
+                            android:numColumns="6" >
+                        </GridView>
+                        <ImageView
+                            android:id="@+id/multimediaPvrFileBrowserItemFirstGridDivider"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/content_list_horiz_line" />
+                        <ImageView
+                            android:id="@+id/multimediaPvrFileBrowserItemSecondGridDivider"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/content_list_horiz_line" />
+                        <ImageView
+                            android:id="@+id/multimediaPvrFileBrowserItemThirdGridDivider"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/content_list_horiz_line" />
+                        <ImageView
+                            android:id="@+id/multimediaPvrFileBrowserItemFourthGridDivider"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/content_list_horiz_line" />
+                        <ImageView
+                            android:id="@+id/multimediaPvrFileBrowserItemFifthGridDivider"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/content_list_horiz_line" />
+                    </FrameLayout>
+                    <!-- Right arrow -->
+                    <ImageView
+                        android:id="@+id/multimediaPvrAllRightArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/right_arrow_big" />
+                </LinearLayout>
+                <!-- Info bar -->
+                <LinearLayout
+                    android:id="@+id/linearLayoutForMenuInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_weight="2"
+                    android:background="@drawable/down_stripe"
+                    android:padding="@dimen/main_menu_description_margin"
+                    android:weightSum="2" >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:gravity="left|top"
+                        android:orientation="horizontal" >
+                        <com.iwedia.gui.components.A4TVTextView
+                            android:id="@+id/aTVTextViewMoreInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_large"
+                            android:gravity="top|left"
+                            android:text="@string/main_menu_description_multimedia" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linearLayoutSortedBy"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:gravity="left|top"
+                        android:orientation="horizontal" >
+                        <ImageView
+                            android:id="@+id/imageViewMultimediaPVRRecordSortedBy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:src="@drawable/sorted_by" >
+                        </ImageView>
+                        <com.iwedia.gui.components.A4TVTextView
+                            android:id="@+id/textViewMultimediaPVRRecordSortedBy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_small"
+                            android:layout_marginRight="@dimen/padding_medium"
+                            android:layout_marginTop="@dimen/main_menu_description_margin"
+                            android:text="@string/multimedia_pvr_record_sorted_mode" />
+                        <ImageView
+                            android:id="@+id/imageViewMultimediaPVRRecordSortedByOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:src="@drawable/sorted_by_order" >
+                        </ImageView>
+                        <com.iwedia.gui.components.A4TVTextView
+                            android:id="@+id/textViewMultimediaPVRRecordSortedByOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_small"
+                            android:layout_marginRight="@dimen/padding_small"
+                            android:layout_marginTop="@dimen/main_menu_description_margin"
+                            android:text="@string/multimedia_pvr_record_sorted_order" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="top|right"
+                        android:orientation="horizontal" >
+                        <com.iwedia.gui.components.A4TVTextView
+                            android:id="@+id/aTVTextViewInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="top|right"
+                            android:text="@string/main_menu_description_info" />
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|right"
+                            android:layout_marginBottom="@dimen/padding_small"
+                            android:src="@drawable/product_info" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ViewFlipper>
+</LinearLayout>

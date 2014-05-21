@@ -1,0 +1,1528 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">Android4TV2.0</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="main_menu_settings">设置</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="spinner_choose_title">选项:</string>
+    <string name="program_block">Program block</string>
+    <string name="null_pointer_error">空指针错误!</string>
+    <string name="proxy_service_is_null">代理服务是空的!</string>
+    <string name="zero_number">0</string>
+    <string name="scaning">扫描中</string>
+    <string name="connecting">连接中</string>
+    <string name="please_wait">请稍等…</string>
+    <string name="google_play_error">Google Play没有安装!</string>
+    <string name="not_implemented">还未完成</string>
+    <string name="exit_massage">你确定要退出?</string>
+    <string name="ask_massage">你确定了吗?</string>
+    <string name="ask_massage_factory_reset">这将擦除所有已保存的数据!</string>
+    <string name="factory_reset_success">恢复出厂设置成功完成.</string>
+    <string name="factory_reset_fail">恢复出厂设置失败!</string>
+    <string name="already_in_favorites">该项已经存在!</string>
+    <string name="already_in_this_folder">已经在该目录下了!</string>
+    <string name="already_active">已经激活</string>
+    <string name="loading_message">请稍等…</string>
+    <string name="loading_title">加载中</string>
+    <string name="no_enough_space_on_screen">屏幕上已经没有足够的空间了!</string>
+    <string name="loading_data">加载数据中</string>
+    <string name="aborting_scan">正在中止扫描</string>
+    <string name="inputs_not_enabled">输入未启用!</string>
+    <string name="input_not_connected">输入不正确!</string>
+    <string name="connected_input">输入已连接!</string>
+    <string name="disconnected_input">输入已断开!</string>
+    <string name="connected_input_is_disabled">已连接的输入被关闭!</string>
+    <string name="input_is_disabled">输入已被关闭!</string>
+    <string name="previous_input_is_disabled">Previous input is disabled!</string>
+    <string name="folder_is_empty">文件夹为空!</string>
+    <string name="format_is_not_supported">文件格式不支持!</string>
+    <string name="teletext_hide">隐藏图文!</string>
+    <string name="choose_audio_language">选择音频语言</string>
+    <string name="choose_audio_top_menu_value">A4TVTextView??? - change me in strings.xml</string>
+    <string name="choose_audio_bottom_menu_value">A4TVTextView??? - change me in strings.xml</string>
+    <string name="choose_teletext_language">选择图文语言</string>
+    <string name="only_one_audio_language">只有一种音频语言!</string>
+    <string name="open_default_subtitle_language">打开默认字幕语言!</string>
+    <string name="no_subtitle_language">没有字幕语言!</string>
+    <string name="open_default_teletext_language">打开默认图文语言!</string>
+    <string name="no_teletext_available">没有可用的图文语言!</string>
+    <string name="no_teletext_language">没有图文语言!</string>
+    <string name="choose_subtitle_language">选择字幕语言</string>
+    <string name="multimedia_no_application_available">此操作没有相对应的程序进行响应!</string>
+    <string name="no_accout_message">没有可以使用的帐号进行添加!</string>
+    <string name="epg_no_data">无可用数据!</string>
+    <string name="epg_load_next_day">加载下一天数据!</string>
+    <string name="epg_load_previous_day">加载前一天数据!</string>
+    <string name="epg_day_showing">Day:</string>
+    <string name="epg_genre">Genre:</string>
+    <string name="epg_imdb_info">展示IMDB信息</string>
+    <string name="epg_return">返回</string>
+    <string name="epg_event_not_scheduled">录制事件没有在计划表中添加</string>
+    <string name="epg_error_with_number">频道号无效!</string>
+    <string name="epg_not_possible_to_zapp">录制模式无EPG菜单!</string>
+    <string name="epg_not_supported">次输入模式不支持EPG!</string>
+    <string name="pvr_file_is_deleted">PVR文件已被删除.</string>
+    <string name="all_pvr_files_are_deleted">所有PVR文件都已被删除.</string>
+    <string name="pvr_schedule_file_is_deleted">PVR计划表已被删除.</string>
+    <string name="software_upgrade_text_part_one">有可用于升级的系统(版本:</string>
+    <string name="software_upgrade_text_part_two_upgrade">) \n 你想升级你的系统吗?</string>
+    <string name="software_upgrade_text_part_two_downgrade">) \n 你想将系统恢复到上一个版本吗?</string>
+    <string name="first_time_install_text">欢迎来到安卓世界!</string>
+    <string name="first_time_install_end_text">This is first time install ending text!!!!</string>
+    <string name="first_time_install_set_language_and_country">语言、国家</string>
+    <string name="first_time_install_set_tv_mode">TV制式</string>
+    <string name="first_time_install_set_accounts">添加用户帐号</string>
+    <string name="first_time_install_setup_network">设置网络连接</string>
+    <string name="first_time_install_scan">开始扫描流程</string>
+    <string name="first_time_install_scan_restart">重启扫描流程</string>
+    <string name="first_time_install_just_finish">完成</string>
+    <string name="first_time_install_next">进入下一步设置</string>
+    <string name="first_time_install_next_button_text">下一步</string>
+    <string name="first_time_install_no_services_found">未找到服务!重新扫描?</string>
+    <string name="first_time_install_end_fti">感谢使用Android4TV</string>
+    <string name="reminder_event_triggered">提示事件已经触发! 你想切换频道吗?</string>
+    <string name="no_usb">无插入的USB设备!</string>
+    <string name="no_usb_zip_file">在USB设备根目录下未找到升级用的zip文件!</string>
+    <string name="upgrade_invalid_zip">USB上的zip升级文件无效!</string>
+    <string name="upgrade_finished_over_usb">升级完成，5秒后重启!</string>
+    <string name="upgrade_no_new_version">你的系统已经是最新的!</string>
+    <string name="parental_state_change">确认更改家长控制</string>
+    <string name="config_file_error">配置文件有误!</string>
+    <string name="no_channel">尝试调制出现未存在的服务!</string>
+    <string name="download_speed">下载速度</string>
+    <string name="connection_time">连接时间</string>
+    <string name="progress">进度</string>
+    <string name="kbs">kB/s</string>
+    <string name="milisec">毫秒</string>
+    <string name="reminder_error">添加提醒事件时发生错误!</string>
+    <string name="connected">已连接</string>
+    <string name="syncing">同步中</string>
+    <string name="cam_inserted">CAM已插入</string>
+    <string name="cam_removed">CAM已被移出</string>
+    <string name="no_cam_present">现在没有CAM设备</string>
+    <string name="invalid_host_certificate">无效的主机证书</string>
+    <string name="cam_not_started">不能开启CI回话</string>
+    <string name="manual_scan_prompt">所有服务将会被擦除！你确定吗？</string>
+    <string name="error_with_playing_audio">不支持的音频!</string>
+    <string name="channel_change_fail">频道切换失败!</string>
+    <string name="no_internet_connection">网络未连接!</string>
+    <string name="usb_mounted">媒体设备已挂载</string>
+    <string name="usb_ejected">媒体设备已弹出</string>
+    <string name="usb_unmountable">媒体设备不能被挂载-文件系统损坏或不支持</string>
+    <string name="parental_error">设置家长控制级别出错</string>
+    <string name="under">Under</string>
+    <string name="empty_list">空频道列表!</string>
+    <string name="no_services_found_during_scan">扫描过程未找到服务!</string>
+    <string name="no_service_space">服务数据库已满!退出扫描!</string>
+    <string name="error_during_scan">扫描过程中出现错误!</string>
+    <string name="freq_error">请设置正确的频率!</string>
+    <string name="name_error">Please set correct name!</string>
+    <string name="already_exist">Already exist</string>
+    <string name="downloading">下载中</string>
+    <string name="checking">检测中</string>
+    <string name="not_supported_dual_scenario">不支持请求的双视频场景!</string>
+    <string name="not_supported_action_for_input">不支持该请求操作!</string>
+    <string name="swich_to_previous_content">切换至前一内容!</string>
+    <string name="source_swiching">打开新资源!</string>
+    <string name="middleware_is_initialized">中间件已经初始化完成!</string>
+    <string name="parental_guidance_is_off">家长引导共功能关闭!</string>
+    <string name="parental_guidance_is_set_on">家长引导功能已打开</string>
+    <string name="store_mode_video_presentation_not_exist">视频演示不存在!</string>
+    <string name="add_to_favorite_list">添加到爱好列表</string>
+    <string name="remove_from_favorite_list">从爱好列表中移除</string>
+    <string name="already_in_favorite_list">该项已经存在于爱好列表</string>
+    <string name="error_adding_in_favorite_list">不能添加到爱好列表中</string>
+    <string name="ci_oprofile_install_started">运行商服务安装开始</string>
+    <string name="ci_oprofile_install_finished">运营商服务安装完成</string>
+    <string name="ci_cam_not_present">CA module not present</string>
+    <string name="ci_oprofile_question_label">你是否想安装运营商服务?</string>
+    <string name="ci_oprofile_label">运营商服务将要被安装</string>
+    <string name="rotate_left">Rotate left</string>
+    <string name="rotate_right">Rotate right</string>
+    <string name="zoom_in">Zoom in</string>
+    <string name="zoom_out">Zoom out</string>
+    <string-array name="picture_mode_settings">
+        <item>@string/spinner_item_dynamic</item>
+        <item>@string/spinner_item_standard</item>
+        <item>@string/spinner_item_sport</item>
+        <item>@string/spinner_item_eco</item>
+        <item>@string/spinner_item_cinema</item>
+        <item>@string/spinner_item_user</item>
+    </string-array>
+    <string name="spinner_item_dynamic">动态</string>
+    <string name="spinner_item_standard">标准</string>
+    <string name="spinner_item_sport">运动</string>
+    <string name="spinner_item_eco">生态</string>
+    <string name="spinner_item_cinema">影院</string>
+    <string name="spinner_item_user">用户</string>
+    <string-array name="sound_mode_settings">
+        <item>@string/spinner_item_standard</item>
+        <item>@string/spinner_item_music</item>
+        <item>@string/spinner_item_movie</item>
+        <item>@string/spinner_item_sports</item>
+        <item>@string/spinner_item_speech</item>
+        <item>@string/spinner_item_user</item>
+    </string-array>
+    <string name="spinner_item_sound_mode_normal">正常</string>
+    <string name="spinner_item_sound_mode_srs">SRS 效果</string>
+    <string name="spinner_item_sound_mode_spatial">空间效果</string>
+    <string-array name="sound_mode">
+        <item>@string/spinner_item_sound_mode_normal</item>
+        <item>@string/spinner_item_sound_mode_srs</item>
+        <item>@string/spinner_item_sound_mode_spatial</item>
+    </string-array>
+    <!-- PIP Position array -->
+    <string name="pip_settings_position_upperright">右上角</string>
+    <string name="pip_settings_position_upperleft">左上角</string>
+    <string name="pip_settings_position_lowerleft">左下角</string>
+    <string name="pip_settings_position_lowerright">右下角</string>
+    <string-array name="pip_settings_position">
+        <item>@string/pip_settings_position_upperright</item>
+        <item>@string/pip_settings_position_upperleft</item>
+        <item>@string/pip_settings_position_lowerleft</item>
+        <item>@string/pip_settings_position_lowerright</item>
+    </string-array>
+    <!-- PIP Size array -->
+    <string name="pip_settings_size_1_9">1/9</string>
+    <string name="pip_settings_size_1_16">1/16</string>
+    <string-array name="pip_settings_size">
+        <item>@string/pip_settings_size_1_9</item>
+        <item>@string/pip_settings_size_1_16</item>
+    </string-array>
+    <string name="spinner_item_music">音乐</string>
+    <string name="spinner_item_movie">影视</string>
+    <string name="spinner_item_sports">运动</string>
+    <string name="spinner_item_speech">演说</string>
+    <string name="epg_genre_news">新闻</string>
+    <string name="epg_genre_show">演出</string>
+    <string name="epg_genre_children">儿童</string>
+    <string name="epg_genre_culture">文化</string>
+    <string name="epg_genre_politics">政治</string>
+    <string name="epg_genre_science">科学</string>
+    <string name="epg_genre_hobies">爱好</string>
+    <string-array name="tv_menu_sound_settings_spdif_mode_spinner">
+        <item>@string/tv_menu_sound_settings_spdif_mode_spinner_item_passtrough</item>
+        <item>@string/tv_menu_sound_settings_spdif_mode_spinner_item_pcm</item>
+        <item>@string/tv_menu_sound_settings_spdif_mode_spinner_item_dolby_digital</item>
+        <item>@string/tv_menu_sound_settings_spdif_mode_spinner_item_off</item>
+    </string-array>
+    <string name="tv_menu_sound_settings_spdif_mode_spinner_item_passtrough">原始效果</string>
+    <string name="tv_menu_sound_settings_spdif_mode_spinner_item_pcm">立体声</string>
+    <string name="tv_menu_sound_settings_spdif_mode_spinner_item_dolby_digital">多通道</string>
+    <string name="tv_menu_sound_settings_spdif_mode_spinner_item_off">关闭</string>
+    <string-array name="tv_menu_sound_settings_output_mode_spinner">
+        <item>@string/tv_menu_sound_settings_analog_output_mode_spinner_item_disabled</item>
+        <item>@string/tv_menu_sound_settings_analog_output_mode_spinner_item_fixed</item>
+        <item>@string/tv_menu_sound_settings_analog_output_mode_spinner_item_variable</item>
+    </string-array>
+    <string name="tv_menu_sound_settings_analog_output_mode_spinner_item_disabled">关闭</string>
+    <string name="tv_menu_sound_settings_analog_output_mode_spinner_item_fixed">固定</string>
+    <string name="tv_menu_sound_settings_analog_output_mode_spinner_item_variable">可变</string>
+    <string-array name="tv_menu_subtitle_settings_subtitle_mode_spinner">
+        <item>@string/tv_menu_subtitle_settings_subtitle_mode_spinner_item_size</item>
+        <item>@string/tv_menu_sound_settings_spdif_mode_spinner_item_dolby_digital</item>
+    </string-array>
+    <string-array name="tv_menu_subtitle_settings_subtitle_mode">
+        <item>@string/tv_menu_subtitle_settings_subtitle_mode_normal</item>
+        <item>@string/tv_menu_subtitle_settings_subtitle_mode_hard_of_hearing</item>
+    </string-array>
+    <string-array name="tv_menu_subtitle_settings_subtitle_type">
+        <item>@string/tv_menu_subtitle_settings_subtitle_type_dvb</item>
+        <item>@string/tv_menu_subtitle_settings_subtitle_type_teletext</item>
+    </string-array>
+    <string name="tv_menu_subtitle_settings_subtitle_mode_spinner_item_size">大小 [小/中/大]</string>
+    <string name="tv_menu_subtitle_settings_subtitle_mode_spinner_item_font">字体 [列表]</string>
+    <string name="tv_menu_subtitle_settings_subtitle_mode_spinner_item_style">样式 [列表]</string>
+    <string name="tv_menu_subtitle_settings_subtitle_mode_normal">正常</string>
+    <string name="tv_menu_subtitle_settings_subtitle_mode_hard_of_hearing">听力辅助</string>
+    <string name="tv_menu_subtitle_settings_subtitle_type_dvb">DVB</string>
+    <string name="tv_menu_subtitle_settings_subtitle_type_teletext">图文</string>
+    <string-array name="tv_menu_network_settings_network_type">
+        <item>@string/button_text_ethernet</item>
+        <item>@string/tv_menu_network_settings_wireless</item>
+    </string-array>
+    <string-array name="tv_menu_time_and_date_settings_select_time_zone">
+        <item>@string/gmtm12</item>
+        <item>@string/gmtm11</item>
+        <item>@string/gmtm10</item>
+        <item>@string/gmtm9</item>
+        <item>@string/gmtm8</item>
+        <item>@string/gmtm7</item>
+        <item>@string/gmtm6</item>
+        <item>@string/gmtm5</item>
+        <item>@string/gmtm4</item>
+        <item>@string/gmtm3</item>
+        <item>@string/gmtm2</item>
+        <item>@string/gmtm1</item>
+        <item>@string/gmt</item>
+        <item>@string/gmtp1</item>
+        <item>@string/gmtp2</item>
+        <item>@string/gmtp3</item>
+        <item>@string/gmtp4</item>
+        <item>@string/gmtp5</item>
+        <item>@string/gmtp6</item>
+        <item>@string/gmtp7</item>
+        <item>@string/gmtp8</item>
+        <item>@string/gmtp9</item>
+        <item>@string/gmtp10</item>
+        <item>@string/gmtp11</item>
+        <item>@string/gmtp12</item>
+    </string-array>
+    <string name="gmtm12">GMT-12</string>
+    <string name="gmtm11">GMT-11</string>
+    <string name="gmtm10">GMT-11</string>
+    <string name="gmtm9">GMT-11</string>
+    <string name="gmtm8">GMT-11</string>
+    <string name="gmtm7">GMT-11</string>
+    <string name="gmtm6">GMT-11</string>
+    <string name="gmtm5">GMT-11</string>
+    <string name="gmtm4">GMT-11</string>
+    <string name="gmtm3">GMT-11</string>
+    <string name="gmtm2">GMT-11</string>
+    <string name="gmtm1">GMT-11</string>
+    <string name="gmt">GMT</string>
+    <string name="gmtp1">GMT+1</string>
+    <string name="gmtp2">GMT+2</string>
+    <string name="gmtp3">GMT+3</string>
+    <string name="gmtp4">GMT+4</string>
+    <string name="gmtp5">GMT+5</string>
+    <string name="gmtp6">GMT+6</string>
+    <string name="gmtp7">GMT+7</string>
+    <string name="gmtp8">GMT+8</string>
+    <string name="gmtp9">GMT+9</string>
+    <string name="gmtp10">GMT+10</string>
+    <string name="gmtp11">GMT+11</string>
+    <string name="gmtp12">GMT+12</string>
+    <string-array name="manual_tunning_settings_symbol_rate">
+        <item>@string/symbol_rate_22000</item>
+        <item>@string/symbol_rate_27500</item>
+    </string-array>
+    <string name="symbol_rate_default">默认符号率</string>
+    <string name="symbol_rate_22000">符号率 22000</string>
+    <string name="symbol_rate_27500">符号率 27500</string>
+    <string-array name="manual_tunning_settings_scrambled">
+        <item>@string/all_services</item>
+        <item>@string/only_scrambled</item>
+        <item>@string/only_free</item>
+    </string-array>
+    <string name="all_services">所有服务</string>
+    <string name="only_scrambled">加扰</string>
+    <string name="only_free">免费的</string>
+    <string-array name="manual_tunning_settings_polarization">
+        <item>@string/horizontal_polarization</item>
+        <item>@string/vertical_polarization</item>
+        <item>@string/circular_left_polarization</item>
+        <item>@string/circular_right_polarization</item>
+        <item>@string/all_polarization</item>
+    </string-array>
+    <string-array name="manual_tunning_settings_modulation">
+        <item>@string/modulation_16qam</item>
+        <item>@string/modulation_64qam</item>
+        <item>@string/modulation_128qam</item>
+        <item>@string/modulation_256qam</item>
+    </string-array>
+    <string-array name="manual_tunning_settings_system">
+        <item>@string/system_pal_bg</item>
+        <item>@string/system_pal_i</item>
+        <item>@string/system_pal_dk</item>
+        <item>@string/system_scm_l</item>
+    </string-array>
+    <string-array name="manual_tunning_nordic_band">
+        <item>@string/nordic_band_s</item>
+        <item>@string/nordic_band_d</item>
+        <item>@string/nordic_band_k</item>
+    </string-array>
+    <string name="modulation_16qam">16-QAM</string>
+    <string name="modulation_64qam">64-QAM</string>
+    <string name="modulation_128qam">128-QAM</string>
+    <string name="modulation_256qam">256-QAM</string>
+    <string name="horizontal_polarization">水平</string>
+    <string name="vertical_polarization">垂直</string>
+    <string name="circular_left_polarization">左半圆</string>
+    <string name="circular_right_polarization">右半圆</string>
+    <string name="all_polarization">All</string>
+    <string name="system_pal_bg">Pal B/G</string>
+    <string name="system_pal_i">Pal I</string>
+    <string name="system_pal_dk">Pal D/K</string>
+    <string name="system_pal_l">Pal L</string>
+    <string name="system_pal_l1">Pal L1</string>
+    <string name="system_scm_bg">Secam B/G</string>
+    <string name="system_scm_dk">Secam D/K</string>
+    <string name="system_scm_l">Secam L</string>
+    <string name="system_scm_l1">Secam L1</string>
+    <string name="nordic_band_s">S</string>
+    <string name="nordic_band_d">D</string>
+    <string name="nordic_band_k">K</string>
+    <string-array name="manual_tunning_settings_fec">
+        <item>@string/p2</item>
+        <item>@string/p3</item>
+        <item>@string/p4</item>
+        <item>@string/p5</item>
+        <item>@string/p6</item>
+        <item>@string/p7</item>
+        <item>@string/p8</item>
+        <item>@string/auto</item>
+    </string-array>
+    <string name="p2">1 ⁄ 2</string>
+    <string name="p3">2 ⁄ 3</string>
+    <string name="p4">3 ⁄ 4</string>
+    <string name="p5">4 ⁄ 5</string>
+    <string name="p6">5 ⁄ 6</string>
+    <string name="p7">6 ⁄ 7</string>
+    <string name="p8">7 ⁄ 8</string>
+    <string name="auto">Auto</string>
+    <string-array name="tv_menu_time_and_date_settings_select_date_format">
+        <item>@string/month.day.year</item>
+        <item>@string/day.month.year</item>
+        <item>@string/year.month.day</item>
+    </string-array>
+    <string name="day.month.year">DD/MM/YYYY</string>
+    <string name="month.day.year">MM/DD/YYYY</string>
+    <string name="year.month.day">YYYY/MM/DD</string>
+    <!-- input settings -->
+    <!-- hdmi cec -->
+    <!-- <string-array name="tv_menu_factory_input_settings_hdmi_cec_spinner"> -->
+    <!-- <item>@string/tv_menu_factory_input_settings_spinner_item_auto_tv_power</item> -->
+    <!-- <item>@string/tv_menu_factory_input_settings_spinner_item_hdmi_cec</item> -->
+    <!-- <item>@string/tv_menu_factory_input_settings_spinner_item_auto_link_power_off</item> -->
+    <!-- <item>@string/tv_menu_factory_input_settings_spinner_item_speaker_output</item> -->
+    <!-- <item>@string/tv_menu_factory_input_settings_spinner_item_device_list</item> -->
+    <!-- <item>@string/tv_menu_factory_input_settings_spinner_item_device_scan</item> -->
+    <!-- </string-array> -->
+    <string name="tv_menu_factory_input_settings_spinner_item_auto_tv_power">自动开机 [开/关]</string>
+    <string name="tv_menu_factory_input_settings_spinner_item_hdmi_cec">HDMI CEC[开/关]</string>
+    <string name="tv_menu_factory_input_settings_spinner_item_auto_link_power_off">自动关闭连接电源</string>
+    <string name="tv_menu_factory_input_settings_spinner_item_speaker_output">扬声器输出 [开/关]</string>
+    <string name="tv_menu_factory_input_settings_spinner_item_device_list">设备列表 [列表]</string>
+    <string name="tv_menu_factory_input_settings_spinner_item_device_scan">扫描设备</string>
+    <string-array name="tv_menu_language_settings_keyboard_settings_spinner">
+        <item>@string/tv_menu_language_settings_spinner_item_keyboard_types</item>
+        <item>@string/tv_menu_language_settings_spinner_item_text_input</item>
+        <item>@string/tv_menu_language_settings_spinner_item_tutorial</item>
+        <item>@string/tv_menu_language_settings_spinner_item_user_dictionary</item>
+    </string-array>
+    <string name="tv_menu_language_settings_spinner_item_keyboard_types">键盘类型 [QWERTY/自定义]</string>
+    <string name="tv_menu_language_settings_spinner_item_text_input">文本输入(预设置选项文本)</string>
+    <string name="tv_menu_language_settings_spinner_item_tutorial">教程(学习如何输入文本)</string>
+    <string name="tv_menu_language_settings_spinner_item_user_dictionary">用户字典(添加、删除和编辑单词)</string>
+    <string-array name="tv_menu_storage_settings_external_file_storage_spinner">
+        <item>@string/tv_menu_storage_settings_spinner_item_total_space</item>
+        <item>@string/tv_menu_storage_settings_spinner_item_available_space</item>
+        <item>@string/tv_menu_storage_settings_spinner_item_unmount</item>
+        <item>@string/tv_menu_storage_settings_spinner_item_format</item>
+    </string-array>
+    <string name="tv_menu_storage_settings_spinner_item_total_space">总空间</string>
+    <string name="tv_menu_storage_settings_spinner_item_available_space">可用空间</string>
+    <string name="tv_menu_storage_settings_spinner_item_unmount">卸载</string>
+    <string name="tv_menu_storage_settings_spinner_item_format">格式</string>
+    <string name="main_menu_description_info">信息</string>
+    <string name="button_text_yes">是</string>
+    <string name="button_text_later">以后</string>
+    <string name="button_text_connect">连接</string>
+    <string name="button_text_no">否</string>
+    <string name="button_text_edit">编辑</string>
+    <string name="button_text_add">添加</string>
+    <string name="button_text_cancel">取消</string>
+    <string name="button_text_sync">同步</string>
+    <string name="button_text_enable">打开</string>
+    <string name="button_text_off">关闭</string>
+    <string name="button_text_english">英文</string>
+    <string name="button_text_serbia">塞尔维亚</string>
+    <string name="button_text_ethernet">以太网</string>
+    <string name="button_text_begin">开始</string>
+    <string name="button_text_on">打开</string>
+    <string name="button_text_choose">选择</string>
+    <string name="button_text_configure">配置</string>
+    <string name="button_text_info">信息</string>
+    <string name="button_text_view">浏览</string>
+    <string name="button_text_ok">Ok</string>
+    <string name="button_text_disable">关闭</string>
+    <string name="button_text_gmt_4m">GMT - 4</string>
+    <string name="button_text_gmt_3m">GMT - 3</string>
+    <string name="button_text_gmt_2m">GMT - 2</string>
+    <string name="button_text_gmt_1m">GMT - 1</string>
+    <string name="button_text_gmt">GMT</string>
+    <string name="button_text_gmt_1p">GMT + 1</string>
+    <string name="button_text_dtv">DTV</string>
+    <string name="button_text_start">开始</string>
+    <string name="button_text_confirm">确认</string>
+    <string name="button_text_tune">调谐</string>
+    <string name="button_text_move">Move</string>
+    <string name="button_text_delete">删除</string>
+    <string name="button_text_delete_all">全部删除</string>
+    <string name="button_text_standard">标准</string>
+    <string name="button_text_pcm">PCM</string>
+    <string name="button_text_music">音乐</string>
+    <string name="button_text_block">堵塞</string>
+    <string name="button_text_unblock">不堵塞</string>
+    <string name="button_text_set">Set</string>
+    <string name="button_text_change">改变</string>
+    <string name="button_text_remove">移除</string>
+    <string name="button_text_reset">重置</string>
+    <string name="button_text_listen">监听</string>
+    <string name="main_menu_content_list">内容列表</string>
+    <string name="main_menu_content_list_filter_all">全部</string>
+    <string name="main_menu_content_list_dvb_t">DVB T</string>
+    <string name="main_menu_content_list_ip">IP</string>
+    <string name="main_menu_content_list_dvb_s">DVB S</string>
+    <string name="main_menu_content_list_dvb_c">DVB C</string>
+    <string name="main_menu_content_list_atv">ATV</string>
+    <string name="main_menu_content_list_atsc_s">ATSC S</string>
+    <string name="main_menu_content_list_atsc_t">ATSC T</string>
+    <string name="main_menu_content_list_atsc_c">ATSC C</string>
+    <string name="main_menu_content_list_ntsc">NTSC</string>
+    <string name="main_menu_content_list_radio">广播</string>
+    <string name="main_menu_content_list_inputs">输入</string>
+    <string name="main_menu_content_list_apps">应用</string>
+    <string name="main_menu_content_list_widgets">工具</string>
+    <string name="main_menu_content_list_operator_profile">OP</string>
+    <string name="main_menu_content_list_data">日期</string>
+    <string name="main_menu_content_list_pip">画中画</string>
+    <string name="main_menu_content_list_recently_watched">最近访问内容:</string>
+    <string name="main_menu_content_list_favourite">爱好:</string>
+    <string name="main_menu_content_list_all">全部:</string>
+    <string name="main_menu_content_list_theme">主题</string>
+    <string name="multimedia_pvr_record">录制</string>
+    <string name="multimedia_pvr_record_sorted_mode">改变排序模式</string>
+    <string name="multimedia_pvr_record_sorted_order">改变排列顺序</string>
+    <string name="multimedia_pvr_schedule">计划表</string>
+    <string name="title">标题:</string>
+    <string name="duration">持续时长:</string>
+    <string name="description">描述:</string>
+    <string name="date">数据:</string>
+    <string name="start_time">开始时间:</string>
+    <string name="end_time">结束时间:</string>
+    <string name="multimedia">多媒体浏览器</string>
+    <string name="multimedia_all">所有</string>
+    <string name="multimedia_recently_watched">最近观看的节目:</string>
+    <string name="multimedia_favourite">爱好:</string>
+    <string name="multimedia_file_explorer">文件浏览器:</string>
+    <string name="multimedia_pvr_playlist">PVR列表为空.</string>
+    <string name="multimedia_file_info">文件信息:</string>
+    <string name="multimedia_file_path">文件路径:</string>
+    <string name="epg">EPG</string>
+    <string name="epg_reminder">提醒事项</string>
+    <string name="reminder_message_title">为此节目添加提醒事件?</string>
+    <string name="epg_reminder_error_list_full">提醒事项列表已满!</string>
+    <string name="epg_reminder_error_exist">事件已经在提醒事项列表中!</string>
+    <string name="epg_reminder_added">事项已经被添加到提醒事件列表中!</string>
+    <string name="smart_record_message_title">为此节目添加录制计划?</string>
+    <string name="electronic_program_guide">电子节目指南</string>
+    <string name="epg_schedule_reminder">计划提醒事件</string>
+    <string name="epg_scheduled_reminder">提醒事件</string>
+    <string name="epg_scheduled_record">PVR 录制</string>
+    <string name="epg_scheduled_record_passed">一些PVR录制已过期</string>
+    <string name="epg_scheduled_record_in_5mins">将在5分钟后开始</string>
+    <string name="epg_scheduled_reminder_passed">过期的</string>
+    <string name="epg_schedule_recording">计划录制</string>
+    <string name="epg_reminder_go_to_channel">切到频道</string>
+    <string name="epg_menu">EPG菜单</string>
+    <string name="google_play">Google Play</string>
+    <string name="teletext">Teletext</string>
+    <string name="tv_menu_picture_settings">图片设置</string>
+    <string name="tv_menu_picture_settings_picture_mode">图片模式</string>
+    <string name="tv_menu_picture_settings_aspect_ratio">长宽比</string>
+    <string name="tv_menu_picture_settings_brightness">亮度</string>
+    <string name="tv_menu_picture_settings_contrast">对比度</string>
+    <string name="tv_menu_picture_settings_color">颜色</string>
+    <string name="tv_menu_picture_settings_color_temperature">色温</string>
+    <string name="tv_menu_picture_settings_tint">色彩</string>
+    <string name="tv_menu_picture_settings_sharpness">锐度</string>
+    <string name="tv_menu_picture_settings_hue">色调</string>
+    <string name="tv_menu_picture_settings_saturation">饱和度</string>
+    <string name="tv_menu_picture_settings_backlight">背光</string>
+    <string name="tv_menu_picture_settings_advanced_video">高级视频设置</string>
+    <string name="tv_menu_picture_settings_theme">主题</string>
+    <string name="tv_menu_picture_settings_aspect_ratio_normal_4_3">4:3</string>
+    <string name="tv_menu_picture_settings_aspect_ratio_auto">原始比例</string>
+    <string name="tv_menu_picture_settings_nr">降噪</string>
+    <string name="tv_menu_picture_settings_nr_mode_off">关闭</string>
+    <string name="tv_menu_picture_settings_nr_mode_low">低</string>
+    <string name="tv_menu_picture_settings_nr_mode_middle">中</string>
+    <string name="tv_menu_picture_settings_nr_mode_high">高</string>
+    <string name="tv_menu_picture_settings_nr_mode_auto">自动</string>
+    <string-array name="tv_menu_picture_settings_nr">
+        <item>@string/tv_menu_picture_settings_nr_mode_off</item>
+        <item>@string/tv_menu_picture_settings_nr_mode_low</item>
+        <item>@string/tv_menu_picture_settings_nr_mode_middle</item>
+        <item>@string/tv_menu_picture_settings_nr_mode_high</item>
+        <item>@string/tv_menu_picture_settings_nr_mode_auto</item>
+    </string-array>
+    <string name="tv_menu_picture_settings_curl_settings">卷曲特效设置</string>
+    <string name="tv_menu_picture_settings_osd_selection">Osd 配置项</string>
+    <string name="tv_menu_picture_settings_curl_settings_delay_time_set">设置延时</string>
+    <string name="tv_menu_picture_settings_curl_settings_delay_time">卷曲延时时间</string>
+    <string name="tv_menu_picture_settings_curl_settings_delay_time_updated">卷曲延时时间已更新.</string>
+    <string name="tv_menu_picture_settings_color_temperature_normal">正常</string>
+    <string name="tv_menu_picture_settings_color_temperature_cool">冷色调</string>
+    <string name="tv_menu_picture_settings_color_temperature_warm">暖色调</string>
+    <string name="curl_effect_on_off">频道切换时启用卷曲特效</string>
+    <string name="curl_enabled">卷曲特效打开</string>
+    <string name="spinner_item_osd_selection_curl">卷曲横幅</string>
+    <string name="spinner_item_osd_selection_info_banner">标准信息横幅</string>
+    <string name="spinner_item_osd_selection_none">无</string>
+    <string-array name="osd_selection_mode">
+        <item>@string/spinner_item_osd_selection_curl</item>
+        <item>@string/spinner_item_osd_selection_info_banner</item>
+        <item>@string/spinner_item_osd_selection_none</item>
+    </string-array>
+    <string-array name="tv_menu_picture_settings_color_temperature_values">
+        <item>@string/tv_menu_picture_settings_color_temperature_cool</item>
+        <item>@string/tv_menu_picture_settings_color_temperature_normal</item>
+        <item>@string/tv_menu_picture_settings_color_temperature_warm</item>
+    </string-array>
+    <!-- Delay time values -->
+    <string name="tv_menu_picture_settings_curl_settings_delay_time_3_seconds">3秒</string>
+    <string name="tv_menu_picture_settings_curl_settings_delay_time_5_seconds">5秒</string>
+    <string name="tv_menu_picture_settings_curl_settings_delay_time_10_seconds">10秒</string>
+    <string name="tv_menu_picture_settings_curl_settings_delay_time_15_seconds">15秒</string>
+    <string name="tv_menu_picture_settings_curl_settings_delay_time_20_seconds">20秒</string>
+    <string-array name="tv_menu_picture_settings_aspect_ratio">
+        <item>@string/tv_menu_picture_settings_aspect_ratio_normal_4_3</item>
+        <item>@string/tv_menu_picture_settings_aspect_ratio_auto</item>
+    </string-array>
+    <string-array name="picture_settings_curl_settings_delay_time_array">
+        <item>@string/tv_menu_picture_settings_curl_settings_delay_time_3_seconds</item>
+        <item>@string/tv_menu_picture_settings_curl_settings_delay_time_5_seconds</item>
+        <item>@string/tv_menu_picture_settings_curl_settings_delay_time_10_seconds</item>
+        <item>@string/tv_menu_picture_settings_curl_settings_delay_time_15_seconds</item>
+        <item>@string/tv_menu_picture_settings_curl_settings_delay_time_20_seconds</item>
+    </string-array>
+    <string name="tv_menu_sound_settings">声音设置</string>
+    <string name="tv_menu_sound_settings_sound_mode">声音模式</string>
+    <string name="tv_menu_sound_settings_post_processing">音色均衡器</string>
+    <string name="tv_menu_sound_settings_spdif_mode">SPDIF输出模式</string>
+    <string name="tv_menu_sound_settings_treble">高音</string>
+    <string name="tv_menu_sound_settings_balance">平衡 [L/R]</string>
+    <string name="tv_menu_sound_settings_first_audio">第一音频</string>
+    <string name="tv_menu_sound_settings_second_audio">第二音频</string>
+    <string name="tv_menu_sound_settings_audio_description">音频描述</string>
+    <string name="tv_menu_sound_settings_bass">低音</string>
+    <string name="tv_menu_sound_settings_eq_band_1">EQ Band 120Hz</string>
+    <string name="tv_menu_sound_settings_eq_band_2">EQ Band 500Hz</string>
+    <string name="tv_menu_sound_settings_eq_band_3">EQ Band 1500Hz</string>
+    <string name="tv_menu_sound_settings_eq_band_4">EQ Band 5kHz</string>
+    <string name="tv_menu_sound_settings_eq_band_5">EQ Band 10kHz</string>
+    <string name="tv_menu_sound_settings_surround_sound">环绕音</string>
+    <string name="tv_menu_sound_settings_auto_volume">自动音量调节 [开/关]</string>
+    <string name="tv_menu_sound_settings_srs_trusurround">SRS TruSurround</string>
+    <string name="tv_menu_sound_settings_srs_trubass">SRS TruBass</string>
+    <string name="tv_menu_sound_settings_srs_dialog_clarity">SRS 对话清晰度</string>
+    <string name="tv_menu_sound_settings_bass_enhancer">低音增强</string>
+    <string name="tv_menu_sound_settings_headphones_volume">耳机音量</string>
+    <string name="tv_menu_sound_settings_headphones_mode">耳机输出模式</string>
+    <string name="tv_menu_sound_settings_delay">延迟</string>
+    <string name="tv_menu_sound_settings_clear_voice">Clear Voice</string>
+    <string name="tv_menu_sound_settings_analog_output_mode">模拟输出模式</string>
+    <string name="tv_menu_sound_settings_tv_speakers">TV扬声器</string>
+    <string name="tv_menu_sound_settings_theme">主题</string>
+    <string name="tv_menu_sound_settings_set_default_settings">恢复默认设置</string>
+    <string name="tv_menu_sound_mode_stereo"> 立体声</string>
+    <string name="tv_menu_sound_mode_single_mono">单声道</string>
+    <string name="tv_menu_sound_dual_mono">双单声道</string>
+    <string name="tv_menu_sound_sap">SAP</string>
+    <string name="tv_menu_hbb_settings">Hbb 设置</string>
+    <string name="tv_menu_hbb_settings_hbb_tv_enable">Hbb TV 使能</string>
+    <string name="tv_menu_hbb_settings_theme">主题</string>
+    <string name="tv_menu_dlna_settings_server_on_off">打开服务</string>
+    <string name="tv_menu_dlna_settings_renderer_on_off">使能渲染器</string>
+    <string name="tv_menu_subtitle_settings">字幕设置</string>
+    <string name="tv_menu_teletext_settings">图文设置</string>
+    <string name="tv_menu_subtitle_settings_subtitle_enabled">字幕使能</string>
+    <string name="tv_menu_subtitle_settings_teletext_language">图文语言</string>
+    <string name="tv_menu_subtitle_settings_epg_language">EPG语言</string>
+    <string name="tv_menu_subtitle_settings_subtitle_language">字幕第一语言</string>
+    <string name="tv_menu_subtitle_settings_subtitle_second_language">字幕第二语言</string>
+    <string name="tv_menu_subtitle_settings_subtitle_mode">字幕模式</string>
+    <string name="tv_menu_subtitle_settings_subtitle_type">字幕类型</string>
+    <string name="tv_menu_teletext_settings_language">图文第一语言</string>
+    <string name="tv_menu_teletext_settings_second_language">图文第二语言</string>
+    <string name="tv_menu_subtitle_settings_theme">主题</string>
+    <string name="tv_menu_channel_installation_settings">频道设置</string>
+    <string name="tv_menu_channel_installation_settings_tuner_type">Tuner类型</string>
+    <string name="tv_menu_channel_installation_settings_channel_tuning_mode">频道调谐模式</string>
+    <string name="tv_menu_channel_installation_settings_table_type">Table type</string>
+    <string name="tv_menu_channel_installation_settings_cable">同轴电缆</string>
+    <string name="tv_menu_channel_installation_settings_air">Air</string>
+    <string name="tv_menu_channel_installation_settings_satellite_name">卫星名称</string>
+    <string name="tv_menu_channel_installation_settings_auto_tunning">自动调谐</string>
+    <string name="tv_menu_channel_installation_settings_operator_tunning">Operator profile scan</string>
+    <string name="tv_menu_channel_installation_settings_manual_tunning">手动调谐</string>
+    <string name="tv_menu_channel_installation_settings_manual_tunning_abort_not_supported">不支持终止手动扫描!</string>
+    <string name="tv_menu_channel_installation_settings_signal_info">信号信息</string>
+    <string name="tv_menu_channel_installation_settings_programme_edit">节目编辑</string>
+    <string name="tv_menu_channel_installation_settings_satelite_edit">卫星编辑</string>
+    <string name="tv_menu_channel_installation_settings_ci_info">CI信息</string>
+    <string name="tv_menu_channel_installation_settings_ci_remove">Operator profile 移除</string>
+    <string name="tv_menu_channel_installation_settings_set_cicam_id">设置CICAM id</string>
+    <string name="tv_menu_channel_installation_settings_auto_channel_number">自动获取频道 [on/off]</string>
+    <string name="tv_menu_channel_installation_settings_theme">主题</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings">收到调谐</string>
+    <string name="tv_menu_channel_installation_manual_tunning_keep_current_list">保持当前频道列表</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_frequency">频率</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_frequency_scan">当前频率:</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_signal_strength">信号强度</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_signal_quality">信号质量</string>
+    <string name="tv_menu_channel_installation_scan_progress">扫描进度</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_channel_number_dvbt">频道号</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_nordic_band">频带</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_frequency_hint">频率 (KHz)</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_dtv_frequency_hint">频道号</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_symbol_rate_dvbc_hint">信号 (KSymbols/s)</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_symbol_rate_dvbs_hint">信号 (Mbaud)</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_scrambled">加扰</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_symbol_rate">符号率</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_polarization">偏振</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_modulation">调制</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_network_id">网络 ID</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_fec">FEC</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_start_search">开始检索</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_theme">主题</string>
+    <string name="tv_menu_channel_installation_settings_wrong_symbol_rate">误码率!</string>
+    <string name="tv_menu_channel_installation_signal_info_service_name">服务名称</string>
+    <string name="tv_menu_channel_installation_signal_info_service_id">服务 ID</string>
+    <string name="tv_menu_channel_installation_signal_info_channel_id">频道 ID</string>
+    <string name="tv_menu_channel_installation_signal_info_centre_frequency">频率</string>
+    <string name="tv_menu_channel_installation_signal_info_multiplex">复用</string>
+    <string name="tv_menu_channel_installation_signal_info_network">网络</string>
+    <string name="tv_menu_channel_installation_signal_info_network_id">网络ID</string>
+    <string name="tv_menu_channel_installation_signal_info_bit_error_level">误码水平</string>
+    <string name="tv_menu_channel_installation_signal_info_signal_strength">信号强度</string>
+    <string name="tv_menu_channel_installation_signal_info_signal_quality">信号质量</string>
+    <string name="tv_menu_channel_installation_manual_tunning_start_search_settings">开始检索</string>
+    <string name="tv_menu_channel_installation_manual_tunning_start_search_settings_scaning">正在进行频道扫描, 请稍等</string>
+    <string name="tv_menu_channel_installation_manual_tunning_start_search_settings_dtv_services">数字电视服务:16</string>
+    <string name="tv_menu_channel_installation_manual_tunning_start_search_settings_radio_services">广播服务:1</string>
+    <string name="tv_menu_channel_installation_manual_tunning_start_search_settings_data_services">数据服务:2</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_system">系统</string>
+    <string name="tv_menu_channel_installation_manual_tunning_settings_fine_tune">微调</string>
+    <string name="content_list_name">Android4TV</string>
+    <string name="filter_button_text">过滤器</string>
+    <string name="multimedia_content_list_name">Android 4 TV</string>
+    <string-array name="tv_menu_channel_installation_settings_tuner_type">
+        <item>@string/main_menu_content_list_dvb_s</item>
+        <item>@string/main_menu_content_list_dvb_t</item>
+        <item>@string/main_menu_content_list_dvb_c</item>
+        <item>@string/main_menu_content_list_ip</item>
+    </string-array>
+    <string-array name="tv_menu_channel_installation_settings_tuner_type_rk2010">
+        <item>@string/main_menu_content_list_dvb_t</item>
+        <item>@string/main_menu_content_list_ip</item>
+    </string-array>
+    <string name="tv_menu_parential_security_settings">家长引导</string>
+    <string name="tv_menu_parential_security_settings_parential_guidance">家长引导</string>
+    <string name="tv_menu_parential_security_settings_theme">主题</string>
+    <string name="tv_menu_password_security_settings">密码</string>
+    <string name="tv_menu_password_security_settings_set_password">设置密码</string>
+    <string name="tv_menu_password_security_settings_change_password">更改密码</string>
+    <string name="tv_menu_password_security_settings_remove_password">重置密码</string>
+    <string name="tv_menu_password_security_settings_theme">主题</string>
+    <string name="tv_menu_account_settings">帐号 &amp; 同步</string>
+    <string name="tv_menu_account_settings_background_data">背景数据</string>
+    <string name="tv_menu_account_settings_auto_sync">自动同步</string>
+    <string name="tv_menu_account_settings_click_to_sync">点击进行同步</string>
+    <string name="tv_menu_account_settings_manage_accounts">管理账号</string>
+    <string name="tv_menu_account_settings_manage_account">管理账号</string>
+    <string name="tv_menu_account_settings_manage_accounts_sync_off">同步已经关闭</string>
+    <string name="tv_menu_account_settings_manage_accounts_sync_on">同步已经打开</string>
+    <string name="tv_menu_account_settings_add_account">添加账号</string>
+    <string name="tv_menu_account_settings_add_gmail_account">example@gmail.com</string>
+    <string name="tv_menu_account_settings_add_yahoo_account">example@yahoo.com</string>
+    <string name="tv_menu_account_settings_theme">主题</string>
+    <string name="tv_menu_applications_settings">应用程序</string>
+    <string name="tv_menu_applications_settings_unknown_sources">未知源</string>
+    <string name="tv_menu_applications_settings_manage_applications">管理应用程序</string>
+    <string name="tv_menu_applications_settings_manage">管理</string>
+    <string name="tv_menu_applications_settings_running">查看全部</string>
+    <string name="tv_menu_applications_settings_running_services">运行的程序</string>
+    <string name="tv_menu_applications_settings_theme">主题</string>
+    <string name="tv_menu_applications_settings_manage_applications_choose_by_type">根据类型选程序</string>
+    <string name="tv_menu_applications_settings_manage_applications_downloaded">下载</string>
+    <string name="tv_menu_applications_settings_manage_applications_running">运行中</string>
+    <string name="tv_menu_applications_settings_manage_applications_All">全部</string>
+    <string name="tv_menu_applications_settings_manage_applications_on_external_storage">在外部存储器中</string>
+    <string name="tv_menu_applications_settings_manage_applications_force_stop">强制停止</string>
+    <string name="tv_menu_applications_settings_manage_applications_uninstall">卸载/关闭</string>
+    <string name="tv_menu_applications_settings_manage_applications_uninstall_btn">卸载</string>
+    <string name="tv_menu_applications_settings_manage_applications_disable">关闭</string>
+    <string name="tv_menu_applications_settings_manage_applications_enable">打开</string>
+    <string name="tv_menu_applications_settings_manage_applications_storage">存储</string>
+    <string name="tv_menu_applications_settings_manage_applications_storage_total">全部</string>
+    <string name="tv_menu_applications_settings_manage_applications_storage_app">应用</string>
+    <string name="tv_menu_applications_settings_manage_applications_storage_usb">USB存储应用</string>
+    <string name="tv_menu_applications_settings_manage_applications_storage_data">数据</string>
+    <string name="tv_menu_applications_settings_manage_applications_storage_sd_card">外部存储</string>
+    <string name="tv_menu_applications_settings_manage_applications_clear_data">清理数据</string>
+    <string name="tv_menu_applications_settings_manage_applications_cache">Cache</string>
+    <string name="tv_menu_applications_settings_manage_applications_cache_clear">清理cache</string>
+    <string name="tv_menu_applications_settings_manage_applications_default">在默认情况下启动</string>
+    <string name="tv_menu_applications_settings_manage_applications_default_clear">清除预设值</string>
+    <string name="tv_menu_applications_settings_manage_applications_permissions">权限</string>
+    <string-array name="tv_menu_applications_settings_manage_applications">
+        <item>@string/tv_menu_applications_settings_manage_applications_downloaded</item>
+        <item>@string/tv_menu_applications_settings_manage_applications_running</item>
+        <item>@string/tv_menu_applications_settings_manage_applications_All</item>
+        <item>@string/tv_menu_applications_settings_manage_applications_on_external_storage</item>
+    </string-array>
+    <string name="tv_menu_energy_settings">节能</string>
+    <string name="tv_menu_energy_settings_energy_save_enable">节能功能打开</string>
+    <string name="tv_menu_energy_settings_theme">主题</string>
+    <string name="tv_menu_storage_settings">外部存储 &amp; 本地文件存储</string>
+    <string name="tv_menu_storage_settings_external_file_storage">外部文件存储</string>
+    <string name="tv_menu_storage_settings_local_file_storage">本地存储</string>
+    <string name="tv_menu_storage_settings_factory_data_reset">恢复出厂设置</string>
+    <string name="tv_menu_storage_settings_theme">主题</string>
+    <string name="available">Available</string>
+    <string name="tv_menu_factory_reset_settings">恢复出厂设置</string>
+    <string name="tv_menu_factory_reset_settings_reset">重置</string>
+    <string name="tv_menu_factory_reset_settings_theme">主题</string>
+    <string name="tv_menu_factory_input_settings">输入设置</string>
+    <string name="tv_menu_factory_input_settings_hdmi_cec">HDMI CEC</string>
+    <string name="tv_menu_factory_input_settings_input_labels">输入标签</string>
+    <string name="tv_menu_factory_input_settings_theme">主题</string>
+    <string name="tv_menu_language_settings">语言 &amp; 键盘</string>
+    <string name="tv_menu_language_settings_select_language">选择语言</string>
+    <string name="tv_menu_language_settings_select_country">选择国家</string>
+    <string name="tv_menu_language_settings_audio_language">音频语言</string>
+    <string name="tv_menu_language_settings_keyboard_settings">键盘设置</string>
+    <string name="tv_menu_language_settings_text_size">文本大小</string>
+    <string name="tv_menu_language_settings_text_size_small">小</string>
+    <string name="tv_menu_language_settings_text_size_normal">正常</string>
+    <string name="tv_menu_language_settings_text_size_large">大</string>
+    <string name="tv_menu_language_settings_text_size_huge">超大</string>
+    <string-array name="tv_menu_language_settings_text_size_array">
+        <item>@string/tv_menu_language_settings_text_size_small</item>
+        <item>@string/tv_menu_language_settings_text_size_normal</item>
+        <item>@string/tv_menu_language_settings_text_size_large</item>
+        <item>@string/tv_menu_language_settings_text_size_huge</item>
+    </string-array>
+    <string name="tv_menu_language_settings_theme">主题</string>
+    <string name="tv_menu_network_settings">Network</string>
+    <string name="tv_menu_network_settings_network_type">选择网络类型</string>
+    <string name="tv_menu_network_settings_wireless_settings">无线设置</string>
+    <string name="tv_menu_network_settings_wired_settings">以太网设置</string>
+    <string name="tv_menu_network_settings_advanced_network_setup">高级网络设置</string>
+    <string name="tv_menu_network_settings_network_connection_test">网络连接测试</string>
+    <string name="tv_menu_network_settings_theme">主题</string>
+    <string name="tv_menu_network_settings_wireless">无线</string>
+    <string name="tv_menu_network_wireless_settings">无线设置</string>
+    <string name="tv_menu_network_wireless_settings_wireless">无线</string>
+    <string name="tv_menu_network_wireless_settings_networks">查找无线网络</string>
+    <string name="tv_menu_network_wireless_settings_network">网络</string>
+    <string name="tv_menu_network_wireless_settings_manual_add_wireless_network_name">输入名称</string>
+    <string name="tv_menu_network_wireless_settings_add_wireless_network">添加隐藏无线网络</string>
+    <string name="tv_menu_network_wireless_settings_enter_password">输入密码</string>
+    <string name="tv_menu_network_wireless_settings_repeat_password">再次输入密码</string>
+    <string name="tv_menu_network_wireless_settings_enter_new_password">输入新密码</string>
+    <string name="tv_menu_network_wireless_settings_repeat_new_password">再次输入新密码</string>
+    <string name="tv_menu_network_wireless_settings_enter_password_error_message">输入密码错误!</string>
+    <string name="tv_menu_network_wireless_settings_enter_password_changed_message">密码已经改变</string>
+    <string name="tv_menu_network_wireless_settings_enter_password_reseted_message">密码已经重置.</string>
+    <string name="enter_password_no_more_attempts_message">接下来旳十分钟内您不能够再尝试链接!</string>
+    <string name="enter_password_no_more_attempts_active">“不尝试”时段被激活!</string>
+    <string name="tv_menu_network_wireless_settings_enter_password_error">密码已经设置!!</string>
+    <string name="tv_menu_network_wireless_settings_enter_password_success_message">密码已经设置!</string>
+    <string name="tv_menu_network_wireless_settings_encryption">加密</string>
+    <string name="tv_menu_network_wireless_settings_theme">主题</string>
+    <string name="tv_menu_network_wireless_info">网络信息</string>
+    <string name="tv_menu_network_wireless_info_AP">接入点</string>
+    <string name="tv_menu_network_wireless_info_link_speed">连接速度</string>
+    <string name="tv_menu_network_wireless_info_signal_strength">信号强度</string>
+    <string name="tv_menu_network_wireless_info_enc_method">加密方法</string>
+    <string name="tv_menu_network_wireless_wps_config">WPS设置</string>
+    <string name="tv_menu_network_wireless_wps_config_enroll">WPS参与者</string>
+    <string name="tv_menu_network_wireless_wps_config_registrar">WPS登陆者</string>
+    <string name="tv_menu_network_wireless_wps_config_pbc">WPS PBC</string>
+    <string name="tv_menu_network_wireless_add_hidden_network">添加无线网络</string>
+    <string name="tv_menu_network_wireless_add_hidden_network_add">添加</string>
+    <string name="tv_menu_network_wireless_add_hidden_network_security">安全</string>
+    <string name="tv_menu_network_wireless_add_hidden_network_security_none">无</string>
+    <string name="tv_menu_network_wireless_add_hidden_network_security_wep">WEP</string>
+    <string name="tv_menu_network_wireless_add_hidden_network_security_wpa">WPA</string>
+    <string name="tv_menu_network_wireless_add_hidden_network_security_wpa2_psk">WPA2 PSK</string>
+    <string name="tv_menu_network_wireless_add_hidden_network_ssid">网络SSID</string>
+    <string name="tv_menu_network_wireless_add_hidden_network_password">密码</string>
+    <string name="tv_menu_network_wireless_add_hidden_network_add_none"></string>
+    <string name="tv_menu_network_wired_info">网络信息</string>
+    <string name="tv_menu_network_wired_info_IP">IP地址</string>
+    <string name="tv_menu_network_wired_info_netmask">网络地址</string>
+    <string name="tv_menu_network_wired_info_gateway">网关地址</string>
+    <string name="tv_menu_network_wired_dns">DNS地址</string>
+    <string name="tv_menu_network_wired_dns1">DNS1地址</string>
+    <string name="tv_menu_network_wired_dns2">DNS2地址</string>
+    <string name="tv_menu_network_wired_test">网络测试</string>
+    <string name="tv_menu_network_advanced_network_setup_settings">高级网络设置</string>
+    <string name="tv_menu_network_advanced_network_setup_settings_ip_address">IP地址</string>
+    <string name="tv_menu_network_advanced_network_setup_settings_dns">DNS</string>
+    <string name="tv_menu_network_advanced_network_setup_settings_mac_address">MAC地址</string>
+    <string name="tv_menu_network_advanced_network_setup_settings_proxy_settings">代理设置</string>
+    <string name="tv_menu_network_advanced_network_setup_settings_theme">主题</string>
+    <string name="tv_menu_pip_settings_position">画中画位置</string>
+    <string name="tv_menu_pip_settings_size">画中画尺寸</string>
+    <string name="tv_menu_pip_settings_custom_settings">自定义设置</string>
+    <string name="tv_menu_product_info_settings">产品信息</string>
+    <string name="tv_menu_product_info_settings_legal_information">法律信息</string>
+    <string name="tv_menu_product_info_settings_firmware_version">Android版本</string>
+    <string name="tv_menu_product_info_settings_model_number">型号</string>
+    <string name="tv_menu_product_info_settings_build_number">Build number</string>
+    <string name="tv_menu_product_info_settings_software_version">软件版本</string>
+    <string name="tv_menu_product_info_settings_ip_address">IP地址</string>
+    <string name="tv_menu_product_info_settings_mac_address">MAC地址</string>
+    <string name="tv_menu_product_info_settings_kernel">内核版本</string>
+    <string name="tv_menu_product_info_settings_theme">主题</string>
+    <string name="tv_menu_software_upgrade_settings">软件升级</string>
+    <string name="tv_menu_software_upgrade_settings_auto_upgrade">自动升级</string>
+    <string name="tv_menu_software_upgrade_settings_manually_uprade">手动升级</string>
+    <string name="tv_menu_software_upgrade_settings_manually_uprade_current_version">当前版本</string>
+    <string name="tv_menu_software_upgrade_settings_manually_uprade_upgrade">网络升级</string>
+    <string name="tv_menu_software_upgrade_settings_manually_uprade_usb">USB升级</string>
+    <string name="tv_menu_software_upgrade_settings_manually_uprade_btn">升级</string>
+    <string name="tv_menu_software_upgrade_settings_unavailable">不可用</string>
+    <string name="tv_menu_software_upgrade_settings_bsp">板级支持包</string>
+    <string name="tv_menu_software_upgrade_settings_hal">硬件抽象层</string>
+    <string name="tv_menu_software_upgrade_settings_mwl">中间件</string>
+    <string name="tv_menu_software_upgrade_settings_mal">中间件抽象层</string>
+    <string name="tv_menu_software_upgrade_settings_svn_version">软件包版本</string>
+    <string name="tv_menu_software_upgrade_settings_software_version">应用程序版本</string>
+    <string name="tv_menu_software_upgrade_settings_theme">主题</string>
+    <string name="tv_menu_time_and_date_settings">时间日期设置</string>
+    <string name="tv_menu_time_and_date_settings_automatic">自动</string>
+    <string name="tv_menu_time_and_date_settings_set_date">设置日期</string>
+    <string name="tv_menu_time_and_date_settings_select_time_zone">选择时区</string>
+    <string name="tv_menu_time_and_date_settings_set_time">设置时间</string>
+    <string name="tv_menu_time_and_date_settings_use_24_hour_format">24小时格式</string>
+    <string name="tv_menu_time_and_date_settings_select_date_format">选择日期格式</string>
+    <string name="tv_menu_timers_settings">定时器设置</string>
+    <string name="tv_menu_timers_settings_no_signal">无信号自动关机</string>
+    <string name="tv_menu_timers_settings_no_operation">无操作自动关机</string>
+    <string name="tv_menu_timers_settings_off_timers">关闭计时器设置</string>
+    <string name="tv_menu_timers_settings_on_timers">打开定时器设置</string>
+    <string name="tv_menu_timers_settings_time">时间</string>
+    <string name="tv_menu_timers_settings_delete_toast">定时器删除成功</string>
+    <string name="tv_menu_timers_settings_delete_toast_failed">定时器删除失败</string>
+    <string name="tv_menu_off_timers_settings">关闭定时器设置</string>
+    <string name="tv_menu_off_timers_add">添加关机定时器</string>
+    <string name="tv_menu_off_timers_delete">删除关机定时器</string>
+    <string name="tv_menu_off_timers_list">列出关机定时器列表</string>
+    <string name="tv_menu_off_timers_repeat_mode_off">关闭</string>
+    <string name="tv_menu_off_timers_repeat_mode_once">一次</string>
+    <string name="tv_menu_off_timers_repeat_mode_weekly">Weekly</string>
+    <string name="tv_menu_off_timers_repeat_mode_every_day">每天</string>
+    <string name="tv_menu_off_timers_repeat_mode_monday_to_friday">周一至周五</string>
+    <string name="tv_menu_off_timers_repeat_mode_monday_to_saturday">周一至周六</string>
+    <string name="tv_menu_off_timers_repeat_mode_saturday_to_sunday">周六至周日</string>
+    <string name="tv_menu_off_timers_repeat_mode_sunday">周日</string>
+    <string name="tv_menu_off_timers_repeat_mode">重复模式</string>
+    <string name="tv_menu_off_timers_repeat_mode_minutes">分</string>
+    <string name="tv_menu_off_timers_repeat_mode_hours">时</string>
+    <string name="tv_menu_time_and_date_settings_timer">定时器</string>
+    <string name="tv_menu_time_and_date_settings_theme">主题</string>
+    <string name="tv_menu_time_and_date_select_time_zone_settings">选择时区</string>
+    <string name="tv_menu_time_and_date_select_time_zone_settings_theme">主题</string>
+    <string name="tv_menu_time_and_date_set_time_settings_enter_time">输入时间</string>
+    <string name="tv_menu_time_and_date_set_time_settings_hour_time">h:</string>
+    <string name="tv_menu_time_and_date_set_time_settings_minute_time">m</string>
+    <string name="tv_menu_time_and_date_set_time_settings_theme">主题</string>
+    <string name="tv_menu_voice_settings">语音设置</string>
+    <string name="tv_menu_voice_settings_text_to_speach_settings">演讲文本设置</string>
+    <string name="tv_menu_voice_settings_listen_to_an_example">听一个样例</string>
+    <string name="tv_menu_voice_settings_always_use_my_settings">总是使用我的设置[y/n]</string>
+    <string name="tv_menu_voice_settings_language">语言</string>
+    <string name="tv_menu_voice_settings_theme">主题</string>
+    <string name="tv_menu_service_mode_menu">服务模式菜单</string>
+    <string name="tv_menu_service_mode_menu_system_settings">系统设置</string>
+    <string name="tv_menu_service_mode_menu_panel_settings">面板设置</string>
+    <string name="tv_menu_service_mode_menu_video_settings">视频设置</string>
+    <string name="tv_menu_service_mode_menu_sound_settings">声音设置</string>
+    <string name="tv_menu_service_mode_menu_debugging_data">Debbuging数据</string>
+    <string name="tv_menu_service_mode_menu_rc_button">RC按钮</string>
+    <string name="tv_menu_service_mode_menu_panel_button">面板按钮</string>
+    <string name="tv_menu_service_mode_menu_menu_button">菜单按钮</string>
+    <string name="tv_menu_service_mode_menu_input_mode_start">输入模式开始</string>
+    <string name="tv_menu_service_mode_menu_input_mode_fixed">固定输入模式</string>
+    <string name="tv_menu_service_mode_menu_input_tv_mode">输入TV模式节目号</string>
+    <string name="tv_menu_service_mode_menu_reset">重置</string>
+    <string name="tv_menu_service_mode_menu_commit">提交</string>
+    <string name="tv_menu_service_mode_menu_on_screen_display">在屏幕上显示</string>
+    <string name="tv_menu_service_mode_menu_on_factory_mode">工厂模式</string>
+    <string name="tv_menu_service_mode_menu_maximum_volume">最大音量</string>
+    <string name="tv_menu_service_mode_menu_volume_fixed">固定音量</string>
+    <string name="tv_menu_service_mode_menu_volume_fixed_level">固定音量级别</string>
+    <string name="tv_menu_service_mode_menu_main_version">主版本</string>
+    <string name="tv_menu_service_mode_menu_hardware_version">硬件版本</string>
+    <string name="tv_menu_service_mode_menu_normal_standby_cause">正常待机</string>
+    <string name="tv_menu_service_mode_menu_standby_cause_reset">待机重启</string>
+    <string name="tv_menu_service_mode_menu_pattern">模式</string>
+    <string name="tv_menu_service_mode_menu_normal">正常</string>
+    <string name="tv_menu_service_mode_menu_atv">ATV</string>
+    <string name="tv_menu_service_mode_menu_dtv">DTV</string>
+    <string name="tv_menu_service_mode_menu_scart">SCART</string>
+    <string name="tv_menu_service_mode_menu_component">COMPONENT</string>
+    <string name="tv_menu_service_mode_menu_pc_rgb">PC_RGB</string>
+    <string name="tv_menu_service_mode_menu_hdmi1">HDMI 1</string>
+    <string name="tv_menu_service_mode_menu_hdmi2">HDMI 2</string>
+    <string name="tv_menu_service_mode_menu_hdmi3">HDMI 3</string>
+    <string name="tv_menu_service_mode_menu_hdmi4">HDMI 4</string>
+    <string name="tv_menu_service_mode_menu_cause_ir">Stanby cause IR</string>
+    <string name="tv_menu_service_mode_menu_keypad">键盘</string>
+    <string name="tv_menu_service_mode_menu_sleep_timer">睡眠定时器</string>
+    <string name="tv_menu_service_mode_menu_no_signal">无信号</string>
+    <string name="tv_menu_pvr_menu">PVR 菜单</string>
+    <string name="tv_menu_pvr_manual_reminder">Manual Event Reminder</string>
+    <string name="tv_menu_pvr_manual_schedule">手动定时录制</string>
+    <string name="tv_menu_pvr_settings">PVR 设置</string>
+    <string name="tv_menu_pvr_settings_device">设备</string>
+    <string name="tv_menu_pvr_settings_speed_test_result">测速结果 (KB/s)</string>
+    <string name="tv_menu_pvr_settings_free_space">可用空间(GB)</string>
+    <string name="tv_menu_pvr_settings_total_space">总空间(GB)</string>
+    <string name="tv_menu_pvr_settings_set_path">打开选择的设备</string>
+    <string name="tv_menu_pvr_settings_performing_speed_test">执行测速</string>
+    <string name="tv_menu_pvr_settings_wrong">USB设备不符合使用PVR的最低要求!</string>
+    <string name="tv_menu_pvr_settings_sd_streams">USB设备只能在SD流情况使用PVR功能！</string>
+    <string name="tv_menu_pvr_settings_sd_hd_streams">USB设备可以在HD和SD流情况下使用PVR功能</string>
+    <string name="tv_menu_pvr_settings_start_speed_test">开始测速</string>
+    <string name="tv_menu_pvr_manual_reminder_channel">频道</string>
+    <string name="tv_menu_pvr_manual_reminder_time">开始时间</string>
+    <string name="tv_menu_pvr_manual_reminder_date">开始日期</string>
+    <string name="tv_menu_pvr_manual_scheduled_recording_repeat">重复</string>
+    <string name="tv_menu_pvr_manual_reminder_add">添加提示器</string>
+    <string name="tv_menu_pvr_manual_scheduled_recording_add">添加计划表</string>
+    <string name="tv_menu_pvr_schedule_repeat_once">一次</string>
+    <string name="tv_menu_pvr_schedule_repeat_daily">每日</string>
+    <string name="tv_menu_pvr_schedule_repeat_weekly">每周</string>
+    <string name="tv_menu_pvr_schedule_repeat_monthly">每月一次</string>
+    <string name="tv_menu_pvr_manual_reminder_toast">提示其添加成功</string>
+    <string name="tv_menu_pvr_manual_reminder_toast_failed">选定的时间不对！！！请重新设置</string>
+    <string name="tv_menu_pvr_schedule_date_end">结束日期</string>
+    <string name="tv_menu_pvr_schedule_time_end">结束时间</string>
+    <string name="tv_menu_pvr_schedule_toast">录制计划添加成功</string>
+    <string name="tv_menu_pvr_schedule_toast_failed">选定时间不对！！！请重新设置</string>
+    <string name="smart_record_error">添加PVR事件到列表是出错</string>
+    <string name="epg_smart_record_added">PVR是建议添加到列表中!</string>
+    <string name="epg_smart_record_error_conflit_found">PVR录制计划将不被创建!</string>
+    <string name="epg_smart_record_error_reschedule">PVR录制计划将被重新定制!</string>
+    <string name="epg_smart_record_started">PVR录制计划开始执行!</string>
+    <string name="tv_menu_screensaver_settings">屏幕保护设置</string>
+    <string name="tv_menu_screensaver_start">屏幕保护</string>
+    <string name="tv_menu_screensaver_set_time">设置等待时间</string>
+    <string name="tv_menu_store_mode_settings">存储模式设置</string>
+    <string name="tv_menu_store_mode_start">存储模式</string>
+    <string name="tv_menu_store_mode_launch_video_presentation">启动视频演示</string>
+    <string name="tv_menu_source_menu_broadcast">广播</string>
+    <string name="tv_menu_source_menu_terrestrial">地面</string>
+    <string name="tv_menu_source_menu_cable">同轴电缆</string>
+    <string name="tv_menu_source_menu_satellite">卫星</string>
+    <string name="tv_menu_source_menu_analog">模拟</string>
+    <string name="tv_menu_source_menu_radio">收音机</string>
+    <string name="tv_menu_source_menu_data">数据</string>
+    <string name="tv_menu_source_menu_cvbs">CVBS</string>
+    <string name="tv_menu_source_menu_vga">VGA</string>
+    <string name="tv_menu_source_menu_component">色差端子</string>
+    <string name="tv_menu_source_menu_hdmi1">HDMI 1</string>
+    <string name="tv_menu_source_menu_hdmi2">HDMI 2</string>
+    <string name="tv_menu_source_menu_hdmi3">HDMI 3</string>
+    <string name="tv_menu_source_menu_hdmi4">HDMI 4</string>
+    <string name="tv_menu_network_id">网络ID</string>
+    <string name="tv_menu_cable_network_settings">线缆网络设置</string>
+    <string name="tv_menu_store_values">存储值</string>
+    <string name="tv_menu_network_id_selection">网络ID选项</string>
+    <string-array name="tv_menu_manual_pvr_schedule_repeat">
+        <item>@string/tv_menu_pvr_schedule_repeat_once</item>
+        <item>@string/tv_menu_pvr_schedule_repeat_daily</item>
+        <item>@string/tv_menu_pvr_schedule_repeat_weekly</item>
+        <item>@string/tv_menu_pvr_schedule_repeat_monthly</item>
+    </string-array>
+    <string-array name="tv_menu_off_timers_repeat_mode">
+        <!-- <item>@string/tv_menu_off_timers_repeat_mode_off</item> -->
+        <item>@string/tv_menu_off_timers_repeat_mode_once</item>
+        <item>@string/tv_menu_off_timers_repeat_mode_weekly</item>
+        <item>@string/tv_menu_off_timers_repeat_mode_every_day</item>
+        <item>@string/tv_menu_off_timers_repeat_mode_monday_to_friday</item>
+        <item>@string/tv_menu_off_timers_repeat_mode_monday_to_saturday</item>
+        <item>@string/tv_menu_off_timers_repeat_mode_saturday_to_sunday</item>
+        <item>@string/tv_menu_off_timers_repeat_mode_sunday</item>
+    </string-array>
+    <string-array name="tv_menu_network_wireless_add_hidden_network_security">
+        <item>@string/tv_menu_network_wireless_add_hidden_network_security_none</item>
+        <item>@string/tv_menu_network_wireless_add_hidden_network_security_wep</item>
+        <item>@string/tv_menu_network_wireless_add_hidden_network_security_wpa</item>
+        <item>@string/tv_menu_network_wireless_add_hidden_network_security_wpa2_psk</item>
+    </string-array>
+    <string-array name="tv_menu_system_settings_input_mode">
+        <item>@string/tv_menu_service_mode_menu_normal</item>
+        <item>@string/tv_menu_service_mode_menu_atv</item>
+        <item>@string/tv_menu_service_mode_menu_dtv</item>
+        <item>@string/tv_menu_service_mode_menu_scart</item>
+        <item>@string/tv_menu_service_mode_menu_component</item>
+        <item>@string/tv_menu_service_mode_menu_pc_rgb</item>
+        <item>@string/tv_menu_service_mode_menu_hdmi1</item>
+        <item>@string/tv_menu_service_mode_menu_hdmi2</item>
+        <item>@string/tv_menu_service_mode_menu_hdmi3</item>
+        <item>@string/tv_menu_service_mode_menu_hdmi4</item>
+    </string-array>
+    <string-array name="tv_menu_debugging_data_normal_standby_cause">
+        <item>@string/tv_menu_service_mode_menu_cause_ir</item>
+        <item>@string/tv_menu_service_mode_menu_keypad</item>
+        <item>@string/tv_menu_service_mode_menu_sleep_timer</item>
+        <item>@string/tv_menu_service_mode_menu_no_signal</item>
+    </string-array>
+    <string-array name="main_menu_item_names">
+        <item>@string/main_menu_item_content_list</item>
+        <item>@string/main_menu_item_multimedia</item>
+        <item>@string/main_menu_item_applications</item>
+        <item>@string/main_menu_item_input_selection</item>
+        <item>@string/main_menu_item_google_play</item>
+        <item>@string/main_menu_item_settings</item>
+    </string-array>
+    <string-array name="main_menu_hbb_item_names">
+        <item>@string/tv_settings_menu_item_sound_settings</item>
+        <item>@string/tv_settings_menu_item_picture_settings</item>
+        <item>@string/tv_settings_menu_description_hbb_settings</item>
+    </string-array>
+    <string-array name="main_menu_item_names_tv_features">
+        <item>@string/main_menu_item_content_list</item>
+        <item>@string/main_menu_item_multimedia</item>
+        <item>@string/main_menu_item_applications</item>
+        <item>@string/main_menu_item_google_play</item>
+        <item>@string/main_menu_item_settings</item>
+    </string-array>
+    <string-array name="channel_installation_table_type">
+        <item>@string/table_type_sdt</item>
+        <item>@string/table_type_hrc</item>
+        <item>@string/table_type_irc</item>
+    </string-array>
+    <string-array name="channel_installation_channel_tuning_mode">
+        <item>@string/tuning_mode_digital</item>
+        <item>@string/tuning_mode_analog</item>
+    </string-array>
+    <string name="main_menu_item_content_list">内容列表</string>
+    <string name="main_menu_item_multimedia">多媒体</string>
+    <string name="main_menu_item_applications">应用程序</string>
+    <string name="main_menu_item_input_selection">输入选项</string>
+    <string name="main_menu_item_google_play">Google Play</string>
+    <string name="main_menu_item_settings">设置</string>
+    <string name="table_type_sdt">SDT</string>
+    <string name="table_type_hrc">HRC</string>
+    <string name="table_type_irc">IRC</string>
+    <string name="tuning_mode_digital">数字</string>
+    <string name="tuning_mode_analog">模拟</string>
+    <string-array name="settings_menu_item_names">
+        <item>@string/settings_menu_item_tv_settings</item>
+        <item>@string/settings_menu_item_network</item>
+        <item>@string/settings_menu_item_time_and_date</item>
+        <item>@string/settings_menu_item_language_and_keyboard</item>
+        <item>@string/settings_menu_item_input_devices</item>
+        <item>@string/settings_menu_item_applications</item>
+        <item>@string/settings_menu_item_exteral_and_local_file_storage</item>
+        <item>@string/settings_menu_item_account_and_sync</item>
+        <item>@string/settings_menu_item_voice_input</item>
+        <item>@string/settings_menu_item_dlna</item>
+        <item>@string/settings_menu_item_product_info</item>
+        <item>@string/settings_menu_item_software_update</item>
+        <item>@string/settings_menu_item_energy_save</item>
+        <item>@string/settings_menu_item_factory_reset</item>
+        <item>@string/settings_menu_item_timer</item>
+    </string-array>
+    <string-array name="settings_menu_item_names_no_tv_features">
+        <item>@string/settings_menu_item_tv_settings</item>
+        <item>@string/settings_menu_item_network</item>
+        <item>@string/settings_menu_item_time_and_date</item>
+        <item>@string/settings_menu_item_language_and_keyboard</item>
+        <item>@string/settings_menu_item_applications</item>
+        <item>@string/settings_menu_item_exteral_and_local_file_storage</item>
+        <item>@string/settings_menu_item_account_and_sync</item>
+        <item>@string/settings_menu_item_dlna</item>
+        <item>@string/settings_menu_item_product_info</item>
+        <item>@string/settings_menu_item_software_update</item>
+        <item>@string/settings_menu_item_factory_reset</item>
+        <item>@string/settings_menu_item_timer</item>
+    </string-array>
+    <string-array name="settings_menu_item_names_no_dlna">
+        <item>@string/settings_menu_item_tv_settings</item>
+        <item>@string/settings_menu_item_network</item>
+        <item>@string/settings_menu_item_time_and_date</item>
+        <item>@string/settings_menu_item_language_and_keyboard</item>
+        <item>@string/settings_menu_item_input_devices</item>
+        <item>@string/settings_menu_item_applications</item>
+        <item>@string/settings_menu_item_exteral_and_local_file_storage</item>
+        <item>@string/settings_menu_item_account_and_sync</item>
+        <item>@string/settings_menu_item_voice_input</item>
+        <item>@string/settings_menu_item_product_info</item>
+        <item>@string/settings_menu_item_software_update</item>
+        <item>@string/settings_menu_item_energy_save</item>
+        <item>@string/settings_menu_item_factory_reset</item>
+        <item>@string/settings_menu_item_timer</item>
+    </string-array>
+    <string-array name="settings_menu_item_names_no_dlna_no_tv_features">
+        <item>@string/settings_menu_item_tv_settings</item>
+        <item>@string/settings_menu_item_network</item>
+        <item>@string/settings_menu_item_time_and_date</item>
+        <item>@string/settings_menu_item_language_and_keyboard</item>
+        <item>@string/settings_menu_item_applications</item>
+        <item>@string/settings_menu_item_exteral_and_local_file_storage</item>
+        <item>@string/settings_menu_item_account_and_sync</item>
+        <item>@string/settings_menu_item_product_info</item>
+        <item>@string/settings_menu_item_software_update</item>
+        <item>@string/settings_menu_item_factory_reset</item>
+        <item>@string/settings_menu_item_timer</item>
+    </string-array>
+    <string name="settings_menu_item_tv_settings">TV设置</string>
+    <string name="settings_menu_item_network">网络</string>
+    <string name="settings_menu_item_time_and_date">时间 &amp; 日期</string>
+    <string name="settings_menu_item_language_and_keyboard">语言 &amp; 键盘</string>
+    <string name="settings_menu_item_input_devices">输入设备</string>
+    <string name="settings_menu_item_applications">应用程序</string>
+    <string name="settings_menu_item_exteral_and_local_file_storage">文件存储</string>
+    <string name="settings_menu_item_account_and_sync">帐号 &amp; 同步</string>
+    <string name="settings_menu_item_voice_input">声音输入</string>
+    <string name="settings_menu_item_dlna">DLNA</string>
+    <string name="settings_menu_item_product_info">产品信息</string>
+    <string name="settings_menu_item_software_update">软件升级</string>
+    <string name="settings_menu_item_energy_save">节能设置</string>
+    <string name="settings_menu_item_factory_reset">恢复出厂设置</string>
+    <string name="settings_menu_item_timer">定时器</string>
+    <string-array name="tv_settings_menu_item_names">
+        <item>@string/tv_settings_menu_item_channel_installation</item>
+        <item>@string/tv_settings_menu_item_security</item>
+        <item>@string/tv_settings_menu_item_sound_settings</item>
+        <item>@string/tv_settings_menu_item_picture_settings</item>
+        <item>@string/tv_settings_menu_item_subtitles</item>
+        <item>@string/tv_settings_menu_hbb_settings</item>
+        <item>@string/tv_settings_menu_item_teletext</item>
+        <item>@string/tv_settings_menu_item_pvr</item>
+        <item>@string/tv_settings_menu_item_store_mode</item>
+        <item>@string/tv_settings_menu_item_screensaver</item>
+        <item>@string/tv_settings_menu_ci_settings</item>
+        <item>@string/tv_settings_menu_osd_selection</item>
+        <item>@string/tv_settings_menu_pip_settings</item>
+    </string-array>
+    <string-array name="tv_settings_menu_item_names_no_hbb">
+        <item>@string/tv_settings_menu_item_channel_installation</item>
+        <item>@string/tv_settings_menu_item_security</item>
+        <item>@string/tv_settings_menu_item_sound_settings</item>
+        <item>@string/tv_settings_menu_item_picture_settings</item>
+        <item>@string/tv_settings_menu_item_subtitles</item>
+        <item>@string/tv_settings_menu_item_teletext</item>
+        <item>@string/tv_settings_menu_item_pvr</item>
+        <item>@string/tv_settings_menu_item_store_mode</item>
+        <item>@string/tv_settings_menu_item_screensaver</item>
+        <item>@string/tv_settings_menu_ci_settings</item>
+        <item>@string/tv_settings_menu_osd_selection</item>
+        <item>@string/tv_settings_menu_pip_settings</item>
+    </string-array>
+    <string name="tv_settings_menu_item_channel_installation">频道设置</string>
+    <string name="tv_settings_menu_item_security">安全设置</string>
+    <string name="tv_settings_menu_item_sound_settings">声音设置</string>
+    <string name="tv_settings_menu_item_picture_settings">图片设置</string>
+    <string name="tv_settings_menu_item_subtitles">字幕</string>
+    <string name="tv_settings_menu_hbb_settings">Hbb设置</string>
+    <string name="tv_settings_menu_item_teletext">图文</string>
+    <string name="tv_settings_menu_item_pvr">PVR</string>
+    <string name="tv_settings_menu_item_store_mode">存储模式</string>
+    <string name="tv_settings_menu_item_screensaver">Screen Saver</string>
+    <string name="tv_settings_menu_ci_settings">CI设置</string>
+    <string name="tv_settings_menu_osd_selection">OSD Configuration</string>
+    <string name="tv_settings_menu_pip_settings">画中画设置</string>
+    <string-array name="security_settings_menu_item_names">
+        <item>@string/security_settings_menu_item_parential_guidance</item>
+        <item>@string/security_settings_menu_item_security</item>
+        <item>@string/security_settings_menu_item_program_blocking</item>
+    </string-array>
+    <string name="security_settings_menu_item_parential_guidance">家长向导</string>
+    <string name="security_settings_menu_item_security">密码</string>
+    <string name="security_settings_menu_item_program_blocking">节目锁定</string>
+    <string-array name="main_menu_item_description">
+        <item>@string/main_menu_description_content_list</item>
+        <item>@string/main_menu_description_multimedia</item>
+        <item>@string/main_menu_description_applications</item>
+        <item>@string/main_menu_description_input_selection</item>
+        <item>@string/main_menu_description_google_play</item>
+        <item>@string/main_menu_description_settings</item>
+    </string-array>
+    <string-array name="main_menu_item_description_no_tv_features">
+        <item>@string/main_menu_description_content_list</item>
+        <item>@string/main_menu_description_multimedia</item>
+        <item>@string/main_menu_description_applications</item>
+        <item>@string/main_menu_description_google_play</item>
+        <item>@string/main_menu_description_settings</item>
+    </string-array>
+    <string-array name="main_menu_hbb_item_description">
+        <item>@string/tv_settings_menu_description_sound_settings</item>
+        <item>@string/tv_settings_menu_description_picture_settings</item>
+        <item>@string/tv_settings_menu_description_hbb_settings</item>
+    </string-array>
+    <string name="main_menu_description_content_list">内容列表</string>
+    <string name="main_menu_description_multimedia">多媒体</string>
+    <string name="main_menu_description_applications">应用程序</string>
+    <string name="main_menu_description_input_selection">输入选项</string>
+    <string name="main_menu_description_google_play">Google Play</string>
+    <string name="main_menu_description_settings">设备设置</string>
+    <string-array name="settings_menu_description_names_description">
+        <item>@string/settings_menu_description_tv_settings</item>
+        <item>@string/settings_menu_description_network</item>
+        <item>@string/settings_menu_description_time_and_date</item>
+        <item>@string/settings_menu_description_language_and_keyboard</item>
+        <item>@string/settings_menu_description_input_devices</item>
+        <item>@string/settings_menu_description_applications</item>
+        <item>@string/settings_menu_description_exteral_and_local_file_storage</item>
+        <item>@string/settings_menu_description_account_and_sync</item>
+        <item>@string/settings_menu_description_voice_input</item>
+        <item>@string/settings_menu_description_dlna</item>
+        <item>@string/settings_menu_description_product_info</item>
+        <item>@string/settings_menu_description_software_update</item>
+        <item>@string/settings_menu_description_energy_save</item>
+        <item>@string/settings_menu_description_factory_reset</item>
+        <item>@string/settings_menu_description_timer</item>
+    </string-array>
+    <string-array name="settings_menu_description_names_description_no_tv_features">
+        <item>@string/settings_menu_description_tv_settings</item>
+        <item>@string/settings_menu_description_network</item>
+        <item>@string/settings_menu_description_time_and_date</item>
+        <item>@string/settings_menu_description_language_and_keyboard</item>
+        <item>@string/settings_menu_description_applications</item>
+        <item>@string/settings_menu_description_exteral_and_local_file_storage</item>
+        <item>@string/settings_menu_description_account_and_sync</item>
+        <item>@string/settings_menu_description_dlna</item>
+        <item>@string/settings_menu_description_product_info</item>
+        <item>@string/settings_menu_description_software_update</item>
+        <item>@string/settings_menu_description_factory_reset</item>
+        <item>@string/settings_menu_description_timer</item>
+    </string-array>
+    <string-array name="settings_menu_description_names_description_no_dlna">
+        <item>@string/settings_menu_description_tv_settings</item>
+        <item>@string/settings_menu_description_network</item>
+        <item>@string/settings_menu_description_time_and_date</item>
+        <item>@string/settings_menu_description_language_and_keyboard</item>
+        <item>@string/settings_menu_description_input_devices</item>
+        <item>@string/settings_menu_description_applications</item>
+        <item>@string/settings_menu_description_exteral_and_local_file_storage</item>
+        <item>@string/settings_menu_description_account_and_sync</item>
+        <item>@string/settings_menu_description_voice_input</item>
+        <item>@string/settings_menu_description_product_info</item>
+        <item>@string/settings_menu_description_software_update</item>
+        <item>@string/settings_menu_description_energy_save</item>
+        <item>@string/settings_menu_description_factory_reset</item>
+        <item>@string/settings_menu_description_timer</item>
+    </string-array>
+    <string-array name="settings_menu_description_names_description_no_dlna_no_tv_features">
+        <item>@string/settings_menu_description_tv_settings</item>
+        <item>@string/settings_menu_description_network</item>
+        <item>@string/settings_menu_description_time_and_date</item>
+        <item>@string/settings_menu_description_language_and_keyboard</item>
+        <item>@string/settings_menu_description_applications</item>
+        <item>@string/settings_menu_description_exteral_and_local_file_storage</item>
+        <item>@string/settings_menu_description_account_and_sync</item>
+        <item>@string/settings_menu_description_product_info</item>
+        <item>@string/settings_menu_description_software_update</item>
+        <item>@string/settings_menu_description_factory_reset</item>
+        <item>@string/settings_menu_description_timer</item>
+    </string-array>
+    <string name="settings_menu_description_tv_settings">TV设置</string>
+    <string name="settings_menu_description_network">WiFi与Network设置</string>
+    <string name="settings_menu_description_time_and_date">时间和日期设置</string>
+    <string name="settings_menu_description_language_and_keyboard">语言和键盘设置</string>
+    <string name="settings_menu_description_input_devices">输入设备管理</string>
+    <string name="settings_menu_description_applications">应用程序设置</string>
+    <string name="settings_menu_description_exteral_and_local_file_storage">文件存储设置</string>
+    <string name="settings_menu_description_account_and_sync">账号和同步设置</string>
+    <string name="settings_menu_description_dlna">DLNA设置</string>
+    <string name="settings_menu_description_voice_input">声音设置</string>
+    <string name="settings_menu_description_product_info">产品信息</string>
+    <string name="settings_menu_description_software_update">Software Update Management</string>
+    <string name="settings_menu_description_energy_save">Energy save Management</string>
+    <string name="settings_menu_description_factory_reset">Reset Management</string>
+    <string name="settings_menu_description_timer">Timers</string>
+    <string-array name="tv_settings_menu_description_names">
+        <item>@string/tv_settings_menu_description_channel_installation</item>
+        <item>@string/tv_settings_menu_description_security</item>
+        <item>@string/tv_settings_menu_description_sound_settings</item>
+        <item>@string/tv_settings_menu_description_picture_settings</item>
+        <item>@string/tv_settings_menu_description_subtitles</item>
+        <item>@string/tv_settings_menu_description_hbb_settings</item>
+        <item>@string/tv_settings_menu_description_teletext</item>
+        <item>@string/tv_settings_menu_description_pvr</item>
+        <item>@string/tv_settings_menu_description_store_mode</item>
+        <item>@string/tv_settings_menu_description_screensaver</item>
+        <item>@string/tv_settings_menu_description_ci_settings</item>
+        <item>@string/tv_settings_menu_description_osd_selection</item>
+        <item>@string/tv_settings_menu_description_pip_settings</item>
+    </string-array>
+    <string-array name="tv_settings_menu_description_names_no_hbb">
+        <item>@string/tv_settings_menu_description_channel_installation</item>
+        <item>@string/tv_settings_menu_description_security</item>
+        <item>@string/tv_settings_menu_description_sound_settings</item>
+        <item>@string/tv_settings_menu_description_picture_settings</item>
+        <item>@string/tv_settings_menu_description_subtitles</item>
+        <item>@string/tv_settings_menu_description_teletext</item>
+        <item>@string/tv_settings_menu_description_pvr</item>
+        <item>@string/tv_settings_menu_description_store_mode</item>
+        <item>@string/tv_settings_menu_description_screensaver</item>
+        <item>@string/tv_settings_menu_description_ci_settings</item>
+        <item>@string/tv_settings_menu_description_osd_selection</item>
+        <item>@string/tv_settings_menu_description_pip_settings</item>
+    </string-array>
+    <string name="tv_settings_menu_description_channel_installation">频道设置</string>
+    <string name="tv_settings_menu_description_security">安全设置</string>
+    <string name="tv_settings_menu_description_sound_settings">声音设置</string>
+    <string name="tv_settings_menu_description_picture_settings">屏幕图片设置</string>
+    <string name="tv_settings_menu_description_subtitles">字幕设置</string>
+    <string name="tv_settings_menu_description_hbb_settings">Hbb 设置</string>
+    <string name="tv_settings_menu_description_teletext">图文设置</string>
+    <string name="tv_settings_menu_description_pvr">PVR 菜单</string>
+    <string name="tv_settings_menu_description_store_mode">存储模式设置</string>
+    <string name="tv_settings_menu_description_screensaver">Screen Saver Settings</string>
+    <string name="tv_settings_menu_description_ci_settings">CI 设置</string>
+    <string name="tv_settings_menu_description_osd_selection">OSD 配置</string>
+    <string name="tv_settings_menu_description_pip_settings">画中画设置</string>
+    <string-array name="security_settings_menu_description_names">
+        <item>@string/security_settings_menu_description_parential_guidance</item>
+        <item>@string/security_settings_menu_description_security</item>
+        <item>@string/security_settings_menu_description_program_blocking</item>
+    </string-array>
+    <string name="security_settings_menu_description_parential_guidance">家长向导设置</string>
+    <string name="security_settings_menu_description_security">密码设置</string>
+    <string name="security_settings_menu_description_program_blocking">Manage Program Blocking</string>
+    <string name="channel_search_number_of_dtv_services">Number of DTV services:</string>
+    <string name="channel_search_number_of_radio_services">广播服务:</string>
+    <string name="channel_search_number_of_data_services">数据服务:</string>
+    <string name="channel_search_scanning">正在进行频道扫描, 请稍等</string>
+    <string name="scan_finished">扫描结束!</string>
+    <string name="scan_not_available_for_ip">不适用于IP频道!</string>
+    <string name="add_to_favourites">添加到爱好</string>
+    <string name="remove_from_favourites">从爱好中移除</string>
+    <string name="remove_from_schedulue">从计划表中移除</string>
+    <string name="remove_from_pvr_record">从里表中移除文件</string>
+    <string name="remove_all_files_from_list">移除列表中的所有文件</string>
+    <string name="remove_from_recently">从最近列表中移除</string>
+    <string name="remove_from_reminders">取消提醒</string>
+    <string name="play_in_full_screen">全屏播放</string>
+    <string name="play_in_pip">PiP模式播放</string>
+    <string name="play_in_pap">Play in PAP</string>
+    <string name="lock_channel">锁定</string>
+    <string name="unlock_channel">解锁</string>
+    <string name="enable_input">打开</string>
+    <string name="disable_input">关闭</string>
+    <string name="rename_content">Rename</string>
+    <string name="cancel">取消</string>
+    <string name="cant_remove_from_recently">运行的内容不能移除!</string>
+    <string-array name="add_to_favourites_dropdown">
+        <item>@string/add_to_favourites</item>
+        <item>@string/cancel</item>
+    </string-array>
+    <string-array name="remove_from_favourites_dropdown">
+        <item>@string/remove_from_favourites</item>
+        <item>@string/cancel</item>
+    </string-array>
+    <string-array name="add_to_favourites_remove_from_recenlty_dropdown">
+        <item>@string/remove_from_recently</item>
+        <item>@string/add_to_favourites</item>
+        <item>@string/cancel</item>
+    </string-array>
+    <string-array name="remove_from_schedule_dropdown">
+        <item>@string/remove_from_schedulue</item>
+        <item>@string/cancel</item>
+    </string-array>
+    <string-array name="remove_from_pvr_list_dropdown">
+        <item>@string/add_to_favourites</item>
+        <item>@string/remove_from_pvr_record</item>
+        <item>@string/remove_all_files_from_list</item>
+        <item>@string/cancel</item>
+    </string-array>
+    <string-array name="renderer_video_play_mode_dropdown">
+        <item>@string/play_in_full_screen</item>
+        <item>@string/play_in_pip</item>
+        <item>@string/play_in_pap</item>
+        <item>@string/cancel</item>
+    </string-array>
+    <string-array name="renderer_play_mode_dropdown">
+        <item>@string/play</item>
+        <item>@string/cancel</item>
+    </string-array>
+    <string-array name="reminders_dropdown">
+        <item>@string/remove_from_reminders</item>
+        <item>@string/cancel</item>
+    </string-array>
+    <string name="subtitle_dialog_open">字幕显示</string>
+    <string name="subtitle_dialog_close">字幕隐藏</string>
+    <string name="unknown">不明</string>
+    <string name="no_signal">没有可用的信号!</string>
+    <string name="close">关闭!</string>
+    <string name="scrambled">保密服务!</string>
+    <string name="locked">加锁的服务!</string>
+    <string name="parental_control_activated">家长控制!</string>
+    <string name="radio">广播服务!</string>
+    <string name="data_service">数据服务!</string>
+    <string name="parental_control_title">Parental control</string>
+    <string name="parental_control_enter_pin">输入PIN码:</string>
+    <string name="parental_control_enter_pin_hint">输入PIN码</string>
+    <string name="parental_control_ok">确定</string>
+    <!-- Renderer -->
+    <string name="dlna_renderer_play_file_from_controller">逆向播放这个文件?</string>
+    <string name="dlna_renderer_wrong_extension">此扩展名的文件不能被播放!</string>
+    <string name="dlna_multimedia_decoding_error">这个文件无法播放!</string>
+    <string name="dlna_renderer_play">渲染器播放</string>
+    <string name="dlna_renderer_pause">渲染器暂停</string>
+    <string name="dlna_renderer_stop">渲染器停止</string>
+    <!-- DLNA -->
+    <string name="dlna_playback_no_next_file">没有下一个文件!</string>
+    <string name="dlna_playback_no_previous_file">没有上一个文件!</string>
+    <string name="dlna_media_server_died">媒体服务终止!</string>
+    <!-- PVR -->
+    <string name="pvr_no_usb">请先插入USB设备!</string>
+    <string name="play">播放</string>
+    <string name="pause">暂停</string>
+    <string name="stop">停止</string>
+    <string name="fast_forward">快进</string>
+    <string name="rewind">快退</string>
+    <string name="record">录制中</string>
+    <string name="shedule_record">定时录制</string>
+    <string name="prepare_record">即将录制</string>
+    <string name="pvr_not_possible_to_zapp">录制模式不能切换频道!</string>
+    <string name="pvr_warning_disk_full">警告: 剩余10%磁盘容量</string>
+    <string name="pvr_disk_full">磁盘空间已满</string>
+    <string name="pvr_low_disk_space">低磁盘空间</string>
+    <string name="menu_not_possible_to_zapp">录制模式不能进入菜单!</string>
+    <string name="pvr_disabled">PVR功能不可用!</string>
+    <string name="timeshift_disabled">时移功能不可用!</string>
+    <string name="action_is_not_available">在本模式下此操作不可行!</string>
+    <!-- Time shift -->
+    <string name="play_timeshift">播放</string>
+    <string name="pause_timeshift">暂停</string>
+    <string name="fast_forward_timeshift">快进</string>
+    <string name="rewind_timeshift">快退</string>
+    <string name="prepare_timeshift">准备时移</string>
+    <!-- Subtitle languages -->
+    <string name="subtitle_language_none">无</string>
+    <!-- Parental guidence -->
+    <string name="wrong_pin_entered">PIN码错误!</string>
+    <string name="now">当前:</string>
+    <string name="next">下一个:</string>
+    <string name="error_while_decoding_image">解码图片出错!</string>
+    <string name="app_recreate">程序将重启!</string>
+    <string name="pvr_schedule_start_message">PVR Schedule mode entered.</string>
+    <!-- Info banner -->
+    <string name="infobaner_channel_name">120. 动物星球</string>
+    <string name="infobaner_channel_progress_start">1:45:00</string>
+    <string name="infobaner_channel_progress_duraion">1h 20min</string>
+    <string name="infobaner_channel_current">热门舞曲 80\'s</string>
+    <string name="infobaner_short_description">简述</string>
+    <string name="infobaner_time">8:00/9:20</string>
+    <string name="infobaner_long_description">South Park is an American animated sitcom created by Trey Parker and Matt Stone for the Comedy Central television net. South Park is an American animated sitcom created by Trey Parker and Matt Stone for the Comedy Central television net. South Park is an American animated sitcom created by Trey Parker and Matt Stone for the Comedy Central television net.South Park is an American animated sitcom created by Trey Parker and Matt Stone for the Comedy Central television net. South Park is an American animated sitcom created by Trey Parker and Matt Stone for the Comedy Central television net. South Park is an American animated sitcom created by Trey Parker and Matt Stone for the Comedy Central television net.</string>
+    <string name="infobaner_teletex">TTX</string>
+    <string name="infobaner_subtitle">字幕</string>
+    <string name="infobaner_hd">HD</string>
+    <string name="infobaner_audio">AUD</string>
+    <string name="infobaner_time_from_stream">10:43 AM</string>
+    <string name="infobaner_date_from_stream">2013/09/13</string>
+    <string name="infobaner_date_epg_error">获取EPG信息时出错.</string>
+    <string name="elapsed">"过去的:"</string>
+    <string name="progress_start_time">"00:00:00"</string>
+    <string name="recording">录制: </string>
+    <string name="playing">播放: </string>
+    <string name="resolution">分辨率: </string>
+    <string name="frame_rate">帧速率:</string>
+    <string name="curl_view_enabled_success">卷曲横幅开启成功</string>
+    <string name="info_banner_enabled_success">标准信息横幅开启成功</string>
+    <string name="change_curl">你确定要改变卷曲特效?</string>
+    <string name="curl_enabled_success">卷曲特效更改成功</string>
+</resources>

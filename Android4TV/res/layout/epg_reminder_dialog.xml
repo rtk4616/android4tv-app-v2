@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical" >
+        <com.iwedia.gui.components.A4TVTextView
+            android:id="@+id/aTVTextViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:layout_marginTop="@dimen/padding_small"
+            android:text="@string/epg_scheduled_reminder"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <ImageView
+            android:id="@+id/imageViewHorizLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="?DialogSmallUpperDividerLine" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayoutDialogContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_medium" >
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="?DialogSmallDividerLine"
+            android:fadeScrollbars="false"
+            android:fadingEdge="none"
+            android:listSelector="@drawable/transparent_image"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarStyle="insideInset" >
+        </ListView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/padding_small"
+        android:layout_weight="0.4"
+        android:gravity="right|bottom"
+        android:weightSum="4" >
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/padding_small"
+            android:gravity="center"
+            android:src="@drawable/back_icon" />
+        <com.iwedia.gui.components.A4TVTextView
+            android:id="@+id/aTVTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/padding_small"
+            android:gravity="center"
+            android:text="@string/epg_return"
+            android:textColor="@color/epg_text_gray_text_color" />
+    </LinearLayout>
+</LinearLayout>

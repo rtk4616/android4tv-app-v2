@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayoutVolume"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:visibility="invisible" >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/glow_up"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/up_glows" />
+            <ImageView
+                android:id="@+id/glow_down"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dock_height"
+                android:adjustViewBounds="true"
+                android:alpha=".90"
+                android:maxHeight="@dimen/dock_height1"
+                android:minHeight="@dimen/dock_height1"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_bg" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/dock_holder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dock_height1"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="fill" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dock_height1"
+                    android:gravity="center"
+                    android:minHeight="@dimen/dock_height1"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/padding3"
+                    android:paddingLeft="@dimen/separator"
+                    android:paddingTop="@dimen/padding3" >
+                    <ImageView
+                        android:id="@+id/imageViewVolumeState"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_small"
+                        android:layout_marginRight="@dimen/padding_medium"
+                        android:padding="7dp"
+                        android:src="@drawable/icn_volume_med" />
+                    <com.iwedia.gui.components.A4TVProgressVolumeBanner
+                        android:id="@+id/aTVProgressBarVolume"
+                        android:layout_width="340dp"
+                        android:layout_height="7dp"
+                        android:focusable="false" />
+                    <com.iwedia.gui.components.A4TVTextView
+                        android:id="@+id/aTVTextViewVolumeValue"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="@dimen/text_size_5"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

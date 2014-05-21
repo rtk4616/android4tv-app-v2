@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_medium"
+    android:weightSum="2.5" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.7"
+        android:orientation="vertical" >
+        <com.iwedia.gui.components.A4TVTextView
+            android:id="@+id/aTVTextViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/parental_control_title"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <ImageView
+            android:id="@+id/imageViewHorizLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.iwedia.gui.components.A4TVTextView
+            android:id="@+id/epgReminderTextMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:text="@string/parental_control_enter_pin" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayoutDialogContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_medium"
+        android:weightSum="3" >
+        <com.iwedia.gui.components.A4TVEditText
+            android:id="@+id/parentalControlPinEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:hint="@string/parental_control_enter_pin_hint"
+            android:inputType="textPassword"
+            android:maxLength="4"
+            android:singleLine="true" >
+        </com.iwedia.gui.components.A4TVEditText>
+        <com.iwedia.gui.components.A4TVButton
+            android:id="@+id/parentalControlOkButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/parental_control_ok" >
+        </com.iwedia.gui.components.A4TVButton>
+    </LinearLayout>
+</LinearLayout>
