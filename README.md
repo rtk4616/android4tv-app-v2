@@ -1,4 +1,4 @@
-android4tv-app-v2
+Android4TV - Application - V2.0
 =================
 
-android4tv-v2 full blown TV centric app
+Android4TV-V2.0 full blown TV centric app
