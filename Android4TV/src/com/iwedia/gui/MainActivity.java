@@ -34,15 +34,11 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 import android.widget.VideoView;
 
-import com.iwedia.comm.IActionCallback;
-import com.iwedia.comm.IChannelsCallback;
 import com.iwedia.comm.IDTVManagerProxy;
-import com.iwedia.comm.IDlnaCallback;
 import com.iwedia.comm.IEpgCallback;
 import com.iwedia.comm.IHbbTvCallback;
 import com.iwedia.comm.IInputOutputCallback;
 import com.iwedia.comm.IMhegCallback;
-import com.iwedia.comm.IPvrCallback;
 import com.iwedia.comm.ISetupCallback;
 import com.iwedia.comm.IStreamComponentCallback;
 import com.iwedia.comm.content.Content;
@@ -51,48 +47,34 @@ import com.iwedia.comm.enums.FilterType;
 import com.iwedia.comm.enums.ServiceListIndex;
 import com.iwedia.comm.reminder.IReminderCallback;
 import com.iwedia.comm.system.INetworkCallback;
-import com.iwedia.comm.system.application.AppSizeInfo;
-import com.iwedia.comm.system.external_and_local_storage.IExternalLocalStorageSettings;
 import com.iwedia.dtv.reminder.ReminderEventAdd;
 import com.iwedia.dtv.reminder.ReminderEventRemove;
 import com.iwedia.dtv.reminder.ReminderEventTrigger;
 import com.iwedia.dtv.service.SourceType;
 import com.iwedia.gui.callbacks.CallBackHandler;
-import com.iwedia.gui.callbacks.PVRCallBack;
 import com.iwedia.gui.ci.CICallbackController;
 import com.iwedia.gui.components.A4TVAlertDialog;
 import com.iwedia.gui.components.A4TVButton;
 import com.iwedia.gui.components.A4TVDialog;
-import com.iwedia.gui.components.A4TVMultimediaController;
-import com.iwedia.gui.components.A4TVMultimediaController.ControlProvider;
 import com.iwedia.gui.components.A4TVMultimediaVideoView;
-import com.iwedia.gui.components.A4TVProgressBarPVR;
-import com.iwedia.gui.components.A4TVProgressBarPVR.ControlProviderPVR;
 import com.iwedia.gui.components.A4TVProgressDialog;
 import com.iwedia.gui.components.A4TVTextView;
 import com.iwedia.gui.components.A4TVToast;
 import com.iwedia.gui.components.A4TVVideoView;
 import com.iwedia.gui.components.dialogs.AccountsAndSyncDialog;
-import com.iwedia.gui.components.dialogs.AccountsAndSyncManageAccountsDialog;
-import com.iwedia.gui.components.dialogs.ApplicationsAppControlDialog;
-import com.iwedia.gui.components.dialogs.ApplicationsManageManageAppsDialog;
 import com.iwedia.gui.components.dialogs.ChannelInstallationDialog;
-import com.iwedia.gui.components.dialogs.ChannelScanDialog;
 import com.iwedia.gui.components.dialogs.EPGScheduleDialog;
-import com.iwedia.gui.components.dialogs.ExternalAndLocalStorageDialog;
 import com.iwedia.gui.components.dialogs.LanguageAndKeyboardDialog;
 import com.iwedia.gui.components.dialogs.NetworkSettingsDialog;
 import com.iwedia.gui.components.dialogs.NetworkWirelessAddHiddenNetworkDialog;
 import com.iwedia.gui.components.dialogs.NetworkWirelessFindAPDialog;
 import com.iwedia.gui.components.dialogs.NetworkWirelessFindWPSDialog;
 import com.iwedia.gui.components.dialogs.NetworkWirelessWPSConfigDialog;
-import com.iwedia.gui.components.dialogs.PVRSettingsDialog;
 import com.iwedia.gui.components.dialogs.ParentalGuidanceDialog;
 import com.iwedia.gui.components.dialogs.PasswordSecurityDialog;
 import com.iwedia.gui.components.dialogs.PictureSettingsDialog;
 import com.iwedia.gui.components.dialogs.ScreenSaverDialog;
 import com.iwedia.gui.components.dialogs.ServiceModeDialog;
-import com.iwedia.gui.components.dialogs.SoftwareUpgradeDialog;
 import com.iwedia.gui.config_handler.ConfigHandler;
 import com.iwedia.gui.content_list.ContentListHandler;
 import com.iwedia.gui.dual_video.DualVideoManager;
@@ -111,7 +93,6 @@ import com.iwedia.gui.listeners.MultimediaVideoViewOnPreparedListener;
 import com.iwedia.gui.mainmenu.DialogManager;
 import com.iwedia.gui.mainmenu.MainMenuContent;
 import com.iwedia.gui.mainmenu.MainMenuHandlingClass;
-import com.iwedia.gui.multimedia.MultimediaGridHelper;
 import com.iwedia.gui.multimedia.MultimediaHandler;
 import com.iwedia.gui.multimedia.MultimediaPlayer;
 import com.iwedia.gui.multimedia.controller.MediaController;
@@ -119,18 +100,18 @@ import com.iwedia.gui.multimedia.dlna.renderer.controller.RendererController;
 import com.iwedia.gui.osd.CheckServiceType;
 import com.iwedia.gui.osd.IOSDHandler;
 import com.iwedia.gui.osd.OSDGlobal;
-import com.iwedia.gui.osd.OSDHandlerHelper;
 import com.iwedia.gui.osd.curleffect.CurlHandler;
 import com.iwedia.gui.osd.infobanner.InfoBannerHandler;
 import com.iwedia.gui.osd.noneinfobanner.NoneBannerHandler;
 import com.iwedia.gui.pip.PiPController;
 import com.iwedia.gui.pip.PiPView;
 import com.iwedia.gui.pvr.A4TVStorageManager;
-import com.iwedia.gui.pvr.PVRHandler;
 import com.iwedia.gui.widgets.WidgetsHandler;
 
+import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Timer;
@@ -417,15 +398,20 @@ public class MainActivity extends Activity implements OSDGlobal {
                 .addImagesToMemory(MainMenuContent.submenuSettingsTvSecuritySettings);
         // Set xml content
         setContentView(R.layout.main);
-        // check if early video
-        // TODO: This Should Be Fixed!
-        // if (android.os.SystemProperties.get("iwedia.mw.earlyvideo",
-        // "disabled")
-        // .equals("handled")
-        // && System.getProperty(EARLY_VIDEO_PROPERTY_NAME, "1").equals(
-        // "1")) {
-        // mIsEarlyVideo = true;
-        // }
+        try {
+            Runtime r = Runtime.getRuntime();
+            Process process = r.exec(" getprop iwedia.mw.earlyvideo ");
+            BufferedReader in = new BufferedReader(new InputStreamReader(
+                    process.getInputStream()));
+            // check if early video
+            if (in.readLine().equals("handled")
+                    && System.getProperty(EARLY_VIDEO_PROPERTY_NAME, "1")
+                            .equals("1")) {
+                mIsEarlyVideo = true;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         if (mIsEarlyVideo) {
             connectWithServer();
         } else {
