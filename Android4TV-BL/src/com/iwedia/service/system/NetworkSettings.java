@@ -29,11 +29,9 @@ import android.net.ConnectivityManager;
 import android.net.DhcpInfo;
 import android.net.NetworkInfo;
 import android.net.NetworkInfo.DetailedState;
-import android.net.ethernet.EthernetManager;
 import android.net.wifi.ScanResult;
 import android.net.wifi.SupplicantState;
 import android.net.wifi.WifiConfiguration;
-import android.net.wifi.WifiConfiguration.IpAssignment;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.net.wifi.WpsInfo;
@@ -68,7 +66,8 @@ public class NetworkSettings extends INetworkSettings.Stub {
      * Android wireless settings manager.
      */
     private WifiManager wifiManager;
-    private EthernetManager ethManager;
+    // TODO: This Should Be Fixed!
+    // private EthernetManager ethManager;
     private ConnectivityManager conectivityManager;
     /**
      * Channel
@@ -78,11 +77,13 @@ public class NetworkSettings extends INetworkSettings.Stub {
     /**
      * Submitted WPS operation event listener
      */
-    private WifiManager.WpsListener wpsSubmitListener;
+    // TODO: This Should Be Fixed!
+    // private WifiManager.WpsListener wpsSubmitListener;
     /**
      * Canceled WPS operation event listener
      */
-    private WifiManager.ActionListener wpsCancelListener;
+    // TODO: This Should Be Fixed!
+    // private WifiManager.ActionListener wpsCancelListener;
     /**
      * Available wireless networks.
      */
@@ -134,8 +135,9 @@ public class NetworkSettings extends INetworkSettings.Stub {
         }
         receiver = new WiFiScanReceiver();
         statusReceiver = new WifiStatusReceiver();
-        wpsSubmitListener = new WpsSubmitListener();
-        wpsCancelListener = new WpsCancelListener();
+        // TODO: This Should Be Fixed!
+        // wpsSubmitListener = new WpsSubmitListener();
+        // wpsCancelListener = new WpsCancelListener();
         /**
          * Register receivers.
          */
@@ -406,8 +408,9 @@ public class NetworkSettings extends INetworkSettings.Stub {
             try {
                 ethServiceString = (String) getField(IWEDIAService
                         .getInstance().getContext(), "ETHERNET_SERVICE");
-                ethManager = (EthernetManager) IWEDIAService.getInstance()
-                        .getSystemService(ethServiceString);
+                // TODO: This Should Be Fixed!
+                // ethManager = (EthernetManager) IWEDIAService.getInstance()
+                // .getSystemService(ethServiceString);
                 retVal = setActiveNetworkType_x86Patch(desiredNetworkType);
             } catch (Exception e) {
                 // ETHERNET_SERVICE field exists but unable to get field value
@@ -436,45 +439,48 @@ public class NetworkSettings extends INetworkSettings.Stub {
                 }
                 Log.e(LOG_TAG, "Enabling Ethernet");
                 currentlyActiveWirelessNetwork = null;
-                if (MethodExists(ethManager, "setEnabled")) {
-                    Method getWifiApStateMethod = GetRemoteMethod(ethManager,
-                            "setEnabled");
-                    try {
-                        getWifiApStateMethod.invoke(ethManager, true);
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                }
+                // TODO: This Should Be Fixed!
+                // if (MethodExists(ethManager, "setEnabled")) {
+                // Method getWifiApStateMethod = GetRemoteMethod(ethManager,
+                // "setEnabled");
+                // try {
+                // getWifiApStateMethod.invoke(ethManager, true);
+                // } catch (Exception e) {
+                // e.printStackTrace();
+                // }
+                // }
                 break;
             }
             case NetworkType.WIRELESS: {
                 if (activeNetworkType != null
                         && activeNetworkType.getType() == conectivityManager.TYPE_ETHERNET) {
                     Log.e(LOG_TAG, "Disabling Ethernet");
-                    if (MethodExists(ethManager, "setEnabled")) {
-                        Method getWifiApStateMethod = GetRemoteMethod(
-                                ethManager, "setEnabled");
-                        try {
-                            getWifiApStateMethod.invoke(ethManager, false);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                    }
+                    // TODO: This Should Be Fixed!
+                    // if (MethodExists(ethManager, "setEnabled")) {
+                    // Method getWifiApStateMethod = GetRemoteMethod(
+                    // ethManager, "setEnabled");
+                    // try {
+                    // getWifiApStateMethod.invoke(ethManager, false);
+                    // } catch (Exception e) {
+                    // e.printStackTrace();
+                    // }
+                    // }
                 }
                 Log.e(LOG_TAG, "Enabling Wifi");
                 wifiManager.setWifiEnabled(true);
                 break;
             }
             default: {
-                if (MethodExists(ethManager, "setEnabled")) {
-                    Method getWifiApStateMethod = GetRemoteMethod(ethManager,
-                            "setEnabled");
-                    try {
-                        getWifiApStateMethod.invoke(ethManager, false);
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                }
+                // TODO: This Should Be Fixed!
+                // if (MethodExists(ethManager, "setEnabled")) {
+                // Method getWifiApStateMethod = GetRemoteMethod(ethManager,
+                // "setEnabled");
+                // try {
+                // getWifiApStateMethod.invoke(ethManager, false);
+                // } catch (Exception e) {
+                // e.printStackTrace();
+                // }
+                // }
                 wifiManager.setWifiEnabled(false);
                 currentlyActiveWirelessNetwork = null;
             }
@@ -731,48 +737,48 @@ public class NetworkSettings extends INetworkSettings.Stub {
         }
     }
 
-    class WpsSubmitListener implements WifiManager.WpsListener {
-        public void onStartSuccess(String pin) {
-            if (pin != null) {
-                broadcastWpsPin(pin);
-            } else {
-            }
-        }
-
-        public void onCompletion() {
-        }
-
-        public void onFailure(int reason) {
-            switch (reason) {
-                case WifiManager.WPS_OVERLAP_ERROR:
-                case WifiManager.WPS_WEP_PROHIBITED:
-                case WifiManager.WPS_TKIP_ONLY_PROHIBITED:
-                case WifiManager.WPS_AUTH_FAILURE: {
-                    broadcastWpsStateChange(WpsState.WPS_STATE_ERROR);
-                    break;
-                }
-                case WifiManager.WPS_TIMED_OUT: {
-                    broadcastWpsStateChange(WpsState.WPS_STATE_TIMED_OUT);
-                    break;
-                }
-                default:
-                    break;
-            }
-        }
-    }
-
-    class WpsCancelListener implements WifiManager.ActionListener {
-        @Override
-        public void onSuccess() {
-            broadcastWpsStateChange(WpsState.WPS_STATE_CANCEL_SUCCESS);
-        }
-
-        @Override
-        public void onFailure(int reason) {
-            broadcastWpsStateChange(WpsState.WPS_STATE_CANCEL_ERROR);
-        }
-    }
-
+    // TODO: This Should Be Fixed!
+    // class WpsSubmitListener implements WifiManager.WpsListener {
+    // public void onStartSuccess(String pin) {
+    // if (pin != null) {
+    // broadcastWpsPin(pin);
+    // } else {
+    // }
+    // }
+    //
+    // public void onCompletion() {
+    // }
+    //
+    // public void onFailure(int reason) {
+    // switch (reason) {
+    // case WifiManager.WPS_OVERLAP_ERROR:
+    // case WifiManager.WPS_WEP_PROHIBITED:
+    // case WifiManager.WPS_TKIP_ONLY_PROHIBITED:
+    // case WifiManager.WPS_AUTH_FAILURE: {
+    // broadcastWpsStateChange(WpsState.WPS_STATE_ERROR);
+    // break;
+    // }
+    // case WifiManager.WPS_TIMED_OUT: {
+    // broadcastWpsStateChange(WpsState.WPS_STATE_TIMED_OUT);
+    // break;
+    // }
+    // default:
+    // break;
+    // }
+    // }
+    // }
+    // TODO: This Should Be Fixed!
+    // class WpsCancelListener implements WifiManager.ActionListener {
+    // @Override
+    // public void onSuccess() {
+    // broadcastWpsStateChange(WpsState.WPS_STATE_CANCEL_SUCCESS);
+    // }
+    //
+    // @Override
+    // public void onFailure(int reason) {
+    // broadcastWpsStateChange(WpsState.WPS_STATE_CANCEL_ERROR);
+    // }
+    // }
     private void changeState(DetailedState aState) {
         if (aState == DetailedState.SCANNING) {
             if (IWEDIAService.DEBUG) {
@@ -996,165 +1002,169 @@ public class NetworkSettings extends INetworkSettings.Stub {
      * Sets WPS PIN connection method as registrar
      */
     public void startWpsPinRegistrar(String pin, String BSSID) {
-        WpsInfo config = new WpsInfo();
-        config.setup = WpsInfo.KEYPAD;
-        config.pin = pin;
-        config.BSSID = BSSID;
-        if (MethodExists(wifiManager, "startWps")) {
-            Method startWpsMethod = GetRemoteMethod(wifiManager, "startWps");
-            if (startWpsMethod.getParameterTypes().length == 2)
-                try {
-                    startWpsMethod.invoke(wifiManager, config,
-                            wpsSubmitListener);
-                } catch (IllegalArgumentException e1) {
-                    // TODO Auto-generated catch block
-                    e1.printStackTrace();
-                } catch (IllegalAccessException e1) {
-                    // TODO Auto-generated catch block
-                    e1.printStackTrace();
-                } catch (InvocationTargetException e1) {
-                    // TODO Auto-generated catch block
-                    e1.printStackTrace();
-                }
-            else if (startWpsMethod.getParameterTypes().length == 3)
-                try {
-                    startWpsMethod.invoke(wifiManager, channel, config,
-                            wpsSubmitListener);
-                } catch (IllegalArgumentException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (IllegalAccessException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (InvocationTargetException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
-            else
-                Log.e(LOG_TAG, "Unknown API, unable to call startWps().");
-        }
+        // TODO: This Should Be Fixed!
+        // WpsInfo config = new WpsInfo();
+        // config.setup = WpsInfo.KEYPAD;
+        // config.pin = pin;
+        // config.BSSID = BSSID;
+        // if (MethodExists(wifiManager, "startWps")) {
+        // Method startWpsMethod = GetRemoteMethod(wifiManager, "startWps");
+        // if (startWpsMethod.getParameterTypes().length == 2)
+        // try {
+        // startWpsMethod.invoke(wifiManager, config,
+        // wpsSubmitListener);
+        // } catch (IllegalArgumentException e1) {
+        // // TODO Auto-generated catch block
+        // e1.printStackTrace();
+        // } catch (IllegalAccessException e1) {
+        // // TODO Auto-generated catch block
+        // e1.printStackTrace();
+        // } catch (InvocationTargetException e1) {
+        // // TODO Auto-generated catch block
+        // e1.printStackTrace();
+        // }
+        // else if (startWpsMethod.getParameterTypes().length == 3)
+        // try {
+        // startWpsMethod.invoke(wifiManager, channel, config,
+        // wpsSubmitListener);
+        // } catch (IllegalArgumentException e) {
+        // // TODO Auto-generated catch block
+        // e.printStackTrace();
+        // } catch (IllegalAccessException e) {
+        // // TODO Auto-generated catch block
+        // e.printStackTrace();
+        // } catch (InvocationTargetException e) {
+        // // TODO Auto-generated catch block
+        // e.printStackTrace();
+        // }
+        // else
+        // Log.e(LOG_TAG, "Unknown API, unable to call startWps().");
+        // }
     }
 
     /**
      * Sets WPS PIN connection method as enrollee
      */
     public void startWpsPinEnrollee() {
-        WpsInfo config = new WpsInfo();
-        config.setup = WpsInfo.DISPLAY;
-        if (MethodExists(wifiManager, "startWps")) {
-            Method startWpsMethod = GetRemoteMethod(wifiManager, "startWps");
-            if (startWpsMethod.getParameterTypes().length == 2)
-                try {
-                    startWpsMethod.invoke(wifiManager, config,
-                            wpsSubmitListener);
-                } catch (IllegalArgumentException e1) {
-                    // TODO Auto-generated catch block
-                    e1.printStackTrace();
-                } catch (IllegalAccessException e1) {
-                    // TODO Auto-generated catch block
-                    e1.printStackTrace();
-                } catch (InvocationTargetException e1) {
-                    // TODO Auto-generated catch block
-                    e1.printStackTrace();
-                }
-            else if (startWpsMethod.getParameterTypes().length == 3)
-                try {
-                    startWpsMethod.invoke(wifiManager, channel, config,
-                            wpsSubmitListener);
-                } catch (IllegalArgumentException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (IllegalAccessException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (InvocationTargetException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
-            else
-                Log.e(LOG_TAG, "Unknown API, unable to call startWps().");
-        }
+        // TODO: This Should Be Fixed!
+        // WpsInfo config = new WpsInfo();
+        // config.setup = WpsInfo.DISPLAY;
+        // if (MethodExists(wifiManager, "startWps")) {
+        // Method startWpsMethod = GetRemoteMethod(wifiManager, "startWps");
+        // if (startWpsMethod.getParameterTypes().length == 2)
+        // try {
+        // startWpsMethod.invoke(wifiManager, config,
+        // wpsSubmitListener);
+        // } catch (IllegalArgumentException e1) {
+        // // TODO Auto-generated catch block
+        // e1.printStackTrace();
+        // } catch (IllegalAccessException e1) {
+        // // TODO Auto-generated catch block
+        // e1.printStackTrace();
+        // } catch (InvocationTargetException e1) {
+        // // TODO Auto-generated catch block
+        // e1.printStackTrace();
+        // }
+        // else if (startWpsMethod.getParameterTypes().length == 3)
+        // try {
+        // startWpsMethod.invoke(wifiManager, channel, config,
+        // wpsSubmitListener);
+        // } catch (IllegalArgumentException e) {
+        // // TODO Auto-generated catch block
+        // e.printStackTrace();
+        // } catch (IllegalAccessException e) {
+        // // TODO Auto-generated catch block
+        // e.printStackTrace();
+        // } catch (InvocationTargetException e) {
+        // // TODO Auto-generated catch block
+        // e.printStackTrace();
+        // }
+        // else
+        // Log.e(LOG_TAG, "Unknown API, unable to call startWps().");
+        // }
     }
 
     /**
      * Sets WPS PBC connection method
      */
     public void startWpsPbc() {
-        Log.e(LOG_TAG, "startWpsPbc: ");
-        WpsInfo config = new WpsInfo();
-        config.setup = WpsInfo.PBC;
-        if (MethodExists(wifiManager, "startWps")) {
-            Method startWpsMethod = GetRemoteMethod(wifiManager, "startWps");
-            if (startWpsMethod.getParameterTypes().length == 2)
-                try {
-                    startWpsMethod.invoke(wifiManager, config,
-                            wpsSubmitListener);
-                } catch (IllegalArgumentException e1) {
-                    // TODO Auto-generated catch block
-                    e1.printStackTrace();
-                } catch (IllegalAccessException e1) {
-                    // TODO Auto-generated catch block
-                    e1.printStackTrace();
-                } catch (InvocationTargetException e1) {
-                    // TODO Auto-generated catch block
-                    e1.printStackTrace();
-                }
-            else if (startWpsMethod.getParameterTypes().length == 3)
-                try {
-                    startWpsMethod.invoke(wifiManager, channel, config,
-                            wpsSubmitListener);
-                } catch (IllegalArgumentException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (IllegalAccessException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (InvocationTargetException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
-            else
-                Log.e(LOG_TAG, "Unknown API, unable to call startWps().");
-        }
+        // TODO: This Should Be Fixed!
+        // Log.e(LOG_TAG, "startWpsPbc: ");
+        // WpsInfo config = new WpsInfo();
+        // config.setup = WpsInfo.PBC;
+        // if (MethodExists(wifiManager, "startWps")) {
+        // Method startWpsMethod = GetRemoteMethod(wifiManager, "startWps");
+        // if (startWpsMethod.getParameterTypes().length == 2)
+        // try {
+        // startWpsMethod.invoke(wifiManager, config,
+        // wpsSubmitListener);
+        // } catch (IllegalArgumentException e1) {
+        // // TODO Auto-generated catch block
+        // e1.printStackTrace();
+        // } catch (IllegalAccessException e1) {
+        // // TODO Auto-generated catch block
+        // e1.printStackTrace();
+        // } catch (InvocationTargetException e1) {
+        // // TODO Auto-generated catch block
+        // e1.printStackTrace();
+        // }
+        // else if (startWpsMethod.getParameterTypes().length == 3)
+        // try {
+        // startWpsMethod.invoke(wifiManager, channel, config,
+        // wpsSubmitListener);
+        // } catch (IllegalArgumentException e) {
+        // // TODO Auto-generated catch block
+        // e.printStackTrace();
+        // } catch (IllegalAccessException e) {
+        // // TODO Auto-generated catch block
+        // e.printStackTrace();
+        // } catch (InvocationTargetException e) {
+        // // TODO Auto-generated catch block
+        // e.printStackTrace();
+        // }
+        // else
+        // Log.e(LOG_TAG, "Unknown API, unable to call startWps().");
+        // }
     }
 
     /**
      * Cancels current WPS operation
      */
     public void cancelWps() {
-        Log.e(LOG_TAG, "cancelWps: ");
-        if (MethodExists(wifiManager, "cancelWps")) {
-            Method cancelWpsMethod = GetRemoteMethod(wifiManager, "cancelWps");
-            if (cancelWpsMethod.getParameterTypes().length == 1)
-                try {
-                    cancelWpsMethod.invoke(wifiManager, wpsCancelListener);
-                } catch (IllegalArgumentException e1) {
-                    // TODO Auto-generated catch block
-                    e1.printStackTrace();
-                } catch (IllegalAccessException e1) {
-                    // TODO Auto-generated catch block
-                    e1.printStackTrace();
-                } catch (InvocationTargetException e1) {
-                    // TODO Auto-generated catch block
-                    e1.printStackTrace();
-                }
-            else if (cancelWpsMethod.getParameterTypes().length == 2)
-                try {
-                    cancelWpsMethod.invoke(wifiManager, channel,
-                            wpsCancelListener);
-                } catch (IllegalArgumentException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (IllegalAccessException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (InvocationTargetException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
-            else
-                Log.e(LOG_TAG, "Unknown API, unable to call startWps().");
-        }
+        // TODO: This Should Be Fixed!
+        // Log.e(LOG_TAG, "cancelWps: ");
+        // if (MethodExists(wifiManager, "cancelWps")) {
+        // Method cancelWpsMethod = GetRemoteMethod(wifiManager, "cancelWps");
+        // if (cancelWpsMethod.getParameterTypes().length == 1)
+        // try {
+        // cancelWpsMethod.invoke(wifiManager, wpsCancelListener);
+        // } catch (IllegalArgumentException e1) {
+        // // TODO Auto-generated catch block
+        // e1.printStackTrace();
+        // } catch (IllegalAccessException e1) {
+        // // TODO Auto-generated catch block
+        // e1.printStackTrace();
+        // } catch (InvocationTargetException e1) {
+        // // TODO Auto-generated catch block
+        // e1.printStackTrace();
+        // }
+        // else if (cancelWpsMethod.getParameterTypes().length == 2)
+        // try {
+        // cancelWpsMethod.invoke(wifiManager, channel,
+        // wpsCancelListener);
+        // } catch (IllegalArgumentException e) {
+        // // TODO Auto-generated catch block
+        // e.printStackTrace();
+        // } catch (IllegalAccessException e) {
+        // // TODO Auto-generated catch block
+        // e.printStackTrace();
+        // } catch (InvocationTargetException e) {
+        // // TODO Auto-generated catch block
+        // e.printStackTrace();
+        // }
+        // else
+        // Log.e(LOG_TAG, "Unknown API, unable to call startWps().");
+        // }
     }
 
     /**
@@ -1556,12 +1566,14 @@ public class NetworkSettings extends INetworkSettings.Stub {
     }
 
     public boolean isDHCPactive() {
-        WifiConfiguration config = GetCurrentWifiConfiguration();
-        if (config.ipAssignment == IpAssignment.DHCP) {
-            return true;
-        } else {
-            return false;
-        }
+        // TODO: This Should Be Fixed!
+        // WifiConfiguration config = GetCurrentWifiConfiguration();
+        // if (config.ipAssignment == IpAssignment.DHCP) {
+        // return true;
+        // } else {
+        // return false;
+        // }
+        return false;
     }
 
     public void enableDHCP() {
@@ -1731,27 +1743,28 @@ public class NetworkSettings extends INetworkSettings.Stub {
         if (MethodExists(wifiManager, "getWifiApState")) {
             Method getWifiApStateMethod = GetRemoteMethod(wifiManager,
                     "getWifiApState");
-            try {
-                int wifiApState = (Integer) getWifiApStateMethod
-                        .invoke(wifiManager);
-                if ((wifiApState == WifiManager.WIFI_AP_STATE_ENABLING)
-                        || (wifiApState == WifiManager.WIFI_AP_STATE_ENABLED)) {
-                    Log.e(LOG_TAG, "SoftAP is enabled");
-                    return true;
-                } else {
-                    Log.e(LOG_TAG, "SoftAP is disabled");
-                    return false;
-                }
-            } catch (IllegalArgumentException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            } catch (IllegalAccessException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            } catch (InvocationTargetException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
+            // TODO: This Should Be Fixed!
+            // try {
+            // int wifiApState = (Integer) getWifiApStateMethod
+            // .invoke(wifiManager);
+            // if ((wifiApState == WifiManager.WIFI_AP_STATE_ENABLING)
+            // || (wifiApState == WifiManager.WIFI_AP_STATE_ENABLED)) {
+            // Log.e(LOG_TAG, "SoftAP is enabled");
+            // return true;
+            // } else {
+            // Log.e(LOG_TAG, "SoftAP is disabled");
+            // return false;
+            // }
+            // } catch (IllegalArgumentException e) {
+            // // TODO Auto-generated catch block
+            // e.printStackTrace();
+            // } catch (IllegalAccessException e) {
+            // // TODO Auto-generated catch block
+            // e.printStackTrace();
+            // } catch (InvocationTargetException e) {
+            // // TODO Auto-generated catch block
+            // e.printStackTrace();
+            // }
         }
         return false;
     }
