@@ -1023,6 +1023,8 @@ public class ScanControl extends IScanControl.Stub implements IDTVInterface {
     @Override
     public void unregisterCallback(IScanCallback arg0) {
         scanCallback = null;
+        IWEDIAService.getInstance().getDTVManager().getScanControl()
+                .unregisterCallback(ScanControl.getScanCallback());
     }
 
     /**
