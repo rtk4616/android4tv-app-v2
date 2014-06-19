@@ -35,6 +35,7 @@ import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.net.wifi.WpsInfo;
+import android.net.wifi.p2p.WifiP2pDevice;
 import android.os.RemoteException;
 import android.util.Log;
 
@@ -1767,5 +1768,29 @@ public class NetworkSettings extends INetworkSettings.Stub {
             // }
         }
         return false;
+    }
+
+    @Override
+    public void disconnectWifiDirect() throws RemoteException {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public List<WifiP2pDevice> getWifiDirectPeersList() throws RemoteException {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public void startWifiDirect(int arg0) throws RemoteException {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void wifiDirectDiscover() throws RemoteException {
+        // TODO Auto-generated method stub
+        
     }
 }
